@@ -2,18 +2,25 @@
 */
 
 $color: #363636;
-$background: #fff;
+$background: #ccc;
 
 
 body {
-  .container {
-    color: $color;
-    background: $background;
+  color: $color;
+  background: $background;
   
+  .container {
     a, a:active, a:visited {
       color: $color;
       border-bottom: 1px dotted;
       text-decoration: none;
+    }
+    
+    
+    #content {
+      #iframe-wrapper {
+        background: #fff;
+      }
     }
   }
 }
