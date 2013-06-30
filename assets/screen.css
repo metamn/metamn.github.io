@@ -362,7 +362,7 @@ body .container #content {
 body .container #content #iframe-wrapper {
   display: block;
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 80%;
 }
 /* line 36, layout.scss */
@@ -446,31 +446,31 @@ body.csongor-bartus .container h1 {
 }
 /* line 38, theme.scss */
 body.csongor-bartus .container h2 {
-  font-size: 4.23077em;
-  padding: 1.29532em 0;
-}
-/* line 39, theme.scss */
-body.csongor-bartus .container h3 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 43, theme.scss */
-body.csongor-bartus .container h2 {
-  font-family: 'Old Standard TT', serif;
+/* line 39, theme.scss */
+body.csongor-bartus .container h3 {
+  font-size: 2.61538em;
+  padding: 1.28666em 0;
 }
-/* line 46, theme.scss */
+/* line 44, theme.scss */
+body.csongor-bartus .container h2 {
+  font-family: 'Comfortaa', cursive;
+}
+/* line 47, theme.scss */
 body.csongor-bartus .container h2 a {
   border-bottom: none;
 }
-/* line 51, theme.scss */
+/* line 52, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Faster One', cursive;
 }
-/* line 55, theme.scss */
+/* line 56, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 58, theme.scss */
+/* line 59, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
