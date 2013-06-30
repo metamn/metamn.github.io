@@ -386,19 +386,36 @@ body .container header nav ul li.last {
 /* line 41, theme.scss */
 body .container #content #iframe-wrapper {
   display: block;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
 }
-/* line 50, theme.scss */
+/* line 48, theme.scss */
 body .container #content #iframe-wrapper iframe {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 58, theme.scss */
+/* line 55, theme.scss */
+body .container #content article {
+  width: 100%;
+  float: left;
+  margin-bottom: 1.25em;
+}
+/* line 59, theme.scss */
+body .container #content article figcaption {
+  margin-bottom: 1.25em;
+}
+/* line 64, theme.scss */
+body .container #content article figure a {
+  border-bottom: 0;
+}
+/* line 67, theme.scss */
+body .container #content article figure a img {
+  width: 100%;
+  height: auto;
+}
+/* line 76, theme.scss */
 body .container footer {
   margin: 1.25em 0;
 }
