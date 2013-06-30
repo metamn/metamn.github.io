@@ -21,7 +21,36 @@
     <![endif]-->
     
 
-    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script>
+      /*
+      $(document).ready(function() {
+        
+        var $allVideos = $("iframe"),
+        $fluidEl = $("figure");
+        
+        $allVideos.each(function() {
+          $(this)
+            // jQuery .data does not work on object/embed elements
+            .attr('data-aspectRatio', this.height / this.width)
+            .removeAttr('height')
+            .removeAttr('width');
+          });
+        
+        $(window).resize(function() {
+          var newWidth = $fluidEl.width();
+          
+          $allVideos.each(function() {
+            var $el = $(this);
+            $el.width(newWidth);
+            $el.height(newWidth * $el.attr('data-aspectRatio'));
+          });
+        }).resize(); 
+      
+      });
+      */
+    </script>
   </head>
 
   <body class="skills-|-csongor-bartus">

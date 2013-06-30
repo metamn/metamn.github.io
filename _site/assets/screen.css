@@ -384,18 +384,21 @@ body .container header nav ul li.last {
   margin-right: 0;
 }
 /* line 41, theme.scss */
-body .container #content #iframe-wrap {
-  position: fixed;
+body .container #content #iframe-wrapper {
+  display: block;
+  position: relative;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
 }
-/* line 46, theme.scss */
-body .container #content #iframe-wrap #iframe {
+/* line 50, theme.scss */
+body .container #content #iframe-wrapper iframe {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 54, theme.scss */
+/* line 58, theme.scss */
 body .container footer {
   margin: 1.25em 0;
 }
