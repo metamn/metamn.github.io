@@ -329,44 +329,13 @@ body .container header h1 {
 body .container header nav {
   float: left;
   width: 76.5%;
-}
-/* line 20, layout.scss */
-body .container #content {
-  width: 100%;
-  float: left;
-}
-/* line 24, layout.scss */
-body .container footer {
-  width: 100%;
-  float: left;
-}
-
-/* The color scheme
-*/
-/* line 9, theme.scss */
-body .container {
-  color: #363636;
-  background: white;
-}
-/* line 13, theme.scss */
-body .container a, body .container a:active, body .container a:visited {
-  color: #363636;
-  border-bottom: 1px dotted;
-  text-decoration: none;
-}
-/* line 22, theme.scss */
-body .container header h1 a {
-  border-bottom: 0;
-}
-/* line 27, theme.scss */
-body .container header nav {
   margin-top: 2.1875em;
 }
-/* line 30, theme.scss */
+/* line 19, layout.scss */
 body .container header nav .outline {
   display: none;
 }
-/* line 34, theme.scss */
+/* line 23, layout.scss */
 body .container header nav ul {
   display: block;
   margin: 0;
@@ -383,39 +352,55 @@ body .container header nav ul li {
 body .container header nav ul li.last {
   margin-right: 0;
 }
-/* line 41, theme.scss */
+/* line 29, layout.scss */
+body .container #content {
+  width: 100%;
+  float: left;
+}
+/* line 32, layout.scss */
 body .container #content #iframe-wrapper {
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 48, theme.scss */
+/* line 39, layout.scss */
 body .container #content #iframe-wrapper iframe {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 55, theme.scss */
+/* line 46, layout.scss */
 body .container #content article {
   width: 100%;
   float: left;
   margin-bottom: 1.25em;
 }
-/* line 59, theme.scss */
+/* line 50, layout.scss */
 body .container #content article figcaption {
   margin-bottom: 1.25em;
 }
-/* line 64, theme.scss */
-body .container #content article figure a {
-  border-bottom: 0;
+/* line 55, layout.scss */
+body .container #content article figure img {
+  max-width: 100%;
 }
-/* line 67, theme.scss */
-body .container #content article figure a img {
-  width: 100%;
-  height: auto;
-}
-/* line 76, theme.scss */
+/* line 62, layout.scss */
 body .container footer {
+  width: 100%;
+  float: left;
   margin: 1.25em 0;
+}
+
+/* The color scheme
+*/
+/* line 9, theme.scss */
+body .container {
+  color: #363636;
+  background: white;
+}
+/* line 13, theme.scss */
+body .container a, body .container a:active, body .container a:visited {
+  color: #363636;
+  border-bottom: 1px dotted;
+  text-decoration: none;
 }
