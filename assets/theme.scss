@@ -1,7 +1,32 @@
+/* The color scheme
+*/
+
+$color: #363636;
+$background: #fff;
+
+
 body {
   .container {
+    color: $color;
+    background: $background;
+  
+    a, a:active, a:visited {
+      color: $color;
+      border-bottom: 1px dotted;
+      text-decoration: none;
+    }
+    
+    
     header {
+      h1 {
+        a {
+          border-bottom: 0;
+        }
+      }
+      
       nav {
+        margin-top: $pad*2 - $pad/4;
+        
         .outline {
           display: none;
         }
@@ -10,6 +35,24 @@ body {
           @include list-inline;
         }
       }
+    }
+    
+    #content {
+      #iframe-wrap {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        
+        #iframe {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    
+    footer {
+      margin: $pad 0;
     }
   }
 }

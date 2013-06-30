@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <title>{{ page.title | strip_html }}</title> 
+    <title>Writing | Csongor Bartus</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -24,7 +24,7 @@
     <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body class="{{ page.title | downcase | replace:' ', '-' }}">
+  <body class="writing-|-csongor-bartus">
     <div class="container">
       <header>
         <h1>
@@ -44,7 +44,10 @@
       
       
       <section id="content">
-        {{ content }}
+        <div id="iframe-wrap">
+  <iframe src="http://csbartus.herokuapp.com" frameborder=0 id="iframe"></iframe>
+</div>
+
       </section>
       
       <footer>

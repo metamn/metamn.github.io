@@ -6,9 +6,14 @@ body {
     header {
       @include block;
       
-      h1, nav {
+      h1 {
         float: left;
-        max-width: 50%;
+        width: $minor;
+      }
+      
+      nav {
+        float: left;
+        width: $major;
       }
     }
     

@@ -69,6 +69,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Vertical rhythm
 */
+/* The Grid
+*/
 /* line 1, typography.scss */
 body {
   /* Use Serif for long text */
@@ -319,26 +321,52 @@ body .container header {
   float: left;
 }
 /* line 9, layout.scss */
-body .container header h1, body .container header nav {
+body .container header h1 {
   float: left;
-  max-width: 50%;
+  width: 18.5%;
 }
-/* line 15, layout.scss */
+/* line 14, layout.scss */
+body .container header nav {
+  float: left;
+  width: 76.5%;
+}
+/* line 20, layout.scss */
 body .container #content {
   width: 100%;
   float: left;
 }
-/* line 19, layout.scss */
+/* line 24, layout.scss */
 body .container footer {
   width: 100%;
   float: left;
 }
 
-/* line 5, theme.scss */
+/* The color scheme
+*/
+/* line 9, theme.scss */
+body .container {
+  color: #363636;
+  background: white;
+}
+/* line 13, theme.scss */
+body .container a, body .container a:active, body .container a:visited {
+  color: #363636;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+/* line 22, theme.scss */
+body .container header h1 a {
+  border-bottom: 0;
+}
+/* line 27, theme.scss */
+body .container header nav {
+  margin-top: 2.1875em;
+}
+/* line 30, theme.scss */
 body .container header nav .outline {
   display: none;
 }
-/* line 9, theme.scss */
+/* line 34, theme.scss */
 body .container header nav ul {
   display: block;
   margin: 0;
@@ -354,4 +382,20 @@ body .container header nav ul li {
 /* line 11, mixins.scss */
 body .container header nav ul li.last {
   margin-right: 0;
+}
+/* line 41, theme.scss */
+body .container #content #iframe-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+/* line 46, theme.scss */
+body .container #content #iframe-wrap #iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 54, theme.scss */
+body .container footer {
+  margin: 1.25em 0;
 }
