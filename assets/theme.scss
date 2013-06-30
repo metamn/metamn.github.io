@@ -1,0 +1,15 @@
+body {
+  .container {
+    header {
+      nav {
+        .outline {
+          display: none;
+        }
+        
+        ul {
+          @include list-inline;
+        }
+      }
+    }
+  }
+}

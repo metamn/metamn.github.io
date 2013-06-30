@@ -66,3 +66,292 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* Vertical rhythm
+*/
+/* line 1, typography.scss */
+body {
+  /* Use Serif for long text */
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 100%;
+  line-height: 1.25;
+}
+/* line 9, typography.scss */
+body .container {
+  /* Use Sans serif for non-long text */
+  /* Headings
+   -----------------------------------------------
+  */
+  /* Headings dont differ by size but by decoration
+   - vertical rhythm is maintained by padding
+  */
+  /* Lower headings are like body text but upper cased */
+  /* Block level elements
+  // -----------------------------------------------
+  */
+  /* the second <p> has a top margin */
+  /* blockquote is simply indented, enlarged */
+  /* address is small caps */
+  /* Lists
+  // -----------------------------------------------
+  */
+  /* Tables
+  // -----------------------------------------------
+  */
+  /* Text styles
+  // -----------------------------------------------
+  */
+  /* Forms
+  // -----------------------------------------------
+  */
+  /* Reset browser defaults */
+  /* Text */
+  /* Button */
+  /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+    - the checkbox and radio button is not displayed
+    - instead a label is displayed which can be styled with 'content' 
+  */
+  /* Select box 
+    - put inside a <label class="select">
+    - label:after is positioned over the original selectbox arrow
+    - additionally padding & relative positioning must be overwritten later in the new context
+  */
+}
+/* line 12, typography.scss */
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 27, typography.scss */
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
+  font-size: 1.5em;
+  padding: 1.25em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 35, typography.scss */
+body .container h4, body .container h5, body .container h6 {
+  font-size: 1.25em;
+  /* small caps is not enough to distinguish header from body text */
+  text-transform: uppercase;
+}
+/* line 42, typography.scss */
+body .container h1, body .container h4 {
+  font-weight: bold;
+}
+/* line 46, typography.scss */
+body .container h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 51, typography.scss */
+body .container h6 {
+  text-transform: none;
+  font-variant: small-caps;
+}
+/* line 63, typography.scss */
+body .container p + p {
+  margin-top: 1.25em;
+}
+/* line 68, typography.scss */
+body .container q, body .container blockquote {
+  margin: 1.25em;
+  border-left: 1px dotted;
+  padding-left: 1.25em;
+  font-style: italic;
+  font-size: larger;
+}
+/* line 79, typography.scss */
+body .container address {
+  font-variant: small-caps;
+}
+/* line 88, typography.scss */
+body .container ul, body .container menu, body .container dir, body .container ol {
+  margin: 1.25em;
+  list-style-type: square;
+}
+/* line 93, typography.scss */
+body .container ol {
+  list-style-type: decimal;
+}
+/* line 97, typography.scss */
+body .container dl {
+  margin: 1.25em 0;
+}
+/* line 100, typography.scss */
+body .container dl dt {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1.25em 0;
+}
+/* line 105, typography.scss */
+body .container dl dd {
+  margin: 0.3125em;
+}
+/* line 117, typography.scss */
+body .container table {
+  margin: 1.25em 0;
+}
+/* line 122, typography.scss */
+body .container table thead tr td {
+  font-weight: bold;
+}
+/* line 128, typography.scss */
+body .container table tbody {
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+/* line 133, typography.scss */
+body .container table td, body .container table th, body .container table tr {
+  text-align: left;
+  vertical-align: top;
+}
+/* line 138, typography.scss */
+body .container table td {
+  padding: 1.25em;
+}
+/* line 149, typography.scss */
+body .container em, body .container i {
+  font-style: italic;
+}
+/* line 153, typography.scss */
+body .container strong, body .container b {
+  font-weight: bold;
+}
+/* line 166, typography.scss */
+body .container input, body .container textarea, body .container select {
+  border: none;
+  outline: 0;
+  background: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 177, typography.scss */
+body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+  font-style: italic;
+  color: gray;
+}
+/* line 183, typography.scss */
+body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
+  color: black;
+  font-style: normal;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid;
+}
+/* line 191, typography.scss */
+body .container input[type='submit'] {
+  background: black;
+  color: lightgray;
+  padding: 0.625em;
+}
+/* line 196, typography.scss */
+body .container input[type='submit']:hover {
+  cursor: pointer;
+  color: white;
+}
+/* line 210, typography.scss */
+body .container input[type='radio'], body .container input[type='checkbox'] {
+  display: none;
+}
+/* line 213, typography.scss */
+body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
+  display: inline-block;
+}
+/* line 218, typography.scss */
+body .container input[type='radio'] + label:after {
+  content: '\2610';
+  margin-right: 0.625em;
+}
+/* line 222, typography.scss */
+body .container input[type='radio']:checked + label:after {
+  content: '\25a3';
+}
+/* line 227, typography.scss */
+body .container input[type='checkbox'] + label:before {
+  content: '\2610';
+  margin-right: 0.3125em;
+  font-size: 200%;
+  line-height: .5;
+  vertical-align: top;
+  color: lightgray;
+}
+/* line 238, typography.scss */
+body .container input[type='checkbox']:checked + label:before {
+  content: '\2611';
+  color: black;
+}
+/* line 251, typography.scss */
+body .container select {
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 256, typography.scss */
+body .container label.select:after {
+  content: '\003E';
+  float: right;
+  display: inline-block;
+  padding: 0 .45em;
+  position: relative;
+  left: 0;
+  background: white;
+  pointer-events: none;
+  /* this is a must */
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+/* line 2, layout.scss */
+body .container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 6, layout.scss */
+body .container header {
+  width: 100%;
+  float: left;
+}
+/* line 9, layout.scss */
+body .container header h1, body .container header nav {
+  float: left;
+  max-width: 50%;
+}
+/* line 15, layout.scss */
+body .container #content {
+  width: 100%;
+  float: left;
+}
+/* line 19, layout.scss */
+body .container footer {
+  width: 100%;
+  float: left;
+}
+
+/* line 5, theme.scss */
+body .container header nav .outline {
+  display: none;
+}
+/* line 9, theme.scss */
+body .container header nav ul {
+  display: block;
+  margin: 0;
+}
+/* line 4, mixins.scss */
+body .container header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  float: left;
+  margin-right: 1.25em;
+}
+/* line 11, mixins.scss */
+body .container header nav ul li.last {
+  margin-right: 0;
+}

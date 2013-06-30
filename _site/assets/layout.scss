@@ -1,0 +1,24 @@
+body {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+    header {
+      @include block;
+      
+      h1, nav {
+        float: left;
+        max-width: 50%;
+      }
+    }
+    
+    #content {
+      @include block;
+    }
+    
+    footer {
+      @include block;
+    }
+    
+  }
+}
