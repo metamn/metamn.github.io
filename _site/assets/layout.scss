@@ -1,3 +1,4 @@
+
 body {
   .container {
     width: 90%;
@@ -15,10 +16,6 @@ body {
         float: left;
         width: $major;
         margin-top: $pad*2 - $pad/4;
-        
-        .outline {
-          display: none;
-        }
         
         ul {
           @include list-inline;
@@ -66,5 +63,26 @@ body {
     
   }
 }
+
+
+
+
+/* The frontpage
+*/
+
+body.csongor-bartus {
+  .container {
+    header {
+      h1 {
+        @include block;
+      }
+    }
+    
+    nav {
+      @include block;
+    }
+  }
+}
+
 
 
