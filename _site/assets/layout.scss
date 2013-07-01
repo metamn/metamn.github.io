@@ -21,6 +21,40 @@ body {
           @include list-inline;
         }
       }
+      
+      @include mobile {
+        h1, nav {
+          @include block;
+        }
+        
+        h1 {
+          a {
+            border-bottom: none;
+          }
+        }
+        
+        nav {
+          margin: 0 0 $pad;
+          padding-bottom: $pad;
+          border-bottom: 1px inset;
+        }
+      }
+      
+      
+      @include tablet {
+        h1 {
+          width: $minor*2;
+        }
+        
+        nav {
+          width: $major - $minor - 5%;
+          margin-left: 5%;
+          
+          li {
+            margin-bottom: $pad;
+          }
+        }
+      }
     }
     
     #content {
@@ -32,6 +66,8 @@ body {
         position: absolute;
         width: 90%;
         height: 80%;
+        
+        padding-bottom: $pad*2;
         
         iframe {
           display: block;
@@ -51,6 +87,10 @@ body {
         figure {
           img {
             max-width: 100%;
+            
+            @include large-screen {
+              max-width: 1400px;
+            }
           }
         }
       }

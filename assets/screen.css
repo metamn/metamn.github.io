@@ -315,6 +315,9 @@ body .container label.select:after {
   display: none;
 }
 
+/* Responsive mixins
+  - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+*/
 /* line 3, layout.scss */
 body .container {
   width: 90%;
@@ -353,39 +356,78 @@ body .container header nav ul li {
 body .container header nav ul li.last {
   margin-right: 0;
 }
-/* line 26, layout.scss */
+@media (max-width: 380px) {
+  /* line 26, layout.scss */
+  body .container header h1, body .container header nav {
+    width: 100%;
+    float: left;
+  }
+  /* line 31, layout.scss */
+  body .container header h1 a {
+    border-bottom: none;
+  }
+  /* line 36, layout.scss */
+  body .container header nav {
+    margin: 0 0 1.25em;
+    padding-bottom: 1.25em;
+    border-bottom: 1px inset;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+  /* line 45, layout.scss */
+  body .container header h1 {
+    width: 37%;
+  }
+  /* line 49, layout.scss */
+  body .container header nav {
+    width: 53%;
+    margin-left: 5%;
+  }
+  /* line 53, layout.scss */
+  body .container header nav li {
+    margin-bottom: 1.25em;
+  }
+}
+/* line 60, layout.scss */
 body .container #content {
   width: 100%;
   float: left;
 }
-/* line 29, layout.scss */
+/* line 63, layout.scss */
 body .container #content #iframe-wrapper {
   display: block;
   position: absolute;
   width: 90%;
   height: 80%;
+  padding-bottom: 2.5em;
 }
-/* line 36, layout.scss */
+/* line 72, layout.scss */
 body .container #content #iframe-wrapper iframe {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 43, layout.scss */
+/* line 79, layout.scss */
 body .container #content article {
   width: 100%;
   float: left;
   margin-bottom: 1.25em;
 }
-/* line 47, layout.scss */
+/* line 83, layout.scss */
 body .container #content article figcaption {
   margin-bottom: 1.25em;
 }
-/* line 52, layout.scss */
+/* line 88, layout.scss */
 body .container #content article figure img {
   max-width: 100%;
 }
-/* line 59, layout.scss */
+@media only screen and (min-width: 1280px) {
+  /* line 88, layout.scss */
+  body .container #content article figure img {
+    max-width: 1400px;
+  }
+}
+/* line 99, layout.scss */
 body .container footer {
   width: 100%;
   float: left;
@@ -394,12 +436,12 @@ body .container footer {
 
 /* The frontpage
 */
-/* line 76, layout.scss */
+/* line 116, layout.scss */
 body.csongor-bartus .container header h1 {
   width: 100%;
   float: left;
 }
-/* line 81, layout.scss */
+/* line 121, layout.scss */
 body.csongor-bartus .container nav {
   width: 100%;
   float: left;
@@ -494,19 +536,37 @@ body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
-/* line 114, theme.scss */
+@media (max-width: 380px) {
+  /* line 112, theme.scss */
+  body.csongor-bartus .container h1 {
+    font-size: 3.42308em;
+    padding: 1.38338em 0;
+  }
+  /* line 113, theme.scss */
+  body.csongor-bartus .container h2 {
+    font-size: 2.61538em;
+    padding: 1.28666em 0;
+  }
+}
+/* line 120, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 117, theme.scss */
+/* line 123, theme.scss */
 body.csongor-bartus .container h2 a {
   border-bottom: none;
 }
-/* line 122, theme.scss */
+/* line 128, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Faster One', cursive;
 }
-/* line 126, theme.scss */
+@media only screen and (max-width: 767px) {
+  /* line 128, theme.scss */
+  body.csongor-bartus .container h1 {
+    word-wrap: break-word;
+  }
+}
+/* line 136, theme.scss */
 body.csongor-bartus .container p {
   display: inline-block;
   background: #d4d4bf;
@@ -514,22 +574,28 @@ body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 135, theme.scss */
+/* line 145, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 138, theme.scss */
+/* line 148, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 141, theme.scss */
+/* line 151, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 144, theme.scss */
+/* line 154, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
   border-bottom: 1px inset;
   width: 17.5em;
   display: inline-block;
+}
+@media (max-width: 380px) {
+  /* line 154, theme.scss */
+  body.csongor-bartus .container nav ul li a {
+    width: 8.75em;
+  }
 }

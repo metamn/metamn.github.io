@@ -107,9 +107,15 @@ body.csongor-bartus {
     h1 { font-size:5.53846em; padding:1em 0; }
     h2 { font-size:3.42308em; padding:1.38338em 0; }
     h3 { font-size:2.61538em; padding:1.28666em 0; }
-
     
+    @include mobile {
+      h1 { font-size:3.42308em; padding:1.38338em 0; }
+      h2 { font-size:2.61538em; padding:1.28666em 0; }
+    }
+
     text-align: center;
+    
+    
   
     h2 {
       font-family: 'Comfortaa', cursive;
@@ -121,6 +127,10 @@ body.csongor-bartus {
     
     h1 {
       font-family: 'Faster One', cursive;
+      
+      @include tablet-and-below {
+        word-wrap: break-word;
+      }
     }
     
     p {
@@ -147,6 +157,10 @@ body.csongor-bartus {
             
             width: $pad*14;
             display: inline-block;
+            
+            @include mobile {
+              width: $pad*7;
+            }
           }
         }
       }
