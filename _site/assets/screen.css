@@ -421,7 +421,7 @@ body .container #content article figcaption {
 body .container #content article figure img {
   max-width: 100%;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1401px) {
   /* line 88, layout.scss */
   body .container #content article figure img {
     max-width: 1400px;

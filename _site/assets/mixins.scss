@@ -29,6 +29,7 @@ $breakpoint-mobile: 380px !default;
 $breakpoint-tablet: 767px !default;
 $breakpoint-small: 1024px !default;
 $breakpoint-large: 1279px !default;
+$breakpoint-big: 1400px !default;
 
 
 @mixin mobile {
@@ -72,6 +73,12 @@ $breakpoint-large: 1279px !default;
 
 @mixin large-screen {
 	@media only screen and (min-width : $breakpoint-large + 1) {
+		@content;
+	}
+}
+
+@mixin big-screen {
+	@media only screen and (min-width : $breakpoint-big + 1) {
 		@content;
 	}
 }

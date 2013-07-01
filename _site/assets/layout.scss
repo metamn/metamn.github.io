@@ -88,7 +88,7 @@ body {
           img {
             max-width: 100%;
             
-            @include large-screen {
+            @include big-screen {
               max-width: 1400px;
             }
           }
