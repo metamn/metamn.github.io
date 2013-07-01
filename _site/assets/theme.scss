@@ -3,7 +3,11 @@
 
 $color: #363636;
 $background: #ccc;
+$yellow: #D4D4BF;
 
+
+/* Content pages
+*/
 
 body {
   color: $color;
@@ -15,15 +19,81 @@ body {
       border-bottom: 1px dotted;
       text-decoration: none;
     }
-    
+   
     
     #content {
       #iframe-wrapper {
         background: #fff;
       }
+      
+      article {
+        margin-top: $pad*2;
+        
+        h4 {
+          display: none;
+        }
+        
+        figcaption {
+          margin-bottom: $pad/2;
+        }
+      }
     }
   }
 }
+
+
+/* Highlighting active navigation item
+*/
+
+@mixin highlight {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: $pad/2;
+  border: 1px outset;
+}
+
+body.skills {
+  .container {
+    nav {
+      li#skills {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.writing {
+  .container {
+    nav {
+      li#writing {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.design-and-development {
+  .container {
+    nav {
+      li#design-and-development {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
 
 
 /* The frontpage
@@ -34,7 +104,7 @@ body.csongor-bartus {
     
     h1, h2, h3 { margin-top:0; margin-bottom:0; }
     h1, h2, h3 { font-weight: normal; font-style: normal;}
-    h1 { font-size:5.53846em; padding:1.29342em 0; }
+    h1 { font-size:5.53846em; padding:1em 0; }
     h2 { font-size:3.42308em; padding:1.38338em 0; }
     h3 { font-size:2.61538em; padding:1.28666em 0; }
 
@@ -53,11 +123,32 @@ body.csongor-bartus {
       font-family: 'Faster One', cursive;
     }
     
+    p {
+      display: inline-block;
+      background: $yellow;
+      padding: $pad;
+      
+      font-style: italic;
+      letter-spacing: $pad/4;
+    }
+    
     nav {
       margin: $pad 0;
       
       ul {
         list-style: none;
+        
+        li {
+          padding: $pad/2 0;
+          
+          a {
+            padding: $pad/2;
+            border-bottom: 1px inset;
+            
+            width: $pad*14;
+            display: inline-block;
+          }
+        }
       }
     }
   }
