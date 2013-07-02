@@ -1,12 +1,32 @@
 /*
-Syntax error: Undefined mixin 'mobile'.
-        on line 38 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'
-        from line 38 of /home/cs/work/metamn.github.io/assets/theme.scss
+Syntax error: Undefined mixin 'tablet-and-below'.
+        on line 34 of /home/cs/work/metamn.github.io/assets/theme.scss, in `tablet-and-below'
+        from line 34 of /home/cs/work/metamn.github.io/assets/theme.scss
 
 Backtrace:
-/home/cs/work/metamn.github.io/assets/theme.scss:38:in `mobile'
-/home/cs/work/metamn.github.io/assets/theme.scss:38
+/home/cs/work/metamn.github.io/assets/theme.scss:34:in `tablet-and-below'
+/home/cs/work/metamn.github.io/assets/theme.scss:34
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -84,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 38 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'\A         from line 38 of /home/cs/work/metamn.github.io/assets/theme.scss"; }
+  content: "Syntax error: Undefined mixin 'tablet-and-below'.\A         on line 34 of /home/cs/work/metamn.github.io/assets/theme.scss, in `tablet-and-below'\A         from line 34 of /home/cs/work/metamn.github.io/assets/theme.scss"; }

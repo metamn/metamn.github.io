@@ -441,65 +441,53 @@ body.csongor-bartus .container nav {
 */
 /* Content pages
 */
-/* line 14, theme.scss */
+/* line 13, theme.scss */
 body {
   color: #c2c2c2;
-  background: url(/assets/background.jpg) #c2c2c2;
+  background: url(/assets/background.jpg) #363636;
   background-size: cover;
 }
-/* line 20, theme.scss */
+/* line 19, theme.scss */
 body .container a, body .container a:active, body .container a:visited {
   color: #c2c2c2;
-  border-bottom: 1px dotted;
   text-decoration: none;
 }
-/* line 28, theme.scss */
+/* line 26, theme.scss */
 body .container nav li.desktop {
   display: block;
 }
-/* line 32, theme.scss */
+/* line 30, theme.scss */
 body .container nav li.mobile {
   display: none;
 }
-@media (max-width: 380px) {
-  /* line 40, theme.scss */
-  body .container h1 a {
-    border-bottom: none;
-  }
-}
 @media only screen and (max-width: 767px) {
-  /* line 47, theme.scss */
-  body .container nav {
-    margin: 0 0 1.25em;
-    padding-bottom: 1.25em;
-  }
-  /* line 52, theme.scss */
+  /* line 35, theme.scss */
   body .container nav li.desktop {
     display: none;
   }
-  /* line 56, theme.scss */
+  /* line 39, theme.scss */
   body .container nav li.mobile {
     display: block;
   }
 }
-/* line 65, theme.scss */
+/* line 48, theme.scss */
 body .container #content #iframe-wrapper {
   background: #363636;
 }
-/* line 69, theme.scss */
+/* line 52, theme.scss */
 body .container #content article {
   margin-top: 2.5em;
 }
-/* line 72, theme.scss */
+/* line 55, theme.scss */
 body .container #content article h4 {
   display: none;
 }
-/* line 76, theme.scss */
+/* line 59, theme.scss */
 body .container #content article figcaption {
   margin-bottom: 0.625em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 82, theme.scss */
+  /* line 65, theme.scss */
   body .container #content dl {
     background: black;
     opacity: .9;
@@ -507,10 +495,14 @@ body .container #content article figcaption {
     max-width: 30em;
   }
 }
+/* line 76, theme.scss */
+body .container footer a {
+  border-bottom: 1px dotted;
+}
 
 /* Highlighting active navigation item
 */
-/* line 112, theme.scss */
+/* line 101, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -518,7 +510,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 124, theme.scss */
+/* line 113, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -526,7 +518,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 136, theme.scss */
+/* line 125, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -536,98 +528,82 @@ body.design-and-development .container nav li#design-and-development a {
 
 /* The frontpage
 */
-/* line 152, theme.scss */
-body.csongor-bartus {
-  background: url(/assets/background.jpg) #c2c2c2;
-  background-size: cover;
-}
-/* line 156, theme.scss */
+/* line 142, theme.scss */
 body.csongor-bartus .container {
   text-align: center;
 }
-/* line 157, theme.scss */
+/* line 143, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 158, theme.scss */
+/* line 144, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   font-weight: normal;
   font-style: normal;
 }
-/* line 159, theme.scss */
+/* line 145, theme.scss */
 body.csongor-bartus .container h1 {
   font-size: 5.53846em;
   padding: 1em 0;
 }
-/* line 160, theme.scss */
+/* line 146, theme.scss */
 body.csongor-bartus .container h2 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 161, theme.scss */
+/* line 147, theme.scss */
 body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
 @media (max-width: 380px) {
-  /* line 164, theme.scss */
+  /* line 150, theme.scss */
   body.csongor-bartus .container h1 {
     font-size: 3.42308em;
     padding: 1.38338em 0;
   }
-  /* line 165, theme.scss */
+  /* line 151, theme.scss */
   body.csongor-bartus .container h2 {
     font-size: 2.61538em;
     padding: 1.28666em 0;
   }
 }
-/* line 171, theme.scss */
+/* line 157, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 174, theme.scss */
-body.csongor-bartus .container h2 a {
-  border-bottom: none;
-}
-/* line 179, theme.scss */
+/* line 161, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Reenie Beanie', cursive;
-  color: #c2c2c2;
+  word-wrap: break-word;
 }
-@media only screen and (max-width: 767px) {
-  /* line 179, theme.scss */
-  body.csongor-bartus .container h1 {
-    word-wrap: break-word;
-  }
-}
-/* line 188, theme.scss */
+/* line 166, theme.scss */
 body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 193, theme.scss */
+/* line 171, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 196, theme.scss */
+/* line 174, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 199, theme.scss */
+/* line 177, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 202, theme.scss */
+/* line 180, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
-  color: #c2c2c2;
-  border-bottom: 1px outset #c2c2c2;
+  border-bottom: 1px outset;
   width: 17.5em;
   display: inline-block;
 }
 @media (max-width: 380px) {
-  /* line 202, theme.scss */
+  /* line 180, theme.scss */
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
   }

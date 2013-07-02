@@ -2,9 +2,8 @@
 */
 
 
-$color: #363636;
-$background: #C2C2C2;
-$yellow: #F3F3DB;
+$color: #C2C2C2;
+$background: #363636;
 
 
 
@@ -12,14 +11,13 @@ $yellow: #F3F3DB;
 */
 
 body {
-  color: $background;
+  color: $color;
   background: url(/assets/background.jpg) $background;
   background-size: cover;
   
   .container {
     a, a:active, a:visited {
-      color: $background;
-      border-bottom: 1px dotted;
+      color: $color;
       text-decoration: none;
     }
     
@@ -32,23 +30,8 @@ body {
         &.mobile {
           display: none;
         }
-      }
-    }
-    
-    @include mobile {
-      h1 {
-        a {
-          border-bottom: none;
-        }
-      }
-    }
-    
-    @include tablet-and-below {
-      nav {
-        margin: 0 0 $pad;
-        padding-bottom: $pad;
         
-        li {
+        @include tablet-and-below {
           &.desktop {
             display: none;
           }
@@ -59,11 +42,11 @@ body {
         }
       }
     }
-   
+    
     
     #content {
       #iframe-wrapper {
-        background: $color;
+        background: $background;
       }
       
       article {
@@ -86,6 +69,12 @@ body {
           
           max-width: 30em;
         }
+      }
+    }
+    
+    footer {
+      a {
+        border-bottom: 1px dotted;
       }
     }
     
@@ -150,9 +139,6 @@ body.design-and-development {
 */
 
 body.csongor-bartus {
-  background: url(/assets/background.jpg) $background;
-  background-size: cover;
-  
   .container {
     h1, h2, h3 { margin-top:0; margin-bottom:0; }
     h1, h2, h3 { font-weight: normal; font-style: normal;}
@@ -170,19 +156,11 @@ body.csongor-bartus {
   
     h2 {
       font-family: 'Comfortaa', cursive;
-      
-      a {
-        border-bottom: none;
-      }
     }
     
     h1 {
       font-family: 'Reenie Beanie', cursive;
-      color: $background;
-      
-      @include tablet-and-below {
-        word-wrap: break-word;
-      }
+      word-wrap: break-word;
     }
     
     p {
@@ -201,8 +179,7 @@ body.csongor-bartus {
           
           a {
             padding: $pad/2;
-            color: $background;
-            border-bottom: 1px outset $background;
+            border-bottom: 1px outset;
             
             width: $pad*14;
             display: inline-block;
