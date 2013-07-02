@@ -49,16 +49,7 @@ body {
       }
     }
     
-    @include tablet-and-below {
-      footer {
-        a {
-          background: $violet;
-          opacity: .8;
-          
-          padding: $pad/4;
-        }
-      }
-    }
+    
   }
 }
 
@@ -184,6 +175,17 @@ body.csongor-bartus {
               width: $pad*7;
             }
           }
+        }
+      }
+    }
+    
+    @include tablet-and-below {
+      footer {
+        a {
+          background: $violet;
+          opacity: .8;
+          
+          padding: $pad/4;
         }
       }
     }

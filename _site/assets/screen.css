@@ -479,18 +479,10 @@ body .container #content article h4 {
 body .container #content article figcaption {
   margin-bottom: 0.625em;
 }
-@media only screen and (max-width: 767px) {
-  /* line 54, theme.scss */
-  body .container footer a {
-    background: #9997ad;
-    opacity: .8;
-    padding: 0.3125em;
-  }
-}
 
 /* Highlighting active navigation item
 */
-/* line 81, theme.scss */
+/* line 72, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -498,7 +490,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 93, theme.scss */
+/* line 84, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -506,7 +498,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 105, theme.scss */
+/* line 96, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -516,73 +508,73 @@ body.design-and-development .container nav li#design-and-development a {
 
 /* The frontpage
 */
-/* line 121, theme.scss */
+/* line 112, theme.scss */
 body.csongor-bartus {
   background: url("/assets/background.jpg") #f3f2fa;
   background-size: cover;
 }
-/* line 125, theme.scss */
+/* line 116, theme.scss */
 body.csongor-bartus .container {
   text-align: center;
 }
-/* line 126, theme.scss */
+/* line 117, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 127, theme.scss */
+/* line 118, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   font-weight: normal;
   font-style: normal;
 }
-/* line 128, theme.scss */
+/* line 119, theme.scss */
 body.csongor-bartus .container h1 {
   font-size: 5.53846em;
   padding: 1em 0;
 }
-/* line 129, theme.scss */
+/* line 120, theme.scss */
 body.csongor-bartus .container h2 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 130, theme.scss */
+/* line 121, theme.scss */
 body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
 @media (max-width: 380px) {
-  /* line 133, theme.scss */
+  /* line 124, theme.scss */
   body.csongor-bartus .container h1 {
     font-size: 3.42308em;
     padding: 1.38338em 0;
   }
-  /* line 134, theme.scss */
+  /* line 125, theme.scss */
   body.csongor-bartus .container h2 {
     font-size: 2.61538em;
     padding: 1.28666em 0;
   }
 }
-/* line 140, theme.scss */
+/* line 131, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 143, theme.scss */
+/* line 134, theme.scss */
 body.csongor-bartus .container h2 a {
   border-bottom: none;
   color: #6b6064;
 }
-/* line 149, theme.scss */
+/* line 140, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Faster One', cursive;
   color: #9997ad;
 }
 @media only screen and (max-width: 767px) {
-  /* line 149, theme.scss */
+  /* line 140, theme.scss */
   body.csongor-bartus .container h1 {
     word-wrap: break-word;
   }
 }
-/* line 158, theme.scss */
+/* line 149, theme.scss */
 body.csongor-bartus .container p {
   display: inline-block;
   background: #fbe7da;
@@ -590,19 +582,19 @@ body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 167, theme.scss */
+/* line 158, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 170, theme.scss */
+/* line 161, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 173, theme.scss */
+/* line 164, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 176, theme.scss */
+/* line 167, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
   border-bottom: 1px inset;
@@ -610,8 +602,16 @@ body.csongor-bartus .container nav ul li a {
   display: inline-block;
 }
 @media (max-width: 380px) {
-  /* line 176, theme.scss */
+  /* line 167, theme.scss */
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 184, theme.scss */
+  body.csongor-bartus .container footer a {
+    background: #9997ad;
+    opacity: .8;
+    padding: 0.3125em;
   }
 }
