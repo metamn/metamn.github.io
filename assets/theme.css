@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'mobile'.
-        on line 26 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'
-        from line 26 of /home/cs/work/metamn.github.io/assets/theme.scss
+        on line 38 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'
+        from line 38 of /home/cs/work/metamn.github.io/assets/theme.scss
 
 Backtrace:
-/home/cs/work/metamn.github.io/assets/theme.scss:26:in `mobile'
-/home/cs/work/metamn.github.io/assets/theme.scss:26
+/home/cs/work/metamn.github.io/assets/theme.scss:38:in `mobile'
+/home/cs/work/metamn.github.io/assets/theme.scss:38
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -84,4 +84,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 26 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'\A         from line 26 of /home/cs/work/metamn.github.io/assets/theme.scss"; }
+  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 38 of /home/cs/work/metamn.github.io/assets/theme.scss, in `mobile'\A         from line 38 of /home/cs/work/metamn.github.io/assets/theme.scss"; }

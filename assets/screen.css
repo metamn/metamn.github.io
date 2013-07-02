@@ -315,11 +315,6 @@ body .container label.select:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 
-/* line 283, typography.scss */
-.outline {
-  display: none;
-}
-
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
@@ -458,35 +453,53 @@ body .container a, body .container a:active, body .container a:visited {
   border-bottom: 1px dotted;
   text-decoration: none;
 }
+/* line 28, theme.scss */
+body .container nav li.desktop {
+  display: block;
+}
+/* line 32, theme.scss */
+body .container nav li.mobile {
+  display: none;
+}
 @media (max-width: 380px) {
-  /* line 28, theme.scss */
+  /* line 40, theme.scss */
   body .container h1 a {
     border-bottom: none;
   }
-  /* line 33, theme.scss */
+}
+@media only screen and (max-width: 767px) {
+  /* line 47, theme.scss */
   body .container nav {
     margin: 0 0 1.25em;
     padding-bottom: 1.25em;
   }
+  /* line 52, theme.scss */
+  body .container nav li.desktop {
+    display: none;
+  }
+  /* line 56, theme.scss */
+  body .container nav li.mobile {
+    display: block;
+  }
 }
-/* line 41, theme.scss */
+/* line 65, theme.scss */
 body .container #content #iframe-wrapper {
   background: #363636;
 }
-/* line 45, theme.scss */
+/* line 69, theme.scss */
 body .container #content article {
   margin-top: 2.5em;
 }
-/* line 48, theme.scss */
+/* line 72, theme.scss */
 body .container #content article h4 {
   display: none;
 }
-/* line 52, theme.scss */
+/* line 76, theme.scss */
 body .container #content article figcaption {
   margin-bottom: 0.625em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 58, theme.scss */
+  /* line 82, theme.scss */
   body .container #content dl {
     background: black;
     opacity: .9;
@@ -497,7 +510,7 @@ body .container #content article figcaption {
 
 /* Highlighting active navigation item
 */
-/* line 88, theme.scss */
+/* line 112, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -505,7 +518,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 100, theme.scss */
+/* line 124, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -513,7 +526,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 112, theme.scss */
+/* line 136, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -523,89 +536,89 @@ body.design-and-development .container nav li#design-and-development a {
 
 /* The frontpage
 */
-/* line 128, theme.scss */
+/* line 152, theme.scss */
 body.csongor-bartus {
   background: url(/assets/background.jpg) #c2c2c2;
   background-size: cover;
 }
-/* line 132, theme.scss */
+/* line 156, theme.scss */
 body.csongor-bartus .container {
   text-align: center;
 }
-/* line 133, theme.scss */
+/* line 157, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 134, theme.scss */
+/* line 158, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   font-weight: normal;
   font-style: normal;
 }
-/* line 135, theme.scss */
+/* line 159, theme.scss */
 body.csongor-bartus .container h1 {
   font-size: 5.53846em;
   padding: 1em 0;
 }
-/* line 136, theme.scss */
+/* line 160, theme.scss */
 body.csongor-bartus .container h2 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 137, theme.scss */
+/* line 161, theme.scss */
 body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
 @media (max-width: 380px) {
-  /* line 140, theme.scss */
+  /* line 164, theme.scss */
   body.csongor-bartus .container h1 {
     font-size: 3.42308em;
     padding: 1.38338em 0;
   }
-  /* line 141, theme.scss */
+  /* line 165, theme.scss */
   body.csongor-bartus .container h2 {
     font-size: 2.61538em;
     padding: 1.28666em 0;
   }
 }
-/* line 147, theme.scss */
+/* line 171, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 150, theme.scss */
+/* line 174, theme.scss */
 body.csongor-bartus .container h2 a {
   border-bottom: none;
 }
-/* line 155, theme.scss */
+/* line 179, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Reenie Beanie', cursive;
   color: #c2c2c2;
 }
 @media only screen and (max-width: 767px) {
-  /* line 155, theme.scss */
+  /* line 179, theme.scss */
   body.csongor-bartus .container h1 {
     word-wrap: break-word;
   }
 }
-/* line 164, theme.scss */
+/* line 188, theme.scss */
 body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 169, theme.scss */
+/* line 193, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 172, theme.scss */
+/* line 196, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 175, theme.scss */
+/* line 199, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 178, theme.scss */
+/* line 202, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
   color: #c2c2c2;
@@ -614,8 +627,13 @@ body.csongor-bartus .container nav ul li a {
   display: inline-block;
 }
 @media (max-width: 380px) {
-  /* line 178, theme.scss */
+  /* line 202, theme.scss */
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
   }
+}
+
+/* line 1, common.scss */
+.outline {
+  display: none;
 }

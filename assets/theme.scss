@@ -23,16 +23,40 @@ body {
       text-decoration: none;
     }
     
+    nav {
+      li {
+        &.desktop {
+          display: block;
+        }
+        
+        &.mobile {
+          display: none;
+        }
+      }
+    }
+    
     @include mobile {
       h1 {
         a {
           border-bottom: none;
         }
       }
-        
+    }
+    
+    @include tablet-and-below {
       nav {
         margin: 0 0 $pad;
         padding-bottom: $pad;
+        
+        li {
+          &.desktop {
+            display: none;
+          }
+          
+          &.mobile {
+            display: block;
+          }
+        }
       }
     }
    
