@@ -40,7 +40,7 @@ body {
     
     #content {
       #iframe-wrapper {
-        background: #fff;
+        background: $color;
       }
       
       article {
@@ -55,12 +55,14 @@ body {
         }
       }
       
-      dl {
-        background: black;
-        opacity: .9;
-        padding: $pad/2 $pad/2 $pad;
-        
-        max-width: 30em;
+      @include tablet-and-below {
+        dl {
+          background: black;
+          opacity: .9;
+          padding: $pad/2 $pad/2 $pad;
+          
+          max-width: 30em;
+        }
       }
     }
     
