@@ -1,9 +1,19 @@
 /* The color scheme
 */
 
+
+/* Taken from the bakcground photo */
+$gray: #F3F2FA;
+$brown: #6B6064;
+
+$yellow: #FBE7DA;
+$violet: #9997AD;
+
+
+
 $color: #363636;
-$background: #ccc;
-$yellow: #D4D4BF;
+$background: $gray;
+
 
 
 /* Content pages
@@ -38,8 +48,20 @@ body {
         }
       }
     }
+    
+    @include tablet-and-below {
+      footer {
+        a {
+          background: $violet;
+          opacity: .8;
+          
+          padding: $pad/4;
+        }
+      }
+    }
   }
 }
+
 
 
 /* Highlighting active navigation item
@@ -93,15 +115,14 @@ body.design-and-development {
 
 
 
-
-
-
 /* The frontpage
 */
 
 body.csongor-bartus {
+  background: url('/assets/background.jpg') $gray;
+  background-size: cover;
+  
   .container {
-    
     h1, h2, h3 { margin-top:0; margin-bottom:0; }
     h1, h2, h3 { font-weight: normal; font-style: normal;}
     h1 { font-size:5.53846em; padding:1em 0; }
@@ -115,18 +136,19 @@ body.csongor-bartus {
 
     text-align: center;
     
-    
   
     h2 {
       font-family: 'Comfortaa', cursive;
       
       a {
         border-bottom: none;
+        color: $brown;
       }
     }
     
     h1 {
       font-family: 'Faster One', cursive;
+      color: $violet;
       
       @include tablet-and-below {
         word-wrap: break-word;
