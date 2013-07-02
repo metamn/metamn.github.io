@@ -26,18 +26,6 @@ body {
         h1, nav {
           @include block;
         }
-        
-        h1 {
-          a {
-            border-bottom: none;
-          }
-        }
-        
-        nav {
-          margin: 0 0 $pad;
-          padding-bottom: $pad;
-          border-bottom: 1px inset;
-        }
       }
       
       

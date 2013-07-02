@@ -2,17 +2,9 @@
 */
 
 
-/* Taken from the bakcground photo */
-$gray: #F3F2FA;
-$brown: #6B6064;
-
-$yellow: #FBE7DA;
-$violet: #9997AD;
-
-
-
 $color: #363636;
-$background: $gray;
+$background: #C2C2C2;
+$yellow: #F3F3DB;
 
 
 
@@ -20,14 +12,29 @@ $background: $gray;
 */
 
 body {
-  color: $color;
-  background: $background;
+  color: $background;
+  background: url(/assets/background.jpg) $background;
+  background-size: cover;
   
   .container {
     a, a:active, a:visited {
-      color: $color;
+      color: $background;
       border-bottom: 1px dotted;
       text-decoration: none;
+    }
+    
+    @include mobile {
+      h1 {
+        a {
+          border-bottom: none;
+        }
+      }
+        
+      nav {
+        margin: 0 0 $pad;
+        padding-bottom: $pad;
+        border-bottom: 1px outset $background;
+      }
     }
    
     
@@ -46,6 +53,13 @@ body {
         figcaption {
           margin-bottom: $pad/2;
         }
+      }
+      
+      dl {
+        background: black;
+        padding: $pad/2;
+        
+        max-width: 30em;
       }
     }
     
@@ -110,7 +124,7 @@ body.design-and-development {
 */
 
 body.csongor-bartus {
-  background: url('/assets/background.jpg') $gray;
+  background: url(/assets/background.jpg) $background;
   background-size: cover;
   
   .container {
@@ -133,13 +147,12 @@ body.csongor-bartus {
       
       a {
         border-bottom: none;
-        color: $brown;
       }
     }
     
     h1 {
-      font-family: 'Faster One', cursive;
-      color: $violet;
+      font-family: 'Reenie Beanie', cursive;
+      color: $background;
       
       @include tablet-and-below {
         word-wrap: break-word;
@@ -147,10 +160,6 @@ body.csongor-bartus {
     }
     
     p {
-      display: inline-block;
-      background: $yellow;
-      padding: $pad;
-      
       font-style: italic;
       letter-spacing: $pad/4;
     }
@@ -166,7 +175,8 @@ body.csongor-bartus {
           
           a {
             padding: $pad/2;
-            border-bottom: 1px inset;
+            color: $background;
+            border-bottom: 1px outset $background;
             
             width: $pad*14;
             display: inline-block;
@@ -179,16 +189,6 @@ body.csongor-bartus {
       }
     }
     
-    @include tablet-and-below {
-      footer {
-        a {
-          background: $violet;
-          opacity: .8;
-          
-          padding: $pad/4;
-        }
-      }
-    }
   }
 }
 
