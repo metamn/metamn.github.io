@@ -57,7 +57,8 @@ body {
       
       dl {
         background: black;
-        padding: $pad/2;
+        opacity: .9;
+        padding: $pad/2 $pad/2 $pad;
         
         max-width: 30em;
       }

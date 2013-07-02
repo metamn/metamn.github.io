@@ -104,7 +104,12 @@ body {
 	    }
 	    dd {
 		    margin: $pad/4;
+		    margin-bottom: $pad/2;
 	    }
+	    
+      dd + dt {
+        margin-top: $pad*2;
+      }
     }
 
 

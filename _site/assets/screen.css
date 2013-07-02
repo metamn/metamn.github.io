@@ -188,38 +188,43 @@ body .container dl dt {
 /* line 105, typography.scss */
 body .container dl dd {
   margin: 0.3125em;
+  margin-bottom: 0.625em;
 }
-/* line 117, typography.scss */
+/* line 110, typography.scss */
+body .container dl dd + dt {
+  margin-top: 2.5em;
+}
+/* line 122, typography.scss */
 body .container table {
   margin: 1.25em 0;
 }
-/* line 122, typography.scss */
+/* line 127, typography.scss */
 body .container table thead tr td {
   font-weight: bold;
 }
-/* line 128, typography.scss */
+/* line 133, typography.scss */
 body .container table tbody {
   border-top: 1px dotted;
   border-bottom: 1px dotted;
 }
-/* line 133, typography.scss */
+/* line 138, typography.scss */
 body .container table td, body .container table th, body .container table tr {
   text-align: left;
   vertical-align: top;
 }
-/* line 138, typography.scss */
+/* line 143, typography.scss */
 body .container table td {
   padding: 1.25em;
 }
-/* line 149, typography.scss */
+/* line 154, typography.scss */
 body .container em, body .container i {
   font-style: italic;
 }
-/* line 153, typography.scss */
+/* line 158, typography.scss */
 body .container strong, body .container b {
   font-weight: bold;
 }
-/* line 166, typography.scss */
+/* line 171, typography.scss */
 body .container input, body .container textarea, body .container select {
   border: none;
   outline: 0;
@@ -228,49 +233,49 @@ body .container input, body .container textarea, body .container select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 177, typography.scss */
+/* line 182, typography.scss */
 body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
   border: 1px solid transparent;
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
 }
-/* line 183, typography.scss */
+/* line 188, typography.scss */
 body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
   color: black;
   font-style: normal;
   border: 1px solid #ccc;
   border-bottom: 1px solid;
 }
-/* line 191, typography.scss */
+/* line 196, typography.scss */
 body .container input[type='submit'] {
   background: black;
   color: lightgray;
   padding: 0.625em;
 }
-/* line 196, typography.scss */
+/* line 201, typography.scss */
 body .container input[type='submit']:hover {
   cursor: pointer;
   color: white;
 }
-/* line 210, typography.scss */
+/* line 215, typography.scss */
 body .container input[type='radio'], body .container input[type='checkbox'] {
   display: none;
 }
-/* line 213, typography.scss */
+/* line 218, typography.scss */
 body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
   display: inline-block;
 }
-/* line 218, typography.scss */
+/* line 223, typography.scss */
 body .container input[type='radio'] + label:after {
   content: '\2610';
   margin-right: 0.625em;
 }
-/* line 222, typography.scss */
+/* line 227, typography.scss */
 body .container input[type='radio']:checked + label:after {
   content: '\25a3';
 }
-/* line 227, typography.scss */
+/* line 232, typography.scss */
 body .container input[type='checkbox'] + label:before {
   content: '\2610';
   margin-right: 0.3125em;
@@ -279,18 +284,18 @@ body .container input[type='checkbox'] + label:before {
   vertical-align: top;
   color: lightgray;
 }
-/* line 238, typography.scss */
+/* line 243, typography.scss */
 body .container input[type='checkbox']:checked + label:before {
   content: '\2611';
   color: black;
 }
-/* line 251, typography.scss */
+/* line 256, typography.scss */
 body .container select {
   border-bottom: 1px solid gray;
   cursor: pointer;
   width: 100%;
 }
-/* line 256, typography.scss */
+/* line 261, typography.scss */
 body .container label.select:after {
   content: '\003E';
   float: right;
@@ -310,7 +315,7 @@ body .container label.select:after {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 
-/* line 278, typography.scss */
+/* line 283, typography.scss */
 .outline {
   display: none;
 }
@@ -484,13 +489,14 @@ body .container #content article figcaption {
 /* line 58, theme.scss */
 body .container #content dl {
   background: black;
-  padding: 0.625em;
+  opacity: .9;
+  padding: 0.625em 0.625em 1.25em;
   max-width: 30em;
 }
 
 /* Highlighting active navigation item
 */
-/* line 86, theme.scss */
+/* line 87, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -498,7 +504,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 98, theme.scss */
+/* line 99, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -506,7 +512,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 110, theme.scss */
+/* line 111, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -516,89 +522,89 @@ body.design-and-development .container nav li#design-and-development a {
 
 /* The frontpage
 */
-/* line 126, theme.scss */
+/* line 127, theme.scss */
 body.csongor-bartus {
   background: url(/assets/background.jpg) #c2c2c2;
   background-size: cover;
 }
-/* line 130, theme.scss */
+/* line 131, theme.scss */
 body.csongor-bartus .container {
   text-align: center;
 }
-/* line 131, theme.scss */
+/* line 132, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 132, theme.scss */
+/* line 133, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   font-weight: normal;
   font-style: normal;
 }
-/* line 133, theme.scss */
+/* line 134, theme.scss */
 body.csongor-bartus .container h1 {
   font-size: 5.53846em;
   padding: 1em 0;
 }
-/* line 134, theme.scss */
+/* line 135, theme.scss */
 body.csongor-bartus .container h2 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 135, theme.scss */
+/* line 136, theme.scss */
 body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
 @media (max-width: 380px) {
-  /* line 138, theme.scss */
+  /* line 139, theme.scss */
   body.csongor-bartus .container h1 {
     font-size: 3.42308em;
     padding: 1.38338em 0;
   }
-  /* line 139, theme.scss */
+  /* line 140, theme.scss */
   body.csongor-bartus .container h2 {
     font-size: 2.61538em;
     padding: 1.28666em 0;
   }
 }
-/* line 145, theme.scss */
+/* line 146, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 148, theme.scss */
+/* line 149, theme.scss */
 body.csongor-bartus .container h2 a {
   border-bottom: none;
 }
-/* line 153, theme.scss */
+/* line 154, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Reenie Beanie', cursive;
   color: #c2c2c2;
 }
 @media only screen and (max-width: 767px) {
-  /* line 153, theme.scss */
+  /* line 154, theme.scss */
   body.csongor-bartus .container h1 {
     word-wrap: break-word;
   }
 }
-/* line 162, theme.scss */
+/* line 163, theme.scss */
 body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 167, theme.scss */
+/* line 168, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 170, theme.scss */
+/* line 171, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 173, theme.scss */
+/* line 174, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 176, theme.scss */
+/* line 177, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
   color: #c2c2c2;
@@ -607,7 +613,7 @@ body.csongor-bartus .container nav ul li a {
   display: inline-block;
 }
 @media (max-width: 380px) {
-  /* line 176, theme.scss */
+  /* line 177, theme.scss */
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
   }
