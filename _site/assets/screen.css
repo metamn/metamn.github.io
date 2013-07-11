@@ -639,49 +639,54 @@ body.text .container #content {
 body.text .container #content h2, body.text .container #content h3 {
   padding-bottom: 0;
 }
-/* line 227, theme.scss */
+/* line 225, theme.scss */
+body.text .container #content h1, body.text .container #content h2, body.text .container #content h3 {
+  line-height: 1.1;
+}
+/* line 231, theme.scss */
 body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
   border-bottom: 1px dotted;
 }
-/* line 234, theme.scss */
+/* line 238, theme.scss */
 body.text .container #content p {
   /* Highlight text
   */
   /* Separate content blocks
   */
 }
-/* line 237, theme.scss */
+/* line 241, theme.scss */
 body.text .container #content p span {
   background: #c2c2c2;
   color: #363636;
   padding: 0.15625em;
   font-style: italic;
 }
-/* line 247, theme.scss */
+/* line 251, theme.scss */
 body.text .container #content p.separator {
   text-align: center;
 }
-/* line 250, theme.scss */
+/* line 254, theme.scss */
 body.text .container #content p.separator:after {
   content: '* * *';
 }
-/* line 259, theme.scss */
+/* line 263, theme.scss */
 body.text .container #content figure {
   display: inline-block;
   max-width: 65em;
 }
-/* line 263, theme.scss */
+/* line 267, theme.scss */
 body.text .container #content figure a {
   border-bottom: none;
 }
-/* line 268, theme.scss */
+/* line 272, theme.scss */
 body.text .container #content p + figure, body.text .container #content figure + p {
   margin-top: 1.25em;
 }
-/* line 272, theme.scss */
+/* line 276, theme.scss */
 body.text .container #content figcaption {
   font-size: normal;
   font-style: italic;
+  margin-bottom: 2.5em;
 }
 
 /* line 1, common.scss */

@@ -222,6 +222,10 @@ body.text {
         padding-bottom: 0;
       }  
       
+      h1, h2, h3 {
+        line-height: 1.1;
+      }
+      
       /* Restore expectations
       */
       a, a:active, a:visited {
@@ -272,7 +276,10 @@ body.text {
       figcaption {
         font-size: normal;
         font-style: italic;
+        
+        margin-bottom: $pad*2;
       }
+      
       
     }
   }
