@@ -439,7 +439,7 @@ body.csongor-bartus .container nav {
 
 /* The color scheme
 */
-/* Content pages
+/* All pages
 */
 /* line 13, theme.scss */
 body {
@@ -607,6 +607,46 @@ body.csongor-bartus .container nav ul li a {
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
   }
+}
+
+/* Long text pages
+*/
+/* line 203, theme.scss */
+body.text {
+  background-image: none;
+}
+/* line 207, theme.scss */
+body.text .container #content {
+  /* Make it readable
+  */
+  max-width: 600px;
+  line-height: 1.5;
+  font-size: larger;
+  /* Put focus on
+  */
+  border-left: 1px dotted #434343;
+  padding: 0 1.25em 3.75em 2.5em;
+  /* Adjust visual hierarchy
+  */
+  /* Restore expectations
+  */
+  /* Highlight text 
+  */
+}
+/* line 221, theme.scss */
+body.text .container #content h2, body.text .container #content h3 {
+  padding-bottom: 0;
+}
+/* line 227, theme.scss */
+body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
+  border-bottom: 1px dotted;
+}
+/* line 235, theme.scss */
+body.text .container #content p span {
+  background: #c2c2c2;
+  color: #363636;
+  padding: 0.3125em;
+  font-style: italic;
 }
 
 /* line 1, common.scss */

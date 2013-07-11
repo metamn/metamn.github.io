@@ -7,7 +7,7 @@ $background: #363636;
 
 
 
-/* Content pages
+/* All pages
 */
 
 body {
@@ -192,6 +192,56 @@ body.csongor-bartus {
       }
     }
     
+  }
+}
+
+
+
+/* Long text pages
+*/
+
+body.text {
+  background-image: none;
+  
+  .container {
+    #content {
+      /* Make it readable
+      */
+      max-width: 600px;
+      line-height: 1.5;
+      font-size: larger;
+      
+      /* Put focus on
+      */
+      border-left: 1px dotted darken($color, 50%);
+      padding: 0 $pad $pad*3 $pad*2;
+      
+      /* Adjust visual hierarchy
+      */
+      h2, h3 {
+        padding-bottom: 0;
+      }  
+      
+      /* Restore expectations
+      */
+      a, a:active, a:visited {
+        border-bottom: 1px dotted;
+      }
+      
+      
+      /* Highlight text 
+      */
+      p {
+        span {
+          background: $color;
+          color: $background;
+          padding: $pad/4;
+          
+          font-style: italic;
+        }
+      }
+      
+    }
   }
 }
 
