@@ -156,75 +156,77 @@ body .container p + p {
 }
 /* line 68, typography.scss */
 body .container q, body .container blockquote {
+  display: block;
   margin: 1.25em;
   border-left: 1px dotted;
   padding-left: 1.25em;
   font-style: italic;
   font-size: larger;
 }
-/* line 79, typography.scss */
+/* line 80, typography.scss */
 body .container address {
   font-variant: small-caps;
 }
-/* line 88, typography.scss */
+/* line 89, typography.scss */
 body .container ul, body .container menu, body .container dir, body .container ol {
   margin: 1.25em;
   list-style-type: square;
 }
-/* line 93, typography.scss */
+/* line 94, typography.scss */
 body .container ol {
   list-style-type: decimal;
 }
-/* line 97, typography.scss */
+/* line 98, typography.scss */
 body .container dl {
   margin: 1.25em 0;
 }
-/* line 100, typography.scss */
+/* line 101, typography.scss */
 body .container dl dt {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1.25em 0;
 }
-/* line 105, typography.scss */
+/* line 106, typography.scss */
 body .container dl dd {
   margin: 0.3125em;
   margin-bottom: 0.625em;
 }
-/* line 110, typography.scss */
+/* line 111, typography.scss */
 body .container dl dd + dt {
   margin-top: 2.5em;
 }
-/* line 122, typography.scss */
+/* line 123, typography.scss */
 body .container table {
-  margin: 1.25em 0;
+  margin: 1.25em 0 2.5em;
 }
-/* line 127, typography.scss */
+/* line 128, typography.scss */
 body .container table thead tr td {
   font-weight: bold;
 }
-/* line 133, typography.scss */
+/* line 134, typography.scss */
 body .container table tbody {
   border-top: 1px dotted;
   border-bottom: 1px dotted;
 }
-/* line 138, typography.scss */
+/* line 139, typography.scss */
 body .container table td, body .container table th, body .container table tr {
   text-align: left;
   vertical-align: top;
-}
-/* line 143, typography.scss */
-body .container table td {
   padding: 1.25em;
 }
-/* line 154, typography.scss */
+/* line 145, typography.scss */
+body .container table td {
+  border-bottom: 1px solid;
+}
+/* line 156, typography.scss */
 body .container em, body .container i {
   font-style: italic;
 }
-/* line 158, typography.scss */
+/* line 160, typography.scss */
 body .container strong, body .container b {
   font-weight: bold;
 }
-/* line 171, typography.scss */
+/* line 173, typography.scss */
 body .container input, body .container textarea, body .container select {
   border: none;
   outline: 0;
@@ -233,49 +235,49 @@ body .container input, body .container textarea, body .container select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 182, typography.scss */
+/* line 184, typography.scss */
 body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
   border: 1px solid transparent;
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
 }
-/* line 188, typography.scss */
+/* line 190, typography.scss */
 body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
   color: black;
   font-style: normal;
   border: 1px solid #ccc;
   border-bottom: 1px solid;
 }
-/* line 196, typography.scss */
+/* line 198, typography.scss */
 body .container input[type='submit'] {
   background: black;
   color: lightgray;
   padding: 0.625em;
 }
-/* line 201, typography.scss */
+/* line 203, typography.scss */
 body .container input[type='submit']:hover {
   cursor: pointer;
   color: white;
 }
-/* line 215, typography.scss */
+/* line 217, typography.scss */
 body .container input[type='radio'], body .container input[type='checkbox'] {
   display: none;
 }
-/* line 218, typography.scss */
+/* line 220, typography.scss */
 body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
   display: inline-block;
 }
-/* line 223, typography.scss */
+/* line 225, typography.scss */
 body .container input[type='radio'] + label:after {
   content: '\2610';
   margin-right: 0.625em;
 }
-/* line 227, typography.scss */
+/* line 229, typography.scss */
 body .container input[type='radio']:checked + label:after {
   content: '\25a3';
 }
-/* line 232, typography.scss */
+/* line 234, typography.scss */
 body .container input[type='checkbox'] + label:before {
   content: '\2610';
   margin-right: 0.3125em;
@@ -284,18 +286,18 @@ body .container input[type='checkbox'] + label:before {
   vertical-align: top;
   color: lightgray;
 }
-/* line 243, typography.scss */
+/* line 245, typography.scss */
 body .container input[type='checkbox']:checked + label:before {
   content: '\2611';
   color: black;
 }
-/* line 256, typography.scss */
+/* line 258, typography.scss */
 body .container select {
   border-bottom: 1px solid gray;
   cursor: pointer;
   width: 100%;
 }
-/* line 261, typography.scss */
+/* line 263, typography.scss */
 body .container label.select:after {
   content: '\003E';
   float: right;
@@ -669,20 +671,24 @@ body.text .container #content p.separator {
 body.text .container #content p.separator:after {
   content: '* * *';
 }
-/* line 263, theme.scss */
+/* line 260, theme.scss */
+body.text .container #content td {
+  border-color: #434343;
+}
+/* line 267, theme.scss */
 body.text .container #content figure {
   display: inline-block;
   max-width: 65em;
 }
-/* line 267, theme.scss */
+/* line 271, theme.scss */
 body.text .container #content figure a {
   border-bottom: none;
 }
-/* line 272, theme.scss */
+/* line 276, theme.scss */
 body.text .container #content p + figure, body.text .container #content figure + p, body.text .container #content figure + figure {
   margin-top: 1.25em;
 }
-/* line 276, theme.scss */
+/* line 280, theme.scss */
 body.text .container #content figcaption {
   font-size: normal;
   font-style: italic;

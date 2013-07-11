@@ -257,6 +257,10 @@ body.text {
         }
       }
       
+      td {
+        border-color: darken($color, 50%);
+      }
+      
       
       /* Images
       */
