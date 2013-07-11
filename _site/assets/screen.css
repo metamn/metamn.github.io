@@ -679,7 +679,7 @@ body.text .container #content figure a {
   border-bottom: none;
 }
 /* line 272, theme.scss */
-body.text .container #content p + figure, body.text .container #content figure + p {
+body.text .container #content p + figure, body.text .container #content figure + p, body.text .container #content figure + figure {
   margin-top: 1.25em;
 }
 /* line 276, theme.scss */

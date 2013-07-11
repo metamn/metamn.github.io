@@ -269,7 +269,7 @@ body.text {
         }
       }
       
-      p + figure, figure + p {
+      p + figure, figure + p, figure + figure {
         margin-top: $pad;
       }
       
@@ -277,7 +277,7 @@ body.text {
         font-size: normal;
         font-style: italic;
         
-        margin-bottom: $pad*2;
+        margin-bottom: $pad*2;  
       }
       
       
