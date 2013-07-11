@@ -237,7 +237,7 @@ body.text {
         span {
           background: $color;
           color: $background;
-          padding: $pad/8 $pad/4;
+          padding: $pad/8;
           
           font-style: italic;
         }
@@ -262,14 +262,10 @@ body.text {
         
         a {
           border-bottom: none;
-          
-          img {
-            max-width: none;
-          }
         }
       }
       
-      p + figure {
+      p + figure, figure + p {
         margin-top: $pad;
       }
       

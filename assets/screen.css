@@ -654,7 +654,7 @@ body.text .container #content p {
 body.text .container #content p span {
   background: #c2c2c2;
   color: #363636;
-  padding: 0.15625em 0.3125em;
+  padding: 0.15625em;
   font-style: italic;
 }
 /* line 247, theme.scss */
@@ -674,15 +674,11 @@ body.text .container #content figure {
 body.text .container #content figure a {
   border-bottom: none;
 }
-/* line 266, theme.scss */
-body.text .container #content figure a img {
-  max-width: none;
-}
-/* line 272, theme.scss */
-body.text .container #content p + figure {
+/* line 268, theme.scss */
+body.text .container #content p + figure, body.text .container #content figure + p {
   margin-top: 1.25em;
 }
-/* line 276, theme.scss */
+/* line 272, theme.scss */
 body.text .container #content figcaption {
   font-size: normal;
   font-style: italic;
