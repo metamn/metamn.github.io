@@ -630,7 +630,9 @@ body.text .container #content {
   */
   /* Restore expectations
   */
-  /* Highlight text 
+  /* Decororations 
+  */
+  /* Images
   */
 }
 /* line 221, theme.scss */
@@ -641,11 +643,48 @@ body.text .container #content h2, body.text .container #content h3 {
 body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
   border-bottom: 1px dotted;
 }
-/* line 235, theme.scss */
+/* line 234, theme.scss */
+body.text .container #content p {
+  /* Highlight text
+  */
+  /* Separate content blocks
+  */
+}
+/* line 237, theme.scss */
 body.text .container #content p span {
   background: #c2c2c2;
   color: #363636;
-  padding: 0.3125em;
+  padding: 0.15625em 0.3125em;
+  font-style: italic;
+}
+/* line 247, theme.scss */
+body.text .container #content p.separator {
+  text-align: center;
+}
+/* line 250, theme.scss */
+body.text .container #content p.separator:after {
+  content: '* * *';
+}
+/* line 259, theme.scss */
+body.text .container #content figure {
+  display: inline-block;
+  max-width: 65em;
+}
+/* line 263, theme.scss */
+body.text .container #content figure a {
+  border-bottom: none;
+}
+/* line 266, theme.scss */
+body.text .container #content figure a img {
+  max-width: none;
+}
+/* line 272, theme.scss */
+body.text .container #content p + figure {
+  margin-top: 1.25em;
+}
+/* line 276, theme.scss */
+body.text .container #content figcaption {
+  font-size: normal;
   font-style: italic;
 }
 

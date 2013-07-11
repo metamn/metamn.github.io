@@ -229,16 +229,53 @@ body.text {
       }
       
       
-      /* Highlight text 
+      /* Decororations 
       */
       p {
+        /* Highlight text
+        */
         span {
           background: $color;
           color: $background;
-          padding: $pad/4;
+          padding: $pad/8 $pad/4;
           
           font-style: italic;
         }
+        
+        /* Separate content blocks
+        */
+        &.separator {
+          text-align: center;
+          
+          &:after {
+            content: '* * *';
+          }
+        }
+      }
+      
+      
+      /* Images
+      */
+      figure {
+        display: inline-block;
+        max-width: 65em;
+        
+        a {
+          border-bottom: none;
+          
+          img {
+            max-width: none;
+          }
+        }
+      }
+      
+      p + figure {
+        margin-top: $pad;
+      }
+      
+      figcaption {
+        font-size: normal;
+        font-style: italic;
       }
       
     }
