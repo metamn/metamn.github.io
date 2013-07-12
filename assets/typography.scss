@@ -67,7 +67,7 @@ body {
     /* blockquote is simply indented, enlarged */
     q, blockquote {
       display: block;
-	    margin: $pad;
+	    margin: $pad*2;
 	
 	    border-left: 1px dotted;
 	    padding-left: $pad;

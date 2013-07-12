@@ -157,7 +157,7 @@ body .container p + p {
 /* line 68, typography.scss */
 body .container q, body .container blockquote {
   display: block;
-  margin: 1.25em;
+  margin: 2.5em;
   border-left: 1px dotted;
   padding-left: 1.25em;
   font-style: italic;
