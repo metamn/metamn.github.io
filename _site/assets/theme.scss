@@ -205,16 +205,29 @@ body.text {
   
   .container {
     #content {
+      
       /* Make it readable
       */
       max-width: 600px;
       line-height: 1.5;
       font-size: larger;
       
+      ol, ul {
+        margin-bottom: $pad*2;
+        
+        li {
+          margin-bottom: $pad/2;
+        }
+      }
+      
+      
+      
+      
       /* Put focus on
       */
       border-left: 1px dotted darken($color, 50%);
       padding: 0 $pad $pad*3 $pad*2;
+      
       
       /* Adjust visual hierarchy
       */
@@ -226,6 +239,7 @@ body.text {
         line-height: 1.1;
       }
       
+      
       /* Restore expectations
       */
       a, a:active, a:visited {
@@ -235,17 +249,18 @@ body.text {
       
       /* Decororations 
       */
-      p {
-        /* Highlight text
-        */
-        span {
-          background: $color;
-          color: $background;
-          padding: $pad/8;
-          
-          font-style: italic;
-        }
+      
+      /* Highlight text
+      */
+      span {
+        background: $color;
+        color: $background;
+        padding: $pad/8;
         
+        font-style: italic;
+      }
+      
+      p {
         /* Separate content blocks
         */
         &.separator {
