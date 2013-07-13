@@ -33,7 +33,7 @@ body {
     }
     /* Lower headings are like body text but upper cased */
     h4, h5, h6 {
-	    font-size: 1.25em;
+	    font-size: 100%;
 	    /* small caps is not enough to distinguish header from body text */
 	    // font-variant: small-caps;
 	    text-transform: uppercase;

@@ -80,55 +80,6 @@ body {
 
 
 
-/* Highlighting active navigation item
-*/
-
-@mixin highlight {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: $pad/2;
-  border: 1px outset;
-}
-
-body.skills {
-  .container {
-    nav {
-      li#skills {
-        a {
-          @include highlight;
-        }
-      }
-    }
-  }
-}
-
-body.writing {
-  .container {
-    nav {
-      li#writing {
-        a {
-          @include highlight;
-        }
-      }
-    }
-  }
-}
-
-body.design-and-development {
-  .container {
-    nav {
-      li#design-and-development {
-        a {
-          @include highlight;
-        }
-      }
-    }
-  }
-}
-
-
-
-
 
 
 /* The frontpage
@@ -217,14 +168,14 @@ body.text {
       
       /* Put focus on
       */
-      border-left: 20em solid lighten(black, 5%);
+      border-left: 20em solid lighten(black, 10%);
       padding: 0 $pad $pad*3 $pad*2;
       background: $background;
       
       
       /* Adjust visual hierarchy
       */
-      h2, h3 {
+      h3 {
         padding-bottom: 0;
       }  
       
@@ -283,6 +234,15 @@ body.text {
         a {
           border-bottom: none;
         }
+        
+        &.bordered {
+          border: 1px solid darken($color, 50%);
+        }
+        
+        &.spaced {
+          margin-top: $pad*4;
+          margin-bottom: $pad*4;
+        }
       }
       
       p + figure, figure + p, figure + figure {
@@ -300,6 +260,70 @@ body.text {
     }
   }
 }
+
+
+
+/* Highlighting active navigation item
+*/
+
+@mixin highlight {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: $pad/2;
+  border: 1px outset;
+}
+
+body.flow {
+  .container {
+    nav {
+      li#flow {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.skills {
+  .container {
+    nav {
+      li#skills {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.writing {
+  .container {
+    nav {
+      li#writing {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.design-and-development {
+  .container {
+    nav {
+      li#design-and-development {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 
 
 
