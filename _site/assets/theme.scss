@@ -168,9 +168,12 @@ body.text {
       
       /* Put focus on
       */
-      border-left: 20em solid lighten(black, 10%);
-      padding: 0 $pad $pad*3 $pad*2;
-      background: $background;
+      @include large-screen {
+        border-left: 15em solid lighten(black, 10%);
+        padding: 0 $pad $pad*3 $pad*2;
+        background: $background;
+      }
+      
       
       
       /* Adjust visual hierarchy
@@ -224,12 +227,22 @@ body.text {
         border-color: darken($color, 50%);
       }
       
+      @include mobile {
+        table {
+          td, th, tr {
+            padding: $pad/4;
+          }
+        }
+      }
+      
       
       /* Images
       */
       figure {
-        display: inline-block;
-        max-width: 65em;
+       @include small-screen-and-up {
+          display: inline-block;
+          max-width: 65em;
+        }
         
         a {
           border-bottom: none;
@@ -255,7 +268,6 @@ body.text {
         
         margin-bottom: $pad*2;  
       }
-      
       
     }
   }

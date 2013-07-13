@@ -19,6 +19,12 @@ body {
         
         ul {
           @include list-inline;
+          
+          @include tablet-and-below {
+            li {
+              margin-right: $pad/2;
+            }
+          }
         }
       }
       
