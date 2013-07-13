@@ -52,10 +52,6 @@ body {
       article {
         margin-top: $pad*2;
         
-        h4 {
-          display: none;
-        }
-        
         figcaption {
           margin-bottom: $pad/2;
         }
@@ -217,7 +213,6 @@ body.text {
           margin-bottom: $pad/2;
         }
       }
-      
       
       
       /* Put focus on

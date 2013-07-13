@@ -481,15 +481,11 @@ body .container #content article {
   margin-top: 2.5em;
 }
 /* line 55, theme.scss */
-body .container #content article h4 {
-  display: none;
-}
-/* line 59, theme.scss */
 body .container #content article figcaption {
   margin-bottom: 0.625em;
 }
 @media only screen and (max-width: 767px) {
-  /* line 65, theme.scss */
+  /* line 61, theme.scss */
   body .container #content dl {
     background: black;
     opacity: .9;
@@ -497,14 +493,14 @@ body .container #content article figcaption {
     max-width: 30em;
   }
 }
-/* line 76, theme.scss */
+/* line 72, theme.scss */
 body .container footer a {
   border-bottom: 1px dotted;
 }
 
 /* Highlighting active navigation item
 */
-/* line 101, theme.scss */
+/* line 97, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -512,7 +508,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 113, theme.scss */
+/* line 109, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -520,7 +516,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 125, theme.scss */
+/* line 121, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -530,74 +526,74 @@ body.design-and-development .container nav li#design-and-development a {
 
 /* The frontpage
 */
-/* line 142, theme.scss */
+/* line 138, theme.scss */
 body.csongor-bartus .container {
   text-align: center;
 }
-/* line 143, theme.scss */
+/* line 139, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 144, theme.scss */
+/* line 140, theme.scss */
 body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
   font-weight: normal;
   font-style: normal;
 }
-/* line 145, theme.scss */
+/* line 141, theme.scss */
 body.csongor-bartus .container h1 {
   font-size: 5.53846em;
   padding: 1em 0;
 }
-/* line 146, theme.scss */
+/* line 142, theme.scss */
 body.csongor-bartus .container h2 {
   font-size: 3.42308em;
   padding: 1.38338em 0;
 }
-/* line 147, theme.scss */
+/* line 143, theme.scss */
 body.csongor-bartus .container h3 {
   font-size: 2.61538em;
   padding: 1.28666em 0;
 }
 @media (max-width: 380px) {
-  /* line 150, theme.scss */
+  /* line 146, theme.scss */
   body.csongor-bartus .container h1 {
     font-size: 3.42308em;
     padding: 1.38338em 0;
   }
-  /* line 151, theme.scss */
+  /* line 147, theme.scss */
   body.csongor-bartus .container h2 {
     font-size: 2.61538em;
     padding: 1.28666em 0;
   }
 }
-/* line 157, theme.scss */
+/* line 153, theme.scss */
 body.csongor-bartus .container h2 {
   font-family: 'Comfortaa', cursive;
 }
-/* line 161, theme.scss */
+/* line 157, theme.scss */
 body.csongor-bartus .container h1 {
   font-family: 'Reenie Beanie', cursive;
   word-wrap: break-word;
 }
-/* line 166, theme.scss */
+/* line 162, theme.scss */
 body.csongor-bartus .container p {
   font-style: italic;
   letter-spacing: 0.3125em;
 }
-/* line 171, theme.scss */
+/* line 167, theme.scss */
 body.csongor-bartus .container nav {
   margin: 1.25em 0;
 }
-/* line 174, theme.scss */
+/* line 170, theme.scss */
 body.csongor-bartus .container nav ul {
   list-style: none;
 }
-/* line 177, theme.scss */
+/* line 173, theme.scss */
 body.csongor-bartus .container nav ul li {
   padding: 0.625em 0;
 }
-/* line 180, theme.scss */
+/* line 176, theme.scss */
 body.csongor-bartus .container nav ul li a {
   padding: 0.625em;
   border-bottom: 1px outset;
@@ -605,7 +601,7 @@ body.csongor-bartus .container nav ul li a {
   display: inline-block;
 }
 @media (max-width: 380px) {
-  /* line 180, theme.scss */
+  /* line 176, theme.scss */
   body.csongor-bartus .container nav ul li a {
     width: 8.75em;
   }
@@ -613,7 +609,7 @@ body.csongor-bartus .container nav ul li a {
 
 /* Long text pages
 */
-/* line 205, theme.scss */
+/* line 201, theme.scss */
 body.text .container #content {
   /* Make it readable
   */
@@ -636,68 +632,68 @@ body.text .container #content {
   /* Images
   */
 }
-/* line 213, theme.scss */
+/* line 209, theme.scss */
 body.text .container #content ol, body.text .container #content ul {
   margin-bottom: 2.5em;
 }
-/* line 216, theme.scss */
+/* line 212, theme.scss */
 body.text .container #content ol li, body.text .container #content ul li {
   margin-bottom: 0.625em;
 }
-/* line 232, theme.scss */
+/* line 227, theme.scss */
 body.text .container #content h2, body.text .container #content h3 {
   padding-bottom: 0;
 }
-/* line 236, theme.scss */
+/* line 231, theme.scss */
 body.text .container #content h1, body.text .container #content h2, body.text .container #content h3 {
   line-height: 1.1;
 }
-/* line 240, theme.scss */
+/* line 235, theme.scss */
 body.text .container #content article {
   margin-top: 0;
 }
-/* line 247, theme.scss */
+/* line 242, theme.scss */
 body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
   border-bottom: 1px dotted;
 }
-/* line 257, theme.scss */
+/* line 252, theme.scss */
 body.text .container #content span {
   background: #c2c2c2;
   color: #363636;
   padding: 0.15625em;
   font-style: italic;
 }
-/* line 265, theme.scss */
+/* line 260, theme.scss */
 body.text .container #content p {
   /* Separate content blocks
   */
 }
-/* line 268, theme.scss */
+/* line 263, theme.scss */
 body.text .container #content p.separator {
   text-align: center;
 }
-/* line 271, theme.scss */
+/* line 266, theme.scss */
 body.text .container #content p.separator:after {
   content: '* * *';
 }
-/* line 277, theme.scss */
+/* line 272, theme.scss */
 body.text .container #content td {
   border-color: #434343;
 }
-/* line 284, theme.scss */
+/* line 279, theme.scss */
 body.text .container #content figure {
   display: inline-block;
   max-width: 65em;
 }
-/* line 288, theme.scss */
+/* line 283, theme.scss */
 body.text .container #content figure a {
   border-bottom: none;
 }
-/* line 293, theme.scss */
+/* line 288, theme.scss */
 body.text .container #content p + figure, body.text .container #content figure + p, body.text .container #content figure + figure {
   margin-top: 1.25em;
 }
-/* line 297, theme.scss */
+/* line 292, theme.scss */
 body.text .container #content figcaption {
   font-size: normal;
   font-style: italic;
