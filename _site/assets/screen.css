@@ -613,11 +613,7 @@ body.csongor-bartus .container nav ul li a {
 
 /* Long text pages
 */
-/* line 203, theme.scss */
-body.text {
-  background-image: none;
-}
-/* line 207, theme.scss */
+/* line 205, theme.scss */
 body.text .container #content {
   /* Make it readable
   */
@@ -626,77 +622,82 @@ body.text .container #content {
   font-size: larger;
   /* Put focus on
   */
-  border-left: 1px dotted #434343;
+  border-left: 20em solid #0d0d0d;
   padding: 0 1.25em 3.75em 2.5em;
+  background: #363636;
   /* Adjust visual hierarchy
   */
   /* Restore expectations
   */
-  /* Decororations 
+  /* Decorations 
   */
   /* Highlight text
   */
   /* Images
   */
 }
-/* line 215, theme.scss */
+/* line 213, theme.scss */
 body.text .container #content ol, body.text .container #content ul {
   margin-bottom: 2.5em;
 }
-/* line 218, theme.scss */
+/* line 216, theme.scss */
 body.text .container #content ol li, body.text .container #content ul li {
   margin-bottom: 0.625em;
 }
-/* line 234, theme.scss */
+/* line 232, theme.scss */
 body.text .container #content h2, body.text .container #content h3 {
   padding-bottom: 0;
 }
-/* line 238, theme.scss */
+/* line 236, theme.scss */
 body.text .container #content h1, body.text .container #content h2, body.text .container #content h3 {
   line-height: 1.1;
 }
-/* line 245, theme.scss */
+/* line 240, theme.scss */
+body.text .container #content article {
+  margin-top: 0;
+}
+/* line 247, theme.scss */
 body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
   border-bottom: 1px dotted;
 }
-/* line 255, theme.scss */
+/* line 257, theme.scss */
 body.text .container #content span {
   background: #c2c2c2;
   color: #363636;
   padding: 0.15625em;
   font-style: italic;
 }
-/* line 263, theme.scss */
+/* line 265, theme.scss */
 body.text .container #content p {
   /* Separate content blocks
   */
 }
-/* line 266, theme.scss */
+/* line 268, theme.scss */
 body.text .container #content p.separator {
   text-align: center;
 }
-/* line 269, theme.scss */
+/* line 271, theme.scss */
 body.text .container #content p.separator:after {
   content: '* * *';
 }
-/* line 275, theme.scss */
+/* line 277, theme.scss */
 body.text .container #content td {
   border-color: #434343;
 }
-/* line 282, theme.scss */
+/* line 284, theme.scss */
 body.text .container #content figure {
   display: inline-block;
   max-width: 65em;
 }
-/* line 286, theme.scss */
+/* line 288, theme.scss */
 body.text .container #content figure a {
   border-bottom: none;
 }
-/* line 291, theme.scss */
+/* line 293, theme.scss */
 body.text .container #content p + figure, body.text .container #content figure + p, body.text .container #content figure + figure {
   margin-top: 1.25em;
 }
-/* line 295, theme.scss */
+/* line 297, theme.scss */
 body.text .container #content figcaption {
   font-size: normal;
   font-style: italic;
