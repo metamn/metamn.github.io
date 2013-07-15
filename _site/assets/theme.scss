@@ -153,7 +153,7 @@ body.text {
       
       /* Make it readable
       */
-      max-width: 600px;
+      max-width: 700px;
       line-height: 1.5;
       font-size: larger;
       
@@ -267,6 +267,34 @@ body.text {
         font-style: italic;
         
         margin-bottom: $pad*2;  
+      }
+      
+    }
+  }
+}
+
+
+/* Skills
+*/
+
+body.skills {
+  @include tablet-and-below {
+    background: #000;
+  }
+  
+  .container {
+    #content {
+      
+      table {
+        td, tr, th {
+          @include mobile {
+            font-size: small;
+          }
+          
+          @include tablet-and-below {
+            padding: $pad/4;
+          }
+        }
       }
       
     }

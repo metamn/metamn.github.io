@@ -593,7 +593,7 @@ body.csongor-bartus .container nav ul li a {
 body.text .container #content {
   /* Make it readable
   */
-  max-width: 600px;
+  max-width: 700px;
   line-height: 1.5;
   font-size: larger;
   /* Put focus on
@@ -702,9 +702,30 @@ body.text .container #content figcaption {
   margin-bottom: 2.5em;
 }
 
+/* Skills
+*/
+@media only screen and (max-width: 767px) {
+  /* line 280, theme.scss */
+  body.skills {
+    background: #000;
+  }
+}
+@media (max-width: 380px) {
+  /* line 289, theme.scss */
+  body.skills .container #content table td, body.skills .container #content table tr, body.skills .container #content table th {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 289, theme.scss */
+  body.skills .container #content table td, body.skills .container #content table tr, body.skills .container #content table th {
+    padding: 0.3125em;
+  }
+}
+
 /* Highlighting active navigation item
 */
-/* line 292, theme.scss */
+/* line 320, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -712,7 +733,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 304, theme.scss */
+/* line 332, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -720,7 +741,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 316, theme.scss */
+/* line 344, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -728,7 +749,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 328, theme.scss */
+/* line 356, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
