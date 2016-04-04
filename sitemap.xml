@@ -2,162 +2,166 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://metamn.io/</loc>
-        <lastmod>2015-05-15T11:30:26.889Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.367Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/about/</loc>
-        <lastmod>2015-05-15T11:30:26.021Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/contact/</loc>
-        <lastmod>2015-05-15T11:30:26.769Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.291Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/</loc>
-        <lastmod>2015-05-15T11:30:55.001Z</lastmod>
+        <lastmod>2016-04-04T18:23:56.755Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/</loc>
-        <lastmod>2015-05-15T11:30:26.925Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.395Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/not-found/metamn/</loc>
+        <lastmod>2016-04-04T18:24:22.403Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/anvelocom/</loc>
-        <lastmod>2015-05-15T11:30:26.949Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.427Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/inu/</loc>
-        <lastmod>2015-05-15T11:30:26.957Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.455Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/iorad/</loc>
-        <lastmod>2015-05-15T11:30:26.961Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.459Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/occrp/</loc>
-        <lastmod>2015-05-15T11:30:26.969Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/reboot/</loc>
-        <lastmod>2015-05-15T11:30:26.977Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.471Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/scatter/</loc>
-        <lastmod>2015-05-15T11:30:26.985Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.491Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/smuff/</loc>
-        <lastmod>2015-05-15T11:30:26.993Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.499Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/wanderlust/</loc>
-        <lastmod>2015-05-15T11:30:26.997Z</lastmod>
+        <lastmod>2016-04-04T18:24:22.507Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/reboot/</loc>
+        <lastmod>2016-04-04T18:24:22.479Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/beat/</loc>
+        <lastmod>2016-04-04T18:24:22.443Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/description/</loc>
-        <lastmod>2015-05-15T11:30:55.029Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/project/header/</loc>
-        <lastmod>2015-05-15T11:30:55.037Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.871Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/menu/</loc>
-        <lastmod>2015-05-15T11:30:55.049Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.907Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/slider/</loc>
-        <lastmod>2015-05-15T11:30:55.065Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.923Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/thumb/</loc>
-        <lastmod>2015-05-15T11:30:55.073Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.939Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/title/</loc>
-        <lastmod>2015-05-15T11:30:55.085Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.951Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/project/header/</loc>
+        <lastmod>2016-04-04T18:23:57.895Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/framework/behavior/figure-on-figure/</loc>
+        <lastmod>2016-04-04T18:23:57.963Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/behavior/flip/</loc>
-        <lastmod>2015-05-15T11:30:55.093Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.975Z</lastmod>
     </url>
     <url>
-        <loc>http://metamn.io/styleguide/framework/behavior/page-transition/</loc>
-        <lastmod>2015-05-15T11:30:55.101Z</lastmod>
+        <loc>http://metamn.io/styleguide/framework/behavior/spin/</loc>
+        <lastmod>2016-04-04T18:23:57.987Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/behavior/transition/</loc>
-        <lastmod>2015-05-15T11:30:55.113Z</lastmod>
+        <lastmod>2016-04-04T18:23:57.995Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/colors/</loc>
-        <lastmod>2015-05-15T11:30:55.125Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.007Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/breakpoints/</loc>
-        <lastmod>2015-05-15T11:30:55.141Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.019Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/figure/</loc>
-        <lastmod>2015-05-15T11:30:55.157Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.031Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/intrinsic-ratio/</loc>
-        <lastmod>2015-05-15T11:30:55.165Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.051Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/semantic-html5-titles/</loc>
-        <lastmod>2015-05-15T11:30:55.177Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.063Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/arrow/</loc>
-        <lastmod>2015-05-15T11:30:55.185Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.075Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/color-overlay/</loc>
-        <lastmod>2015-05-15T11:30:55.197Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.091Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/long-dash/</loc>
-        <lastmod>2015-05-15T11:30:55.205Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.099Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/fonts/</loc>
-        <lastmod>2015-05-15T11:30:55.213Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.107Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/scale/</loc>
-        <lastmod>2015-05-15T11:30:55.225Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.119Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/text-style/</loc>
-        <lastmod>2015-05-15T11:30:55.233Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.131Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/flexbox/grid/</loc>
-        <lastmod>2015-05-15T11:30:55.245Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.143Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/flexbox/stretch/</loc>
-        <lastmod>2015-05-15T11:30:55.253Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/framework/design/typography/elements/dl/</loc>
-        <lastmod>2015-05-15T11:30:55.277Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.155Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/link/</loc>
-        <lastmod>2015-05-15T11:30:55.289Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.175Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/p/</loc>
-        <lastmod>2015-05-15T11:30:55.305Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.199Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/ul/</loc>
-        <lastmod>2015-05-15T11:30:55.313Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.211Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/uppercase/</loc>
-        <lastmod>2015-05-15T11:30:55.321Z</lastmod>
+        <lastmod>2016-04-04T18:23:58.223Z</lastmod>
     </url>
 </urlset>
