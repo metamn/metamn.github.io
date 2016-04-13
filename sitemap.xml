@@ -2,166 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://metamn.io/</loc>
-        <lastmod>2016-04-04T18:24:22.367Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.241Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/about/</loc>
-        <lastmod>2016-04-04T18:24:22.291Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.105Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/</loc>
-        <lastmod>2016-04-04T18:23:56.755Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.089Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/</loc>
-        <lastmod>2016-04-04T18:24:22.395Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.273Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work-with-me/</loc>
+        <lastmod>2016-04-13T14:28:27.265Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/not-found/metamn/</loc>
-        <lastmod>2016-04-04T18:24:22.403Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.281Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/anvelocom/</loc>
-        <lastmod>2016-04-04T18:24:22.427Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/inu/</loc>
-        <lastmod>2016-04-04T18:24:22.455Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/iorad/</loc>
-        <lastmod>2016-04-04T18:24:22.459Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/occrp/</loc>
-        <lastmod>2016-04-04T18:24:22.471Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/scatter/</loc>
-        <lastmod>2016-04-04T18:24:22.491Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/smuff/</loc>
-        <lastmod>2016-04-04T18:24:22.499Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/wanderlust/</loc>
-        <lastmod>2016-04-04T18:24:22.507Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/work/reboot/</loc>
-        <lastmod>2016-04-04T18:24:22.479Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.293Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/work/beat/</loc>
-        <lastmod>2016-04-04T18:24:22.443Z</lastmod>
+        <lastmod>2016-04-13T14:28:27.301Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/inu/</loc>
+        <lastmod>2016-04-13T14:28:27.313Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/iorad/</loc>
+        <lastmod>2016-04-13T14:28:27.317Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/occrp/</loc>
+        <lastmod>2016-04-13T14:28:27.329Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/reboot/</loc>
+        <lastmod>2016-04-13T14:28:27.337Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/scatter/</loc>
+        <lastmod>2016-04-13T14:28:27.345Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/smuff/</loc>
+        <lastmod>2016-04-13T14:28:27.357Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/work/wanderlust/</loc>
+        <lastmod>2016-04-13T14:28:27.365Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/description/</loc>
-        <lastmod>2016-04-04T18:23:57.871Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/project/menu/</loc>
-        <lastmod>2016-04-04T18:23:57.907Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/project/slider/</loc>
-        <lastmod>2016-04-04T18:23:57.923Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/project/thumb/</loc>
-        <lastmod>2016-04-04T18:23:57.939Z</lastmod>
-    </url>
-    <url>
-        <loc>http://metamn.io/styleguide/project/title/</loc>
-        <lastmod>2016-04-04T18:23:57.951Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.113Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/project/header/</loc>
-        <lastmod>2016-04-04T18:23:57.895Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.125Z</lastmod>
     </url>
     <url>
-        <loc>http://metamn.io/styleguide/framework/behavior/figure-on-figure/</loc>
-        <lastmod>2016-04-04T18:23:57.963Z</lastmod>
+        <loc>http://metamn.io/styleguide/project/menu/</loc>
+        <lastmod>2016-04-13T14:29:41.145Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/project/slider/</loc>
+        <lastmod>2016-04-13T14:29:41.161Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/project/thumb/</loc>
+        <lastmod>2016-04-13T14:29:41.173Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/project/title/</loc>
+        <lastmod>2016-04-13T14:29:41.185Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/behavior/flip/</loc>
-        <lastmod>2016-04-04T18:23:57.975Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.213Z</lastmod>
     </url>
     <url>
-        <loc>http://metamn.io/styleguide/framework/behavior/spin/</loc>
-        <lastmod>2016-04-04T18:23:57.987Z</lastmod>
+        <loc>http://metamn.io/styleguide/framework/behavior/figure-on-figure/</loc>
+        <lastmod>2016-04-13T14:29:41.201Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/framework/behavior/keyframes/</loc>
+        <lastmod>2016-04-13T14:29:41.225Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/behavior/transition/</loc>
-        <lastmod>2016-04-04T18:23:57.995Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.261Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/framework/behavior/spin/</loc>
+        <lastmod>2016-04-13T14:29:41.245Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/colors/</loc>
-        <lastmod>2016-04-04T18:23:58.007Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.269Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/breakpoints/</loc>
-        <lastmod>2016-04-04T18:23:58.019Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.281Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/figure/</loc>
-        <lastmod>2016-04-04T18:23:58.031Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.297Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/intrinsic-ratio/</loc>
-        <lastmod>2016-04-04T18:23:58.051Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.309Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/semantic-html5-titles/</loc>
-        <lastmod>2016-04-04T18:23:58.063Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.321Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/arrow/</loc>
-        <lastmod>2016-04-04T18:23:58.075Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.333Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/color-overlay/</loc>
-        <lastmod>2016-04-04T18:23:58.091Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.349Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/decorations/long-dash/</loc>
-        <lastmod>2016-04-04T18:23:58.099Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.357Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/fonts/</loc>
-        <lastmod>2016-04-04T18:23:58.107Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.369Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/scale/</loc>
-        <lastmod>2016-04-04T18:23:58.119Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.389Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/text-style/</loc>
-        <lastmod>2016-04-04T18:23:58.131Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.405Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/flexbox/grid/</loc>
-        <lastmod>2016-04-04T18:23:58.143Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.417Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/structure/flexbox/stretch/</loc>
-        <lastmod>2016-04-04T18:23:58.155Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.429Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/link/</loc>
-        <lastmod>2016-04-04T18:23:58.175Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.445Z</lastmod>
+    </url>
+    <url>
+        <loc>http://metamn.io/styleguide/framework/design/typography/elements/ol/</loc>
+        <lastmod>2016-04-13T14:29:41.465Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/p/</loc>
-        <lastmod>2016-04-04T18:23:58.199Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.477Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/ul/</loc>
-        <lastmod>2016-04-04T18:23:58.211Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.493Z</lastmod>
     </url>
     <url>
         <loc>http://metamn.io/styleguide/framework/design/typography/elements/uppercase/</loc>
-        <lastmod>2016-04-04T18:23:58.223Z</lastmod>
+        <lastmod>2016-04-13T14:29:41.501Z</lastmod>
     </url>
 </urlset>
