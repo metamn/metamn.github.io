@@ -1,0 +1,18 @@
+{
+  "title": "Ideally",
+  "excerpt": "How an ideally perfect website should be designed and developed.",
+  "template": "article",
+  "categories": [
+    "design",
+    "code"
+  ],
+  "url": "ideally",
+  "date": "2016-03-22",
+  "display": [
+    "title",
+    "title_with_url",
+    "categories",
+    "date",
+    "excerpt"
+  ]
+}
