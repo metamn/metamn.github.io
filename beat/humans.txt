@@ -1,0 +1,16 @@
+/* TEAM */
+	Web designer: Csongor Bartus
+	Website: http://metamn.io
+	From: Romania
+
+/* THANKS */
+
+	Icon: Cursor by romzicon from the Noun Project
+  Icon: Arrow Right by Rockicon from the Noun Project
+
+
+/* SITE */
+	Last update: 2016/09/16
+	Language: English
+	Doctype: HTML5
+	IDE: Atom
