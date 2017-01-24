@@ -1,2 +1,2 @@
-var slider = require('./../../../framework/structure/slider/slider.js');
-slider('.article__slider', '.article__bullets .bullet');
+// Sliders are set up in the respective articles_json
+// like article-is-it-web-or-photoshop.js

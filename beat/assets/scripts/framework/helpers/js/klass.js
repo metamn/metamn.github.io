@@ -48,7 +48,13 @@ var klass = function(element, klass, action) {
       break;
     case 'remove':
       k.klass.loop(function(klassname) {
-        k.remove(element, klassname, k);
+        if (element.loop) {
+          element.loop(function(e) {
+            k.remove(e, klassname, k)
+          });
+        } else {
+          k.remove(element, klassname, k)
+        }
       });
       break;
     case 'toggle':

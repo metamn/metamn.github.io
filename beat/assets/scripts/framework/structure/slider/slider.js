@@ -7,7 +7,7 @@ var klass = require('./../../helpers/js/klass.js');
 
 
 // Set up the slider
-function Slider(sliderID, bulletsID) {
+function Slider(sliderID, bulletsID, autoScroll) {
   // Slider
   this.slider = select(sliderID);
 
@@ -16,29 +16,59 @@ function Slider(sliderID, bulletsID) {
   this.pos = 0;
   this.offset = this.slides[0].offsetWidth;
 
+  // Images
+  this.images = select(sliderID + ' .slide .img');
+
   // Navigation
   this.direction = 'prev';
   this.slideCount = this.slides.length;
   this.bullets = select(bulletsID);
+
+  // Auto scroll
+  this.autoScroll = autoScroll;
 }
 
 
 // The main function
-var slider = function(sliderID, bulletsID) {
-  s = new Slider(sliderID, bulletsID);
+var slider = function(sliderID, bulletsID, autoScroll) {
+  if (typeof(autoScroll)==='undefined') autoScroll = -1;
+  s = new Slider(sliderID, bulletsID, autoScroll);
 
   // Make responsive
   s.setTransform();
   window.addEventListener('resize', s.setTransform.bind(s)); // without `bind(s)` the object is lost in `addEventListener`
 
-  // Click on slide
-  click(s.slides, s.clickSlide.bind(s));
+  // Click on slide image
+  click(s.images, s.clickSlide.bind(s));
 
   // Swipe on slide
   s.swipe();
 
   // Click on bullets
   click(s.bullets, s.clickBullet.bind(s));
+
+  // Auto scroll
+  if (s.autoScroll != -1) {
+    s.autoPlay(s.autoScroll);
+  }
+}
+
+
+// http://stackoverflow.com/questions/29223869/function-prototype-bind-for-requestanimationframe-results-in-unreadable-property
+Slider.prototype.autoPlay = function(delay) {
+  var saveThis;
+
+  function click() {
+    this.images[0].click();
+  }
+  saveThis = click.bind(this);
+
+  function loop() {
+    requestAnimationFrame(saveThis);
+    if (true) // some end condition instead of globalAnimationCancel
+      globalAnimationCancel = setTimeout(loop, delay);
+  }
+  globalAnimationCancel = setTimeout(loop, delay);
 }
 
 
@@ -62,6 +92,7 @@ Slider.prototype.clickBullet = function(event) {
 
 // Swipe with Hammer.js
 Slider.prototype.swipe = function() {
+  console.log('swipe');
   _this = this;
 
   _this.slides.loop(function(slide) {
@@ -146,6 +177,8 @@ function bulletIndex(bullets, bullet) {
 // Set active state for a bullet
 function setActiveBulletClass(bullets, slides) {
   for (var i = 0; i < bullets.length; i++) {
+    bullets[i].classList.remove('bullet--active');
+
     if (slides[i].style['transform'] == 'translateX(0px)') {
       bullets[i].classList.add('bullet--active');
     }
