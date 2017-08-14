@@ -41,11 +41,11 @@ var slider = function(sliderID, bulletsID, autoScroll) {
   // Click on slide image
   click(s.images, s.clickSlide.bind(s));
 
-  // Swipe on slide
-  s.swipe();
-
   // Click on bullets
   click(s.bullets, s.clickBullet.bind(s));
+
+  // Swipe on slide
+  s.swipe();
 
   // Auto scroll
   if (s.autoScroll != -1) {
@@ -88,35 +88,6 @@ Slider.prototype.clickBullet = function(event) {
   }
 }
 
-
-
-// Swipe with Hammer.js
-Slider.prototype.swipe = function() {
-  console.log('swipe');
-  _this = this;
-
-  _this.slides.loop(function(slide) {
-    var hammer = new Hammer(slide);
-    hammer.get('swipe').set({
-      direction: Hammer.DIRECTION_HORIZONTAL,
-      threshold: 1,
-      velocity: 0.1
-    });
-
-    hammer.on("swipeleft", function() {
-      _this.previousSlide(1);
-      setActiveBulletClass(_this.bullets, _this.slides);
-    });
-
-    hammer.on("swiperight", function() {
-      _this.nextSlide(1);
-      setActiveBulletClass(_this.bullets, _this.slides);
-    });
-  });
-
-}
-
-
 // Click on a slide
 Slider.prototype.clickSlide = function() {
   (this.direction == 'prev') ? this.previousSlide(1) : this.nextSlide(1);
@@ -131,6 +102,30 @@ Slider.prototype.clickSlide = function() {
 
   klass(this.bullets, 'bullet--active', 'removeAll');
   setActiveBulletClass(this.bullets, this.slides);
+}
+
+// Swipe with Hammer.js
+Slider.prototype.swipe = function() {
+  var _this = this;
+
+  var hammer = new Hammer(_this.slider[0]);
+
+  hammer.get('swipe').set({
+    direction: Hammer.DIRECTION_HORIZONTAL,
+    threshold: 1,
+    velocity: 0.1
+  });
+
+  hammer.on("swipeleft", function() {
+    console.log('left');
+    _this.previousSlide(1);
+    setActiveBulletClass(_this.bullets, _this.slides);
+  });
+
+  hammer.on("swiperight", function() {
+    _this.nextSlide(1);
+    setActiveBulletClass(_this.bullets, _this.slides);
+  });
 }
 
 
@@ -152,7 +147,7 @@ Slider.prototype.nextSlide = function(step) {
 
 // Move out of viewport all inactive slides
 Slider.prototype.setTransform = function() {
-  _this = this; // loop will alter `this`
+  var _this = this; // loop will alter `this`
 
   _this.slides.loop(function(slide, i) {
     var move = (i + _this.pos) * _this.offset;
