@@ -693,10 +693,86 @@ html {
   @media only screen and (orientation: landscape) and (min-width: 768px) {
     html body .content .cells.cells-4 .cell-1 {
       padding-right: 1.25em; } }
-      html body .content .artwork.texture {
+      html body .content .artwork.artwork-texture-1 {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII=");
         width: 2.5em;
         height: 2.5em;
-        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII="); }
+        animation: rotate-texture 20s infinite;
+        animation-delay: 5s; }
+
+@keyframes rotate-texture {
+  0% {
+    transform: rotate(0deg); }
+  1% {
+    transform: rotate(45deg); }
+  49% {
+    transform: rotate(45deg); }
+  50% {
+    transform: rotate(0deg); }
+  99% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+      html body .content .artwork.artwork-circle-with-arrows {
+        position: relative;
+        margin-top: -1.875em;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        html body .content .artwork.artwork-circle-with-arrows .circle {
+          background-color: lightgray;
+          color: black;
+          border-radius: 3.75em;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          height: 3.75em;
+          min-height: 3.75em;
+          min-width: 3.75em;
+          width: 3.75em;
+          overflow: hidden;
+          border: 1px solid;
+          position: absolute; }
+        html body .content .artwork.artwork-circle-with-arrows .arrows {
+          /*
+		animation:
+			rotate-arrow 30s ease-out 10s alternate infinite,
+			rotate-arrow-2 15s ease-out 25s alternate infinite;
+		*/ }
+          html body .content .artwork.artwork-circle-with-arrows .arrows .arrow-with-triangle__triangle {
+            display: none; }
+
+@keyframes rotate-arrow {
+  0% {
+    transform: rotate(0deg) translateY(0); }
+  1% {
+    transform: rotate(45deg) translateY(0.3125em); }
+  49% {
+    transform: rotate(45deg) translateY(0.3125em); }
+  50% {
+    transform: rotate(0deg) translateY(0); }
+  99% {
+    transform: rotate(0deg) translateY(0); }
+  100% {
+    transform: rotate(0deg) translateY(0); } }
+
+@keyframes rotate-arrow-2 {
+  0% {
+    transform: rotate(0deg) translateY(0); }
+  1% {
+    transform: rotate(135deg) translateY(0.3125em); }
+  49% {
+    transform: rotate(135deg) translateY(0.3125em); }
+  50% {
+    transform: rotate(0deg) translateY(0); }
+  99% {
+    transform: rotate(0deg) translateY(0); }
+  100% {
+    transform: rotate(0deg) translateY(0); } }
       html body .content .artwork.artwork-4 .cube {
         display: -ms-flexbox;
         display: flex;
@@ -705,31 +781,31 @@ html {
         html body .content .artwork.artwork-4 .cube__wrap {
           perspective: 800px;
           perspective-origin: 50% 200px;
-          width: 200px;
+          width: 2.5em;
           cursor: pointer; }
           html body .content .artwork.artwork-4 .cube__wrap .cube3d {
             position: relative;
             margin: 0 auto;
-            height: 200px;
-            width: 200px;
+            height: 2.5em;
+            width: 2.5em;
             transition: transform 2s linear;
             transform-style: preserve-3d; }
             html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
               position: absolute;
-              width: 200px;
-              height: 200px; }
+              width: 2.5em;
+              height: 2.5em; }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--front {
-                transform: rotateX(90deg) translateZ(100px); }
+                transform: rotateX(90deg) translateZ(1.25em); }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--back {
-                transform: translateZ(100px); }
+                transform: translateZ(1.25em); }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--top {
-                transform: rotateY(90deg) translateZ(100px); }
+                transform: rotateY(90deg) translateZ(1.25em); }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--bottom {
-                transform: rotateY(180deg) translateZ(100px); }
+                transform: rotateY(180deg) translateZ(1.25em); }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--left {
-                transform: rotateY(-90deg) translateZ(100px); }
+                transform: rotateY(-90deg) translateZ(1.25em); }
               html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--right {
-                transform: rotateX(-90deg) translateZ(100px) rotate(180deg); }
+                transform: rotateX(-90deg) translateZ(1.25em) rotate(180deg); }
             html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
               border: 1px solid;
               display: -ms-flexbox;
@@ -766,24 +842,6 @@ html {
                 fill: black; }
         html body .content .artwork.artwork-4 .cube h3 {
           display: none; }
-      html body .content .artwork.artwork-2 {
-        position: absolute; }
-        html body .content .artwork.artwork-2 .circle {
-          background-color: black;
-          color: lightgray;
-          border-radius: 3.75em;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-align: center;
-              align-items: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-          height: 3.75em;
-          min-height: 3.75em;
-          min-width: 3.75em;
-          width: 3.75em;
-          overflow: hidden;
-          position: absolute; }
       html body .content .artwork.artwork-3 {
         position: relative;
         display: -ms-flexbox;
@@ -794,9 +852,9 @@ html {
           position: absolute;
           top: -0.625em; }
           html body .content .artwork.artwork-3 .arrows:first-of-type {
-            transform: rotate(-45deg); }
+            transform: rotate(-90deg) translateX(-2.5em); }
           html body .content .artwork.artwork-3 .arrows:last-of-type {
-            transform: rotate(-135deg); }
+            transform: translateX(-2.5em); }
       html body .content .signup {
         display: none; }
       html body .content .site-title .link {
@@ -878,17 +936,9 @@ html {
             transform: rotate(-90deg); }
           html body .content .arrows .arrow-with-triangle--bottom {
             transform: rotate(90deg); }
-      html body .content .question-intro-text {
-        width: 100%; }
-        html body .content .question-intro-text .text {
-          display: table-caption;
-          -ms-writing-mode: sideways-lr;
-              writing-mode: sideways-lr;
-          text-align: center; }
-          html body .content .question-intro-text .text span {
-            background-color: yellow;
-            -ms-writing-mode: lr-tb;
-                writing-mode: horizontal-tb; }
+      html body .content .question-intro-text .text span {
+        -ms-writing-mode: sideways-lr;
+            writing-mode: sideways-lr; }
       html body .content .question-body .text ol,
       html body .content .question-body .text .ol {
         list-style-position: inside; }
