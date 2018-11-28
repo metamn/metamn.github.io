@@ -697,41 +697,40 @@ html {
         width: 2.5em;
         height: 2.5em;
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII="); }
-      html body .content .artwork.cube {
+      html body .content .artwork.artwork-4 .cube {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
-            justify-content: center;
-        display: none; }
-        html body .content .artwork.cube__wrap {
+            justify-content: center; }
+        html body .content .artwork.artwork-4 .cube__wrap {
           perspective: 800px;
           perspective-origin: 50% 200px;
-          width: 2.5em;
+          width: 200px;
           cursor: pointer; }
-          html body .content .artwork.cube__wrap .cube3d {
+          html body .content .artwork.artwork-4 .cube__wrap .cube3d {
             position: relative;
             margin: 0 auto;
-            height: 2.5em;
-            width: 2.5em;
+            height: 200px;
+            width: 200px;
             transition: transform 2s linear;
             transform-style: preserve-3d; }
-            html body .content .artwork.cube__wrap .cube3d__face {
+            html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
               position: absolute;
-              width: 2.5em;
-              height: 2.5em; }
-              html body .content .artwork.cube__wrap .cube3d__face--front {
-                transform: rotateX(90deg) translateZ(1.25em); }
-              html body .content .artwork.cube__wrap .cube3d__face--back {
-                transform: translateZ(1.25em); }
-              html body .content .artwork.cube__wrap .cube3d__face--top {
-                transform: rotateY(90deg) translateZ(1.25em); }
-              html body .content .artwork.cube__wrap .cube3d__face--bottom {
-                transform: rotateY(180deg) translateZ(1.25em); }
-              html body .content .artwork.cube__wrap .cube3d__face--left {
-                transform: rotateY(-90deg) translateZ(1.25em); }
-              html body .content .artwork.cube__wrap .cube3d__face--right {
-                transform: rotateX(-90deg) translateZ(1.25em) rotate(180deg); }
-            html body .content .artwork.cube__wrap .cube3d__face {
+              width: 200px;
+              height: 200px; }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--front {
+                transform: rotateX(90deg) translateZ(100px); }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--back {
+                transform: translateZ(100px); }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--top {
+                transform: rotateY(90deg) translateZ(100px); }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--bottom {
+                transform: rotateY(180deg) translateZ(100px); }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--left {
+                transform: rotateY(-90deg) translateZ(100px); }
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--right {
+                transform: rotateX(-90deg) translateZ(100px) rotate(180deg); }
+            html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
               border: 1px solid;
               display: -ms-flexbox;
               display: flex;
@@ -739,33 +738,33 @@ html {
                   justify-content: center;
               -ms-flex-align: center;
                   align-items: center; }
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg rect,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg path,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg circle,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg ellipse,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg line,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg polygon,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg polyline,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg text,
-              html body .content .artwork.cube__wrap .cube3d__face .icon svg use,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg rect,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg path,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg circle,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg ellipse,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg line,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg polygon,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg polyline,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg text,
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg use {
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg rect,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg path,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg circle,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg ellipse,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg line,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg polygon,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg polyline,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg text,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg use,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg rect,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg path,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg circle,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg ellipse,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg line,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg polygon,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg polyline,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg text,
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg use {
                 all: inherit; }
-              html body .content .artwork.cube__wrap .cube3d__face .icon .link {
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .link {
                 display: -ms-flexbox;
                 display: flex; }
-              html body .content .artwork.cube__wrap .cube3d__face .icon .svg {
+              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg {
                 width: 32px;
                 height: 32px;
                 fill: black; }
-        html body .content .artwork.cube h3 {
+        html body .content .artwork.artwork-4 .cube h3 {
           display: none; }
       html body .content .artwork.artwork-2 {
         position: absolute; }
@@ -879,8 +878,17 @@ html {
             transform: rotate(-90deg); }
           html body .content .arrows .arrow-with-triangle--bottom {
             transform: rotate(90deg); }
-      html body .content .question-intro-text .text span {
-        background-color: yellow; }
+      html body .content .question-intro-text {
+        width: 100%; }
+        html body .content .question-intro-text .text {
+          display: table-caption;
+          -ms-writing-mode: sideways-lr;
+              writing-mode: sideways-lr;
+          text-align: center; }
+          html body .content .question-intro-text .text span {
+            background-color: yellow;
+            -ms-writing-mode: lr-tb;
+                writing-mode: horizontal-tb; }
       html body .content .question-body .text ol,
       html body .content .question-body .text .ol {
         list-style-position: inside; }
