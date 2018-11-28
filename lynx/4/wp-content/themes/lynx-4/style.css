@@ -525,7 +525,6 @@ html {
       html body a:hover {
         cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
     html body .content {
-      max-width: 56.25em;
       position: relative;
       display: -ms-flexbox;
       display: flex;
@@ -555,31 +554,52 @@ html {
       @media only screen and (min-width: 768px) {
         html body .content {
           margin-right: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content {
-          padding-top: 2.5em; } }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .content {
+    padding-top: 2.5em; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .content {
+    padding-top: 2.5em; } }
+
+@media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+  html body .content {
+    padding-bottom: 2.5em; } }
+
+@media only screen and (max-width: 767.9px) and (min-width: 768px) {
+  html body .content {
+    padding-bottom: 2.5em; } }
       @media only screen and (min-width: 768px) {
         html body .content {
-          padding-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content {
-          padding-bottom: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content {
-          padding-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content {
-          padding-left: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content {
-          padding-left: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content {
-          padding-right: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content {
-          padding-right: 2.5em; } }
-      html body .content .id {
+          max-width: 56.25em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content {
+      padding-top: 2.5em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content {
+      padding-top: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content {
+      padding-bottom: 2.5em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content {
+      padding-bottom: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content {
+      padding-left: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content {
+      padding-left: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content {
+      padding-right: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content {
+      padding-right: 2.5em; } }
+      html body .content .text {
+        display: block; }
+      html body .content .logo {
         position: fixed;
         top: 2.5em;
         -ms-flex-item-align: center;
@@ -602,8 +622,182 @@ html {
           -ms-flex-align: center;
               align-items: center;
           border-bottom: 1px solid; }
-        html body .content .cells .cell-1 {
-          border-right: 1px solid; }
+          html body .content .cells .cell.cell-1 {
+            border-right: 1px solid; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .cells .cell.cell-1 {
+                padding-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .cells .cell.cell-1 {
+                padding-right: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .cells .cell.cell-2 {
+              padding-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .cells .cell.cell-2 {
+              padding-left: 1.25em; } }
+        @media only screen and (orientation: portrait) {
+          html body .content .cells.cells-4 .cell {
+            width: 100%;
+            min-height: auto;
+            border-left: 1px solid;
+            border-right: 1px solid; } }
+  @media only screen and (orientation: portrait) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell {
+      padding-top: 2.5em; } }
+  @media only screen and (orientation: portrait) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell {
+      padding-top: 2.5em; } }
+  @media only screen and (orientation: portrait) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell {
+      padding-bottom: 2.5em; } }
+  @media only screen and (orientation: portrait) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell {
+      padding-bottom: 2.5em; } }
+  @media only screen and (orientation: portrait) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell {
+      padding-left: 1.25em; } }
+  @media only screen and (orientation: portrait) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell {
+      padding-left: 2.5em; } }
+  @media only screen and (orientation: portrait) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell {
+      padding-right: 1.25em; } }
+  @media only screen and (orientation: portrait) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell {
+      padding-right: 2.5em; } }
+        @media only screen and (orientation: landscape) {
+          html body .content .cells.cells-4 .cell-1 {
+            padding-left: 0 !important; } }
+  @media only screen and (orientation: landscape) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-top: 1.25em; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-top: 1.25em; } }
+  @media only screen and (orientation: landscape) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-bottom: 1.25em; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-bottom: 1.25em; } }
+  @media only screen and (orientation: landscape) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-left: 0.625em; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-left: 1.25em; } }
+  @media only screen and (orientation: landscape) and (max-width: 767.9px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-right: 0.625em; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) {
+    html body .content .cells.cells-4 .cell-1 {
+      padding-right: 1.25em; } }
+      html body .content .artwork.texture {
+        width: 2.5em;
+        height: 2.5em;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII="); }
+      html body .content .artwork.cube {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        display: none; }
+        html body .content .artwork.cube__wrap {
+          perspective: 800px;
+          perspective-origin: 50% 200px;
+          width: 2.5em;
+          cursor: pointer; }
+          html body .content .artwork.cube__wrap .cube3d {
+            position: relative;
+            margin: 0 auto;
+            height: 2.5em;
+            width: 2.5em;
+            transition: transform 2s linear;
+            transform-style: preserve-3d; }
+            html body .content .artwork.cube__wrap .cube3d__face {
+              position: absolute;
+              width: 2.5em;
+              height: 2.5em; }
+              html body .content .artwork.cube__wrap .cube3d__face--front {
+                transform: rotateX(90deg) translateZ(1.25em); }
+              html body .content .artwork.cube__wrap .cube3d__face--back {
+                transform: translateZ(1.25em); }
+              html body .content .artwork.cube__wrap .cube3d__face--top {
+                transform: rotateY(90deg) translateZ(1.25em); }
+              html body .content .artwork.cube__wrap .cube3d__face--bottom {
+                transform: rotateY(180deg) translateZ(1.25em); }
+              html body .content .artwork.cube__wrap .cube3d__face--left {
+                transform: rotateY(-90deg) translateZ(1.25em); }
+              html body .content .artwork.cube__wrap .cube3d__face--right {
+                transform: rotateX(-90deg) translateZ(1.25em) rotate(180deg); }
+            html body .content .artwork.cube__wrap .cube3d__face {
+              border: 1px solid;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg rect,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg path,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg circle,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg ellipse,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg line,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg polygon,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg polyline,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg text,
+              html body .content .artwork.cube__wrap .cube3d__face .icon svg use,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg rect,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg path,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg circle,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg ellipse,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg line,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg polygon,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg polyline,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg text,
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg use {
+                all: inherit; }
+              html body .content .artwork.cube__wrap .cube3d__face .icon .link {
+                display: -ms-flexbox;
+                display: flex; }
+              html body .content .artwork.cube__wrap .cube3d__face .icon .svg {
+                width: 32px;
+                height: 32px;
+                fill: black; }
+        html body .content .artwork.cube h3 {
+          display: none; }
+      html body .content .artwork.artwork-2 {
+        position: absolute; }
+        html body .content .artwork.artwork-2 .circle {
+          background-color: black;
+          color: lightgray;
+          border-radius: 3.75em;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          height: 3.75em;
+          min-height: 3.75em;
+          min-width: 3.75em;
+          width: 3.75em;
+          overflow: hidden;
+          position: absolute; }
+      html body .content .artwork.artwork-3 {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        html body .content .artwork.artwork-3 .arrows {
+          position: absolute;
+          top: -0.625em; }
+          html body .content .artwork.artwork-3 .arrows:first-of-type {
+            transform: rotate(-45deg); }
+          html body .content .artwork.artwork-3 .arrows:last-of-type {
+            transform: rotate(-135deg); }
       html body .content .signup {
         display: none; }
       html body .content .site-title .link {
@@ -685,6 +879,8 @@ html {
             transform: rotate(-90deg); }
           html body .content .arrows .arrow-with-triangle--bottom {
             transform: rotate(90deg); }
+      html body .content .question-intro-text .text span {
+        background-color: yellow; }
       html body .content .question-body .text ol,
       html body .content .question-body .text .ol {
         list-style-position: inside; }
@@ -927,7 +1123,10 @@ html {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+            justify-content: center;
+        width: 100%; }
         @media only screen and (max-width: 767.9px) {
           html body .content .question-answers {
             padding-top: 2.5em; } }
@@ -1017,6 +1216,36 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content .question-answers .answer + .answer {
               margin-right: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .question-answers {
+            -ms-flex-direction: column;
+                flex-direction: column;
+            -ms-flex-align: center;
+                align-items: center; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .content .question-answers .answer + .answer {
+      margin-top: 2.5em; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .content .question-answers .answer + .answer {
+      margin-top: 2.5em; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .content .question-answers .answer + .answer {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .content .question-answers .answer + .answer {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .content .question-answers .answer + .answer {
+      margin-left: 0; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .content .question-answers .answer + .answer {
+      margin-left: 0; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .content .question-answers .answer + .answer {
+      margin-right: 0; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .content .question-answers .answer + .answer {
+      margin-right: 0; } }
       html body .content .email-signup-text .text {
         font-size: 1.25em; }
     html body .hidden {
