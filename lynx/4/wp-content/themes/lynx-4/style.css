@@ -1290,36 +1290,6 @@ html {
                 transform: rotate(45deg) translateX(-0.625em) translateY(-0.625em); }
               html body .content .question-answers .answer.incorrect .lines .line:last-of-type {
                 transform: rotate(-45deg) translateX(0.625em) translateY(-0.625em); }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .question-answers {
-            -ms-flex-direction: column;
-                flex-direction: column;
-            -ms-flex-align: center;
-                align-items: center; } }
-  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
-    html body .content .question-answers .answer + .answer {
-      margin-top: 2.5em; } }
-  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
-    html body .content .question-answers .answer + .answer {
-      margin-top: 2.5em; } }
-  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
-    html body .content .question-answers .answer + .answer {
-      margin-bottom: 0; } }
-  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
-    html body .content .question-answers .answer + .answer {
-      margin-bottom: 0; } }
-  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
-    html body .content .question-answers .answer + .answer {
-      margin-left: 0; } }
-  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
-    html body .content .question-answers .answer + .answer {
-      margin-left: 0; } }
-  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
-    html body .content .question-answers .answer + .answer {
-      margin-right: 0; } }
-  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
-    html body .content .question-answers .answer + .answer {
-      margin-right: 0; } }
       html body .content .signup #mc_embed_signup_scroll {
         display: -ms-flexbox;
         display: flex;
