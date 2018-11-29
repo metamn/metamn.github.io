@@ -519,6 +519,69 @@ html {
     @media only screen and (min-width: 1600.1px) {
       html body {
         font-size: 1.563em; } }
+    html body button,
+    html body input,
+    html body optgroup,
+    html body select,
+    html body textarea,
+    html body input[type='button'],
+    html body input[type='reset'],
+    html body input[type='submit'],
+    html body input[type='checkbox'],
+    html body input[type='radio'],
+    html body input[type='number'],
+    html body input[type='search'],
+    html body input[type='url'] {
+      font-style: normal;
+      font-weight: normal;
+      font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
+      background-color: lightgray;
+      color: black;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 0; }
+    html body input[type='text'],
+    html body input[type='url'],
+    html body .input-text,
+    html body input[type='email'],
+    html body input[type='tel'],
+    html body input[type='password'],
+    html body input[type='file'],
+    html body input[type='search'] {
+      border-bottom: 1px solid;
+      padding-bottom: 0.625em;
+      width: 100%; }
+    html body select {
+      border: 1px solid;
+      padding: 0.3125em;
+      width: 100%; }
+    html body label {
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 0.625em;
+      padding-top: 1.25em; }
+    html body fieldset {
+      border: 1px solid;
+      margin: 0;
+      padding: 1.25em; }
+    html body textarea {
+      border: 1px solid;
+      padding: 1.25em;
+      width: 100%; }
+    html body button,
+    html body .button,
+    html body input[type='submit'] {
+      font-size: 0.8em;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      will-change: all;
+      border: 1px solid;
+      padding: 0.3125em 0.625em; }
+      html body button:hover,
+      html body .button:hover,
+      html body input[type='submit']:hover {
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
     html body a {
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
       will-change: all; }
@@ -601,6 +664,7 @@ html {
         display: block; }
       html body .content .logo {
         position: fixed;
+        z-index: 10;
         top: 2.5em;
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
@@ -693,6 +757,29 @@ html {
   @media only screen and (orientation: landscape) and (min-width: 768px) {
     html body .content .cells.cells-4 .cell-1 {
       padding-right: 1.25em; } }
+        html body .content .cells.cells-4 #answers {
+          position: relative; }
+          html body .content .cells.cells-4 #answers .question-answers,
+          html body .content .cells.cells-4 #answers .signup {
+            background-color: lightgray;
+            color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+                justify-content: center;
+            -ms-flex-align: center;
+                align-items: center; }
+          html body .content .cells.cells-4 #answers .signup {
+            -ms-flex-direction: column;
+                flex-direction: column;
+            z-index: -1; }
+          html body .content .cells.cells-4 #answers.show-signup .signup {
+            z-index: 1; }
       html body .content .artwork.artwork-texture-1 {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII=");
         width: 2.5em;
@@ -713,14 +800,14 @@ html {
     transform: rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
-      html body .content .artwork.artwork-circle-with-arrows {
+      html body .content .artwork.artwork-circle-with-line {
         position: relative;
         margin-top: -1.875em;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
             justify-content: center; }
-        html body .content .artwork.artwork-circle-with-arrows .circle {
+        html body .content .artwork.artwork-circle-with-line .circle {
           background-color: lightgray;
           color: black;
           border-radius: 3.75em;
@@ -737,76 +824,42 @@ html {
           overflow: hidden;
           border: 1px solid;
           position: absolute; }
-        html body .content .artwork.artwork-circle-with-arrows .arrows {
-          /*
-		animation:
-			rotate-arrow 30s ease-out 10s alternate infinite,
-			rotate-arrow-2 15s ease-out 25s alternate infinite;
-		*/ }
-          html body .content .artwork.artwork-circle-with-arrows .arrows .arrow-with-triangle__triangle {
-            display: none; }
-
-@keyframes rotate-arrow {
-  0% {
-    transform: rotate(0deg) translateY(0); }
-  1% {
-    transform: rotate(45deg) translateY(0.3125em); }
-  49% {
-    transform: rotate(45deg) translateY(0.3125em); }
-  50% {
-    transform: rotate(0deg) translateY(0); }
-  99% {
-    transform: rotate(0deg) translateY(0); }
-  100% {
-    transform: rotate(0deg) translateY(0); } }
-
-@keyframes rotate-arrow-2 {
-  0% {
-    transform: rotate(0deg) translateY(0); }
-  1% {
-    transform: rotate(135deg) translateY(0.3125em); }
-  49% {
-    transform: rotate(135deg) translateY(0.3125em); }
-  50% {
-    transform: rotate(0deg) translateY(0); }
-  99% {
-    transform: rotate(0deg) translateY(0); }
-  100% {
-    transform: rotate(0deg) translateY(0); } }
-      html body .content .artwork.artwork-4 .cube {
+        html body .content .artwork.artwork-circle-with-line .line {
+          border-bottom: 1px solid;
+          width: 10em; }
+      html body .content .artwork.artwork-cube .cube {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
             justify-content: center; }
-        html body .content .artwork.artwork-4 .cube__wrap {
+        html body .content .artwork.artwork-cube .cube__wrap {
           perspective: 800px;
           perspective-origin: 50% 200px;
-          width: 2.5em;
-          cursor: pointer; }
-          html body .content .artwork.artwork-4 .cube__wrap .cube3d {
+          width: 2.5em; }
+          html body .content .artwork.artwork-cube .cube__wrap .cube3d {
             position: relative;
             margin: 0 auto;
             height: 2.5em;
             width: 2.5em;
             transition: transform 2s linear;
             transform-style: preserve-3d; }
-            html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
+            html body .content .artwork.artwork-cube .cube__wrap .cube3d__face {
               position: absolute;
               width: 2.5em;
               height: 2.5em; }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--front {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--front {
                 transform: rotateX(90deg) translateZ(1.25em); }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--back {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--back {
                 transform: translateZ(1.25em); }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--top {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--top {
                 transform: rotateY(90deg) translateZ(1.25em); }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--bottom {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--bottom {
                 transform: rotateY(180deg) translateZ(1.25em); }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--left {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--left {
                 transform: rotateY(-90deg) translateZ(1.25em); }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face--right {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face--right {
                 transform: rotateX(-90deg) translateZ(1.25em) rotate(180deg); }
-            html body .content .artwork.artwork-4 .cube__wrap .cube3d__face {
+            html body .content .artwork.artwork-cube .cube__wrap .cube3d__face {
               border: 1px solid;
               display: -ms-flexbox;
               display: flex;
@@ -814,46 +867,87 @@ html {
                   justify-content: center;
               -ms-flex-align: center;
                   align-items: center; }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg rect,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg path,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg circle,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg ellipse,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg line,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg polygon,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg polyline,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg text,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon svg use,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg rect,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg path,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg circle,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg ellipse,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg line,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg polygon,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg polyline,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg text,
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg use {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg rect,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg path,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg circle,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg ellipse,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg line,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg polygon,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg polyline,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg text,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon svg use,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg rect,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg path,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg circle,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg ellipse,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg line,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg polygon,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg polyline,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg text,
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg use {
                 all: inherit; }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .link {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .link {
                 display: -ms-flexbox;
                 display: flex; }
-              html body .content .artwork.artwork-4 .cube__wrap .cube3d__face .icon .svg {
+              html body .content .artwork.artwork-cube .cube__wrap .cube3d__face .icon .svg {
                 width: 32px;
                 height: 32px;
                 fill: black; }
-        html body .content .artwork.artwork-4 .cube h3 {
-          display: none; }
-      html body .content .artwork.artwork-3 {
+      html body .content .artwork.artwork-arrows {
         position: relative;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
-            justify-content: center; }
-        html body .content .artwork.artwork-3 .arrows {
+            justify-content: center;
+        background-color: black;
+        color: lightgray;
+        mix-blend-mode: difference; }
+        html body .content .artwork.artwork-arrows .arrow-with-triangle {
+          -ms-flex-align: center;
+              align-items: center;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          -ms-flex-pack: center;
+              justify-content: center;
+          width: 5em;
+          transform: rotate(0deg); }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle__line {
+            border-bottom: 1px solid;
+            width: calc(4.16667em); }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle__triangle {
+            border-style: solid;
+            height: 0;
+            width: 0;
+            border-color: transparent transparent transparent lightgray;
+            border-width: 0.83333em 0 0.83333em 0.83333em; }
+            html body .content .artwork.artwork-arrows .arrow-with-triangle__triangle--right {
+              border-color: transparent transparent transparent lightgray;
+              border-width: 0.83333em 0 0.83333em 0.83333em; }
+            html body .content .artwork.artwork-arrows .arrow-with-triangle__triangle--left {
+              border-color: transparent lightgray transparent transparent;
+              border-width: 0.83333em 0.83333em 0.83333em 0; }
+            html body .content .artwork.artwork-arrows .arrow-with-triangle__triangle--top {
+              border-color: transparent transparent lightgray transparent;
+              border-width: 0 0.83333em 0.83333em 0.83333em; }
+            html body .content .artwork.artwork-arrows .arrow-with-triangle__triangle--bottom {
+              border-color: lightgray transparent transparent transparent;
+              border-width: 0.83333em 0.83333em 0 0.83333em; }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle--right {
+            transform: rotate(0deg); }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle--left {
+            transform: rotate(180deg); }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle--top {
+            transform: rotate(-90deg); }
+          html body .content .artwork.artwork-arrows .arrow-with-triangle--bottom {
+            transform: rotate(90deg); }
+        html body .content .artwork.artwork-arrows .arrows {
           position: absolute;
           top: -0.625em; }
-          html body .content .artwork.artwork-3 .arrows:first-of-type {
+          html body .content .artwork.artwork-arrows .arrows:first-of-type {
             transform: rotate(-90deg) translateX(-2.5em); }
-          html body .content .artwork.artwork-3 .arrows:last-of-type {
+          html body .content .artwork.artwork-arrows .arrows:last-of-type {
             transform: translateX(-2.5em); }
       html body .content .signup {
         display: none; }
@@ -868,15 +962,6 @@ html {
       html body .content .site-title .text {
         background-color: transparent;
         color: black; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .site-subtitle {
-          padding-top: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .site-subtitle {
-          padding-top: 1.25em; } }
-      html body .content .site-subtitle .text {
-        -ms-writing-mode: sideways-lr;
-            writing-mode: sideways-lr; }
       html body .content .call-to-action {
         display: -ms-flexbox;
         display: flex; }
@@ -890,52 +975,6 @@ html {
           padding: 0.3125em 0.625em; }
           html body .content .call-to-action .button3D:hover {
             cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
-      html body .content .arrows {
-        background-color: black;
-        color: lightgray;
-        mix-blend-mode: difference;
-        display: -ms-flexbox;
-        display: flex; }
-        html body .content .arrows .arrow-with-triangle {
-          -ms-flex-align: center;
-              align-items: center;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-          -ms-flex-pack: center;
-              justify-content: center;
-          width: 5em;
-          transform: rotate(0deg); }
-          html body .content .arrows .arrow-with-triangle__line {
-            border-bottom: 1px solid;
-            width: calc(4.16667em); }
-          html body .content .arrows .arrow-with-triangle__triangle {
-            border-style: solid;
-            height: 0;
-            width: 0;
-            border-color: transparent transparent transparent lightgray;
-            border-width: 0.83333em 0 0.83333em 0.83333em; }
-            html body .content .arrows .arrow-with-triangle__triangle--right {
-              border-color: transparent transparent transparent lightgray;
-              border-width: 0.83333em 0 0.83333em 0.83333em; }
-            html body .content .arrows .arrow-with-triangle__triangle--left {
-              border-color: transparent lightgray transparent transparent;
-              border-width: 0.83333em 0.83333em 0.83333em 0; }
-            html body .content .arrows .arrow-with-triangle__triangle--top {
-              border-color: transparent transparent lightgray transparent;
-              border-width: 0 0.83333em 0.83333em 0.83333em; }
-            html body .content .arrows .arrow-with-triangle__triangle--bottom {
-              border-color: lightgray transparent transparent transparent;
-              border-width: 0.83333em 0.83333em 0 0.83333em; }
-          html body .content .arrows .arrow-with-triangle--right {
-            transform: rotate(0deg); }
-          html body .content .arrows .arrow-with-triangle--left {
-            transform: rotate(180deg); }
-          html body .content .arrows .arrow-with-triangle--top {
-            transform: rotate(-90deg); }
-          html body .content .arrows .arrow-with-triangle--bottom {
-            transform: rotate(90deg); }
       html body .content .question-intro-text .text span {
         -ms-writing-mode: sideways-lr;
             writing-mode: sideways-lr; }
@@ -1177,6 +1216,9 @@ html {
             html body .content .question-body .text .ol > li:last-of-type,
             html body .content .question-body .text .ol > .li:last-of-type {
               margin-right: 0; } }
+      html body .content .question-body .text li.highlighted::before {
+        background-color: black;
+        color: lightgray; }
       html body .content .question-answers {
         display: -ms-flexbox;
         display: flex;
@@ -1199,47 +1241,9 @@ html {
             padding-bottom: 2.5em; } }
         html body .content .question-answers .answer {
           display: -ms-flexbox;
-          display: flex; }
-          html body .content .question-answers .answer .arrow-with-triangle {
-            -ms-flex-align: center;
-                align-items: center;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap;
-            -ms-flex-pack: center;
-                justify-content: center;
-            width: 3.75em;
-            transform: rotate(0deg); }
-            html body .content .question-answers .answer .arrow-with-triangle__line {
-              border-bottom: 1px solid;
-              width: calc(3.125em); }
-            html body .content .question-answers .answer .arrow-with-triangle__triangle {
-              border-style: solid;
-              height: 0;
-              width: 0;
-              border-color: transparent transparent transparent black;
-              border-width: 0.625em 0 0.625em 0.625em; }
-              html body .content .question-answers .answer .arrow-with-triangle__triangle--right {
-                border-color: transparent transparent transparent black;
-                border-width: 0.625em 0 0.625em 0.625em; }
-              html body .content .question-answers .answer .arrow-with-triangle__triangle--left {
-                border-color: transparent black transparent transparent;
-                border-width: 0.625em 0.625em 0.625em 0; }
-              html body .content .question-answers .answer .arrow-with-triangle__triangle--top {
-                border-color: transparent transparent black transparent;
-                border-width: 0 0.625em 0.625em 0.625em; }
-              html body .content .question-answers .answer .arrow-with-triangle__triangle--bottom {
-                border-color: black transparent transparent transparent;
-                border-width: 0.625em 0.625em 0 0.625em; }
-            html body .content .question-answers .answer .arrow-with-triangle--right {
-              transform: rotate(0deg); }
-            html body .content .question-answers .answer .arrow-with-triangle--left {
-              transform: rotate(180deg); }
-            html body .content .question-answers .answer .arrow-with-triangle--top {
-              transform: rotate(-90deg); }
-            html body .content .question-answers .answer .arrow-with-triangle--bottom {
-              transform: rotate(90deg); }
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column; }
           html body .content .question-answers .answer .button3D {
             font-size: 0.8em;
             letter-spacing: 2.5px;
@@ -1274,6 +1278,18 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content .question-answers .answer + .answer {
               margin-right: 0; } }
+          html body .content .question-answers .answer.incorrect .button3D {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto; }
+          html body .content .question-answers .answer.incorrect .lines {
+            position: relative; }
+            html body .content .question-answers .answer.incorrect .lines .line {
+              border-bottom: 1px solid;
+              position: absolute;
+              width: 100%; }
+              html body .content .question-answers .answer.incorrect .lines .line:first-of-type {
+                transform: rotate(45deg) translateX(-0.625em) translateY(-0.625em); }
+              html body .content .question-answers .answer.incorrect .lines .line:last-of-type {
+                transform: rotate(-45deg) translateX(0.625em) translateY(-0.625em); }
         @media only screen and (max-width: 767.9px) {
           html body .content .question-answers {
             -ms-flex-direction: column;
@@ -1304,8 +1320,21 @@ html {
   @media only screen and (max-width: 767.9px) and (min-width: 768px) {
     html body .content .question-answers .answer + .answer {
       margin-right: 0; } }
-      html body .content .email-signup-text .text {
-        font-size: 1.25em; }
+      html body .content .signup #mc_embed_signup_scroll {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        html body .content .signup #mc_embed_signup_scroll .mc-field-group {
+          display: none; }
+        html body .content .signup #mc_embed_signup_scroll .button {
+          font-size: 0.8em;
+          letter-spacing: 2.5px;
+          text-transform: uppercase;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all; }
+          html body .content .signup #mc_embed_signup_scroll .button:hover {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

@@ -66,58 +66,27 @@ img.emoji {
 	</div>
 </div>
 
-<div class="artwork artwork-circle-with-arrows">
+<div class="artwork artwork-circle-with-line">
 	<div class="circle"></div>
-	<div class="arrows">
-<span class="arrow-with-triangle arrow-with-triangle--left">
-	<span class="arrow-with-triangle__line"></span>
-	<span class="arrow-with-triangle__triangle"></span>
-
-	</span>
-</div>	<div class="arrows">
-<span class="arrow-with-triangle arrow-with-triangle--left">
-	<span class="arrow-with-triangle__line"></span>
-	<span class="arrow-with-triangle__triangle"></span>
-
-	</span>
-</div></div>
+	<div class="line"></div>
+</div>
 
 <div class="cells cells-2">
 	<div class="cell cell-1">
-		<div class="artwork artwork-4">
+		<div class="artwork artwork-cube">
 			
-<section class="cube">
-  <h3>Cube</h3>
-
-  <div class="cube__wrap">
-  	<div class="cube3d">
-        <div class="cube3d__face cube3d__face--front">
-
-        </div>
-
-        <div class="cube3d__face cube3d__face--back">
-
-        </div>
-
-        <div class="cube3d__face cube3d__face--top">
-
-        </div>
-
-        <div class="cube3d__face cube3d__face--bottom">
-
-        </div>
-
-        <div class="cube3d__face cube3d__face--left">
-
-        </div>
-
-        <div class="cube3d__face cube3d__face--right">
-
-        </div>
-
-  	</div>
-  </div>
-</section>
+<div class="cube">
+	<div class="cube__wrap">
+		<div class="cube3d">
+			<div class="cube3d__face cube3d__face--front"></div>
+			<div class="cube3d__face cube3d__face--back"></div>
+			<div class="cube3d__face cube3d__face--top"></div>
+			<div class="cube3d__face cube3d__face--bottom"></div>
+			<div class="cube3d__face cube3d__face--left"></div>
+			<div class="cube3d__face cube3d__face--right"></div>
+		</div>
+	</div>
+</div>
 		</div>
 	</div>
 
@@ -130,7 +99,7 @@ img.emoji {
 		<div class="question-intro-text"><span class="text">You must answer a question correctly before you may choose to <span>sign up</span></span></div>	</div>
 
 	<div class="cell cell-2">
-		<div class="artwork artwork-3">
+		<div class="artwork artwork-arrows">
 			<div class="arrows">
 <span class="arrow-with-triangle arrow-with-triangle--left">
 	<span class="arrow-with-triangle__line"></span>
@@ -159,12 +128,37 @@ img.emoji {
 </ol>
 </span></div>	</div>
 
-	<div class="cell cell-2">
-		<div class="question-answers"><div class="answer"><div class="button3D"><span class="text">Pension A</span></div></div><div class="answer"><div class="button3D"><span class="text">Pension B</span></div></div></div>	</div>
-</div>
-
+	<div id="answers" class="cell cell-2">
+		<div class="question-answers"><div class="answer"><div class="button3D"><span class="text" data-list-item=".question-body ol li:nth-of-type(2)" data-is-correct="false">Pension A</span></div><div class="lines"><span class="line line-1"></span><span class="line line-2"></div></div><div class="answer"><div class="button3D"><span class="text" data-list-item=".question-body ol li:nth-of-type(3)" data-is-correct="true">Pension B</span></div><div class="lines"><span class="line line-1"></span><span class="line line-2"></div></div></div>		
 <div class="signup">
-	<div class="email-signup-text"><span class="text">Enter your email address</span></div>	<div class="email-signup-button"><span class="text">Signup</span></div></div>
+	<!-- Begin Mailchimp Signup Form -->
+	<div id="mc_embed_signup">
+		<form action="https://metamn.us13.list-manage.com/subscribe/post?u=b178b1c2898e554fb49906630&amp;id=6f3b53b2da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+				<div class="mc-field-group">
+					<label for="mce-EMAIL">Email Address</label>
+					<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				</div>
+
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+
+				<div style="position: absolute; left: -5000px;" aria-hidden="true">
+					<input type="text" name="b_b178b1c2898e554fb49906630_6f3b53b2da" tabindex="-1" value="">
+				</div>
+
+				<div class="clear">
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</div>
+			</div>
+		</form>
+	</div>
+	<!--End mc_embed_signup-->
+</div>
+	</div>
+</div>
 
 
 </div>
