@@ -607,6 +607,10 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content .id {
             padding-right: 2.5em; } }
+        @media only screen and (min-width: 1025px) {
+          html body .content .id {
+            top: auto;
+            bottom: 2.5em; } }
       html body .content .slide {
         position: absolute;
         transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
@@ -635,27 +639,17 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content .slide {
             padding-right: 2.5em; } }
-        @media only screen and (orientation: portrait) {
-          html body .content .slide.slide-1 .intro-text-2 {
-            margin-top: 1.25em; } }
+        html body .content .slide.slide-1 .intro-text-2 {
+          margin-top: 1.25em; }
+          @media only screen and (min-width: 1025px) {
+            html body .content .slide.slide-1 .intro-text-2 {
+              margin-top: 0; } }
         html body .content .slide.slide-1 .call-to-action {
-          width: 100%;
+          max-width: 50vw;
           position: fixed;
           bottom: 0; }
           @media only screen and (max-width: 767.9px) {
             html body .content .slide.slide-1 .call-to-action {
-              max-width: calc(100% - 2.5em); } }
-          @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            html body .content .slide.slide-1 .call-to-action {
-              max-width: calc(100% - 5em); } }
-          @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-            html body .content .slide.slide-1 .call-to-action {
-              max-width: 37.5em; } }
-          @media only screen and (min-width: 1600.1px) {
-            html body .content .slide.slide-1 .call-to-action {
-              max-width: 37.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .slide.slide-1 .call-to-action {
               margin-top: 2.5em; } }
           @media only screen and (min-width: 768px) {
             html body .content .slide.slide-1 .call-to-action {
@@ -678,6 +672,44 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content .slide.slide-1 .call-to-action {
               margin-right: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-1 .call-to-action {
+              max-width: none;
+              margin-right: 2.5em; } }
+          @media only screen and (min-width: 1025px) {
+            html body .content .slide.slide-1 .call-to-action {
+              width: auto;
+              max-width: none;
+              left: 50vw; } }
+  @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-top: 0; } }
+  @media only screen and (min-width: 1025px) and (min-width: 768px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-top: 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 1025px) and (min-width: 768px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-bottom: 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-left: 0; } }
+  @media only screen and (min-width: 1025px) and (min-width: 768px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-left: 0; } }
+  @media only screen and (min-width: 1025px) and (max-width: 767.9px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-right: 0; } }
+  @media only screen and (min-width: 1025px) and (min-width: 768px) {
+    html body .content .slide.slide-1 .call-to-action {
+      margin-right: 0; } }
+          @media only screen and (min-width: 1025px) {
+              html body .content .slide.slide-1 .call-to-action .button3D {
+                padding-top: 3.75em;
+                margin-bottom: 1.875em;
+                padding-bottom: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
             html body .content .slide.slide-1 .call-to-action .button3D .text .arrow-with-triangle {
               left: 0; } }
@@ -753,22 +785,32 @@ html {
         @media only screen and (min-width: 414px) and (max-width: 767.9px) {
           html body .content .site-title .text {
             font-size: 1.953em; } }
-      html body .content .intro-text-1 .text {
-        font-size: 1.25em; }
-        @media only screen and (min-width: 360px) and (max-width: 413.9px) {
-          html body .content .intro-text-1 .text {
-            font-size: 1.563em; } }
-        @media only screen and (min-width: 414px) and (max-width: 767.9px) {
-          html body .content .intro-text-1 .text {
-            font-size: 1.563em; } }
-      html body .content .intro-text-2 .text {
-        font-size: 1.25em; }
-        @media only screen and (min-width: 360px) and (max-width: 413.9px) {
-          html body .content .intro-text-2 .text {
-            font-size: 1.563em; } }
-        @media only screen and (min-width: 414px) and (max-width: 767.9px) {
-          html body .content .intro-text-2 .text {
-            font-size: 1.563em; } }
+      html body .content .intro-text-1 {
+        max-width: 37.5em; }
+        html body .content .intro-text-1 .text {
+          font-size: 1.25em; }
+          @media only screen and (min-width: 360px) and (max-width: 413.9px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 414px) and (max-width: 767.9px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 1025px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+      html body .content .intro-text-2 {
+        max-width: 37.5em; }
+        html body .content .intro-text-2 .text {
+          font-size: 1.25em; }
+          @media only screen and (min-width: 360px) and (max-width: 413.9px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 414px) and (max-width: 767.9px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 1025px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
       html body .content .call-to-action {
         display: -ms-flexbox;
         display: flex; }
@@ -836,6 +878,9 @@ html {
               transform: skew(-10deg); }
               html body .content .call-to-action .button3D .text:hover .arrow-with-triangle {
                 left: 5em; }
+          @media only screen and (orientation: landscape) {
+            html body .content .call-to-action .button3D {
+              max-width: 18.75em; } }
       html body .content .question-body .text {
         display: -ms-flexbox;
         display: flex;
