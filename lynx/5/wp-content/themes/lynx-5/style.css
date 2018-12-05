@@ -589,11 +589,15 @@ html {
         position: absolute;
         height: auto; }
       html body .content .id {
+        transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: all;
         position: fixed;
-        z-index: 1;
+        z-index: 100;
         top: 50vh;
-        left: 0; }
+        left: 2.5em; }
       html body .content .slide {
+        transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: all;
         position: absolute; }
         @media only screen and (max-width: 767.9px) {
           html body .content .slide {
@@ -641,6 +645,8 @@ html {
       @media only screen and (min-width: 768px) {
         html body .content .slide-2 .question-body {
           padding-bottom: 2.5em; } }
+      html body .content .slide-2 .question-body ol {
+        max-width: 37.5em; }
 
 @media only screen and (orientation: portrait) and (max-width: 767.9px) {
   html body .content .slide-2 .answer + .answer {
@@ -721,16 +727,18 @@ html {
             padding-bottom: 2.5em; } }
       html body .content .slide-2 .signup {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        min-height: 100vh;
+        z-index: 90;
+        top: 45vh;
+        left: calc(50vw - 6.25em);
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
             justify-content: center;
         -ms-flex-align: center;
             align-items: center; }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content .slide-2 .signup {
+            left: 30vw; } }
         html body .content .slide-2 .signup.hidden {
           display: none; }
       html body .content .site-title .link {
@@ -747,29 +755,31 @@ html {
         font-style: normal;
         font-weight: normal;
         font-family: GalapagosCTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
-        font-size: 2.4441em; }
+        font-size: 1.563em; }
       html body .content .intro-text-1 .text {
-        font-size: 1.563em; }
+        font-size: 1.25em; }
       html body .content .intro-text-2 .text {
-        font-size: 1.563em; }
+        font-size: 1.25em; }
       html body .content .call-to-action {
         display: -ms-flexbox;
         display: flex; }
         html body .content .call-to-action .button3D {
+          letter-spacing: 0.625em;
+          text-transform: uppercase;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
+          border: 1px solid;
+          padding: 0.3125em 0.625em;
+          border: 0.07812em solid;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
           transform: skew(-10deg); }
+          html body .content .call-to-action .button3D:hover {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
           html body .content .call-to-action .button3D .text {
             display: -ms-flexbox;
             display: flex;
-            letter-spacing: 0.625em;
-            text-transform: uppercase;
-            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            will-change: all;
-            border: 1px solid;
-            padding: 0.3125em 0.625em;
-            border: 0.07812em solid;
             font-weight: bold; }
-            html body .content .call-to-action .button3D .text:hover {
-              cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
             html body .content .call-to-action .button3D .text .arrow-with-triangle {
               position: relative;
               left: 2.5em;
@@ -1064,25 +1074,29 @@ html {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         html body .content .question-answers .answer {
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-direction: column;
               flex-direction: column; }
           html body .content .question-answers .answer .button3D {
+            letter-spacing: 0.625em;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            will-change: all;
+            border: 1px solid;
+            padding: 0.3125em 0.625em;
+            border: 0.07812em solid;
+            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            will-change: all;
             transform: skew(-10deg); }
+            html body .content .question-answers .answer .button3D:hover {
+              cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
             html body .content .question-answers .answer .button3D .text {
               display: -ms-flexbox;
               display: flex;
-              letter-spacing: 0.625em;
-              text-transform: uppercase;
-              transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              will-change: all;
-              border: 1px solid;
-              padding: 0.3125em 0.625em;
-              border: 0.07812em solid;
               font-weight: bold; }
-              html body .content .question-answers .answer .button3D .text:hover {
-                cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
               html body .content .question-answers .answer .button3D .text .arrow-with-triangle {
                 position: relative;
                 left: 2.5em;
@@ -1129,20 +1143,12 @@ html {
                 transform: skew(-10deg); }
                 html body .content .question-answers .answer .button3D .text:hover .arrow-with-triangle {
                   left: 5em; }
-          html body .content .question-answers .answer.incorrect .button3D {
+          html body .content .question-answers .answer.incorrect {
             cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto; }
-            html body .content .question-answers .answer.incorrect .button3D:hover {
-              transform: skew(0deg); }
-          html body .content .question-answers .answer.incorrect .lines {
-            position: relative; }
-            html body .content .question-answers .answer.incorrect .lines .line {
-              border-bottom: 1px solid;
-              position: absolute;
-              width: 100%; }
-              html body .content .question-answers .answer.incorrect .lines .line:first-of-type {
-                transform: rotate(45deg) translateX(-0.625em) translateY(-0.625em); }
-              html body .content .question-answers .answer.incorrect .lines .line:last-of-type {
-                transform: rotate(-45deg) translateX(0.625em) translateY(-0.625em); }
+            html body .content .question-answers .answer.incorrect .button3D .text {
+              visibility: hidden; }
+          html body .content .question-answers .answer.hidden {
+            display: none; }
       html body .content .signup #mc_embed_signup_scroll {
         display: -ms-flexbox;
         display: flex;
@@ -1156,25 +1162,79 @@ html {
           transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: all;
           border: 1px solid;
-          padding: 0.3125em 0.625em; }
+          padding: 0.3125em 0.625em;
+          border: 0.07812em solid;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
+          transform: skew(-10deg); }
           html body .content .signup #mc_embed_signup_scroll .button:hover {
             cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+          html body .content .signup #mc_embed_signup_scroll .button .text {
+            display: -ms-flexbox;
+            display: flex;
+            font-weight: bold; }
+            html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle {
+              position: relative;
+              left: 2.5em;
+              -ms-flex-align: center;
+                  align-items: center;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              width: 3.75em;
+              transform: rotate(0deg); }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__line {
+                border-bottom: 1px solid;
+                width: calc(3.125em); }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__triangle {
+                border-style: solid;
+                height: 0;
+                width: 0;
+                border-color: transparent transparent transparent black;
+                border-width: 0.625em 0 0.625em 0.625em; }
+                html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__triangle--right {
+                  border-color: transparent transparent transparent black;
+                  border-width: 0.625em 0 0.625em 0.625em; }
+                html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__triangle--left {
+                  border-color: transparent black transparent transparent;
+                  border-width: 0.625em 0.625em 0.625em 0; }
+                html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__triangle--top {
+                  border-color: transparent transparent black transparent;
+                  border-width: 0 0.625em 0.625em 0.625em; }
+                html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle__triangle--bottom {
+                  border-color: black transparent transparent transparent;
+                  border-width: 0.625em 0.625em 0 0.625em; }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle--right {
+                transform: rotate(0deg); }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle--left {
+                transform: rotate(180deg); }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle--top {
+                transform: rotate(-90deg); }
+              html body .content .signup #mc_embed_signup_scroll .button .text .arrow-with-triangle--bottom {
+                transform: rotate(90deg); }
+            html body .content .signup #mc_embed_signup_scroll .button .text:hover {
+              transform: skew(-10deg); }
+              html body .content .signup #mc_embed_signup_scroll .button .text:hover .arrow-with-triangle {
+                left: 5em; }
       html body .content .signup .circle {
         background-color: #eee;
         color: black;
-        border-radius: 30vw;
+        border-radius: 18.75em;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center;
         -ms-flex-pack: center;
             justify-content: center;
-        height: 30vw;
-        min-height: 30vw;
-        min-width: 30vw;
-        width: 30vw;
+        height: 18.75em;
+        min-height: 18.75em;
+        min-width: 18.75em;
+        width: 18.75em;
         overflow: hidden;
-        border: 1px solid;
+        border: 0.07812em solid;
         position: absolute;
         z-index: -1; }
     html body .hidden {

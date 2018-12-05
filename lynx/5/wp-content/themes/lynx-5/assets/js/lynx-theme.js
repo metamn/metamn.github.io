@@ -5,12 +5,17 @@
 
 // Canvas long shadow
 // - Original idea from https://codepen.io/mladen___/pen/gbvqBo
-// - Added: parameters, responsiveness
+// - Added: parameters, responsiveness, touch events
 //
 // Params:
-// - canvasHeight: the height of the canvas, optional
-// - used to redraw the canvas when the content change
-var canvasLongShadow = function(ID, canvasHeight) {
+// canvasHeight
+// 	- the height of the canvas, optional
+// 	- used to redraw the canvas when the content change
+// displayLight
+// 	- to display the light or not
+var canvasLongShadow = function(ID, canvasHeight, displayLight) {
+	var displayLight = (typeof displayLight !== 'undefined') ? displayLight : true;
+
 	// Set up the canvas
 	// =================
 	//
@@ -39,7 +44,7 @@ var canvasLongShadow = function(ID, canvasHeight) {
 	// - made responsive
 	var screenSize = c.getBoundingClientRect();
 	var screenSizeMin = Math.min(screenSize.width, screenSize.height);
-	var lightRadius = screenSizeMin / 1.2;
+	var lightRadius = screenSizeMin / 2;
 
 	// The color of the light
 	// - more neat if the inner color is darker
@@ -80,15 +85,11 @@ var canvasLongShadow = function(ID, canvasHeight) {
 	}
 
 	// Moving the light on touch devices
-	c.addEventListener("touchmove", touchMove);
-	function touchMove(e) {
-		if (e.targetTouches && e.targetTouches[0]) {
-			e = e.targetTouches[0];
-		}
-
-		light.x = e.clientX;
-	    light.y = e.clientY;
-	}
+	// - https://stackoverflow.com/questions/49157880/how-to-handle-touch-events-with-html5-canvas
+	document.body.addEventListener('touchmove', function(e) {
+	   light.x = e.pageX;
+	   light.y = e.pageY;
+	}, false);
 
 
 
@@ -96,7 +97,7 @@ var canvasLongShadow = function(ID, canvasHeight) {
 	// =========
 	//
 	// The number of boxes
-	var boxNumber = 4;
+	var boxNumber = 5;
 
 	// The color of the boxes
 	// - they will be randomly choosen
@@ -226,7 +227,10 @@ var canvasLongShadow = function(ID, canvasHeight) {
 
 	function draw() {
 	    ctx.clearRect(0, 0, c.width, c.height);
-	    drawLight();
+
+		if (displayLight) {
+			drawLight();
+		}
 
 	    for (var i = 0; i < boxes.length; i++) {
 	        boxes[i].rotate();
@@ -263,10 +267,10 @@ var cta = function(ID) {
 		slide2.classList.remove('hidden');
 		id.classList.add('hidden');
 
-		canvasLongShadow('canvas', slide2.scrollHeight);
+		canvasLongShadow('canvas', slide2.scrollHeight, false);
 	}
 
-	cta.addEventListener('click', onClick, false);
+	cta.addEventListener('click', onClick);
 }
 
 // The question answers
@@ -299,10 +303,15 @@ var questionAnswers = function(ID) {
 			if (isCorrect == 'false') {
 				el.parentNode.parentNode.classList.add('incorrect');
 			} else {
-				highlightListItem(listItemID);
+				//highlightListItem(listItemID);
 
 				var signup = document.querySelector('.signup');
 				signup.classList.remove('hidden');
+
+				var buttons = document.querySelectorAll('.answer');
+				for (var i = 0; i < buttons.length; i++) {
+					buttons[i].classList.add('hidden');
+				}
 			}
 		}
 
@@ -333,8 +342,8 @@ var questionAnswers = function(ID) {
 
 	for (var i = 0; i < answers.length; i++) {
 		answers[i].addEventListener('click', onClick, false);
-		answers[i].addEventListener('mouseover', onMouseOver, false);
-		answers[i].addEventListener('mouseout', onMouseOut, false);
+		//answers[i].addEventListener('mouseover', onMouseOver, false);
+		//answers[i].addEventListener('mouseout', onMouseOut, false);
 	}
 }
 
