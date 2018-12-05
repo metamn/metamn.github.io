@@ -39,36 +39,6 @@
  *
  */
 @font-face {
-  font-family: 'nimbus_sans_lbold_italic';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/nimbussanl-bolita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bolita-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'nimbus_sans_lbold';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/nimbussanl-bol-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bol-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular_italic';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/nimbussanl-regita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-regita-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/nimbussanl-reg-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-reg-webfont.woff") format("woff"); }
-
-@font-face {
-  font-family: 'nimbus_monoregular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/nimbusmono-regular-webfont.woff2") format("woff2"), url("assets/fonts/nimbusmono-regular-webfont.woff") format("woff"); }
-
-@font-face {
   font-family: 'GalapagosCTrial-Regular';
   font-style: normal;
   font-weight: normal;
@@ -81,34 +51,10 @@
   src: url("assets/fonts/GalapagosCTrial-Semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: 'GalapagosBTrial-Light';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/GalapagosBTrial-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'GalapagosBTrial-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/GalapagosBTrial-Regular.woff") format("woff"); }
-
-@font-face {
   font-family: 'MonumentGroteskTrial-Regular';
   font-style: normal;
   font-weight: normal;
   src: url("assets/fonts/MonumentGroteskTrial-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'MonumentGroteskTrial-Mono';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/MonumentGroteskTrial-Mono.woff") format("woff"); }
-
-@font-face {
-  font-family: 'MonumentGroteskTrial-Semi-Mono';
-  font-style: normal;
-  font-weight: normal;
-  src: url("assets/fonts/MonumentGroteskTrial-Semi-Mono.woff") format("woff"); }
 
 /* - fixing big child elements breaking smaller parent's width and height in Firefox
 - http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
@@ -523,6 +469,7 @@ html {
     font-family: MonumentGroteskTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
     background-color: #eee;
     color: black;
+    letter-spacing: 1px;
     cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
     display: -ms-flexbox;
     display: flex;
@@ -554,18 +501,15 @@ html {
     html body object,
     html body embed {
       max-width: 100%; }
-    @media only screen and (max-width: 767.9px) {
-      html body {
-        font-size: 1.563em; } }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       html body {
-        font-size: 1.953em; } }
+        font-size: 1.563em; } }
     @media only screen and (min-width: 1025px) and (max-width: 1600px) {
       html body {
-        font-size: 2.4441em; } }
+        font-size: 1.563em; } }
     @media only screen and (min-width: 1600.1px) {
       html body {
-        font-size: 3.052em; } }
+        font-size: 1.953em; } }
     html body button,
     html body input,
     html body optgroup,
@@ -618,8 +562,7 @@ html {
     html body button,
     html body .button,
     html body input[type='submit'] {
-      font-size: 0.8em;
-      letter-spacing: 2.5px;
+      letter-spacing: 0.625em;
       text-transform: uppercase;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
       will-change: all;
@@ -637,66 +580,159 @@ html {
     html body .content {
       position: relative;
       width: 100%;
-      min-height: 100vh; }
+      min-height: 100vh;
+      height: auto; }
       html body .content #canvas {
         background-color: #eee;
         width: 100%;
         height: 100%;
-        position: absolute; }
+        position: absolute;
+        height: auto; }
       html body .content .id {
         position: fixed;
         z-index: 1;
-        bottom: 2.5em;
-        right: 2.5em; }
-        @media only screen and (orientation: portrait) {
-          html body .content .id {
-            bottom: 5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .id.bottom-0 {
-            bottom: 0; } }
-        html body .content .id .logo {
-          display: none; }
+        top: 50vh;
+        left: 0; }
       html body .content .slide {
         position: absolute; }
-        html body .content .slide.hidden {
-          display: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .slide {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .slide {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .slide {
+            padding-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .slide {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .slide {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .slide {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .slide {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .slide {
+            padding-right: 2.5em; } }
       html body .content .slide-1 .call-to-action {
+        max-width: 16.25em;
         position: fixed;
-        bottom: 2.5em; }
-      html body .content .slide-2 {
-        font-size: 50%; }
+        top: 75vh; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .slide-2 .question-body {
+          padding-right: 0.625em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .slide-2 .question-body {
+          padding-right: 1.25em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .slide-2 .question-body {
+          padding-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .slide-2 .question-body {
+          padding-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .slide-2 .question-body {
+          padding-bottom: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .slide-2 .question-body {
+          padding-bottom: 2.5em; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-top: 1.25em; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-top: 1.25em; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-left: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-left: 0; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-right: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-right: 0; } }
+
+@media only screen and (orientation: landscape) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-left: 1.25em; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-left: 2.5em; } }
+
+@media only screen and (orientation: landscape) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-top: 0; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-top: 0; } }
+
+@media only screen and (orientation: landscape) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: landscape) and (max-width: 767.9px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-right: 0; } }
+
+@media only screen and (orientation: landscape) and (min-width: 768px) {
+  html body .content .slide-2 .answer + .answer {
+    margin-right: 0; } }
+      html body .content .slide-2 .site-title {
+        background-color: transparent; }
         @media only screen and (max-width: 767.9px) {
-          html body .content .slide-2 .question-body {
+          html body .content .slide-2 .site-title {
             padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content .slide-2 .question-body {
+          html body .content .slide-2 .site-title {
             padding-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content .slide-2 .question-body {
+          html body .content .slide-2 .site-title {
             padding-bottom: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content .slide-2 .question-body {
+          html body .content .slide-2 .site-title {
             padding-bottom: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .slide-2 .question-answers {
-            padding-bottom: 20vh; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .slide-2 .question-answers {
-            margin-left: 5em; } }
-        html body .content .slide-2 .signup {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          min-height: 100vh;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center; }
-          html body .content .slide-2 .signup.hidden {
-            display: none; }
+      html body .content .slide-2 .signup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        html body .content .slide-2 .signup.hidden {
+          display: none; }
       html body .content .site-title .link {
         background-color: transparent;
         color: black;
@@ -711,20 +747,75 @@ html {
         font-style: normal;
         font-weight: normal;
         font-family: GalapagosCTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 2.4441em; }
+      html body .content .intro-text-1 .text {
+        font-size: 1.563em; }
+      html body .content .intro-text-2 .text {
         font-size: 1.563em; }
       html body .content .call-to-action {
         display: -ms-flexbox;
         display: flex; }
         html body .content .call-to-action .button3D {
-          font-size: 0.8em;
-          letter-spacing: 2.5px;
-          text-transform: uppercase;
-          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          will-change: all;
-          border: 1px solid;
-          padding: 0.3125em 0.625em; }
-          html body .content .call-to-action .button3D:hover {
-            cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+          transform: skew(-10deg); }
+          html body .content .call-to-action .button3D .text {
+            display: -ms-flexbox;
+            display: flex;
+            letter-spacing: 0.625em;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            will-change: all;
+            border: 1px solid;
+            padding: 0.3125em 0.625em;
+            border: 0.07812em solid;
+            font-weight: bold; }
+            html body .content .call-to-action .button3D .text:hover {
+              cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+            html body .content .call-to-action .button3D .text .arrow-with-triangle {
+              position: relative;
+              left: 2.5em;
+              -ms-flex-align: center;
+                  align-items: center;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              width: 3.75em;
+              transform: rotate(0deg); }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle__line {
+                border-bottom: 1px solid;
+                width: calc(3.125em); }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle__triangle {
+                border-style: solid;
+                height: 0;
+                width: 0;
+                border-color: transparent transparent transparent black;
+                border-width: 0.625em 0 0.625em 0.625em; }
+                html body .content .call-to-action .button3D .text .arrow-with-triangle__triangle--right {
+                  border-color: transparent transparent transparent black;
+                  border-width: 0.625em 0 0.625em 0.625em; }
+                html body .content .call-to-action .button3D .text .arrow-with-triangle__triangle--left {
+                  border-color: transparent black transparent transparent;
+                  border-width: 0.625em 0.625em 0.625em 0; }
+                html body .content .call-to-action .button3D .text .arrow-with-triangle__triangle--top {
+                  border-color: transparent transparent black transparent;
+                  border-width: 0 0.625em 0.625em 0.625em; }
+                html body .content .call-to-action .button3D .text .arrow-with-triangle__triangle--bottom {
+                  border-color: black transparent transparent transparent;
+                  border-width: 0.625em 0.625em 0 0.625em; }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle--right {
+                transform: rotate(0deg); }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle--left {
+                transform: rotate(180deg); }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle--top {
+                transform: rotate(-90deg); }
+              html body .content .call-to-action .button3D .text .arrow-with-triangle--bottom {
+                transform: rotate(90deg); }
+            html body .content .call-to-action .button3D .text:hover {
+              transform: skew(-10deg); }
+              html body .content .call-to-action .button3D .text:hover .arrow-with-triangle {
+                left: 5em; }
       html body .content .question-body .text ol,
       html body .content .question-body .text .ol {
         list-style-position: inside; }
@@ -971,49 +1062,77 @@ html {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        width: 100%; }
+            flex-wrap: wrap; }
         html body .content .question-answers .answer {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-direction: column;
               flex-direction: column; }
           html body .content .question-answers .answer .button3D {
-            font-size: 0.8em;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            will-change: all;
-            border: 1px solid;
-            padding: 0.3125em 0.625em; }
-            html body .content .question-answers .answer .button3D:hover {
-              cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .question-answers .answer + .answer {
-              margin-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .question-answers .answer + .answer {
-              margin-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .question-answers .answer + .answer {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .question-answers .answer + .answer {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .question-answers .answer + .answer {
-              margin-bottom: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .question-answers .answer + .answer {
-              margin-bottom: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .question-answers .answer + .answer {
-              margin-right: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .question-answers .answer + .answer {
-              margin-right: 0; } }
+            transform: skew(-10deg); }
+            html body .content .question-answers .answer .button3D .text {
+              display: -ms-flexbox;
+              display: flex;
+              letter-spacing: 0.625em;
+              text-transform: uppercase;
+              transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+              will-change: all;
+              border: 1px solid;
+              padding: 0.3125em 0.625em;
+              border: 0.07812em solid;
+              font-weight: bold; }
+              html body .content .question-answers .answer .button3D .text:hover {
+                cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+              html body .content .question-answers .answer .button3D .text .arrow-with-triangle {
+                position: relative;
+                left: 2.5em;
+                -ms-flex-align: center;
+                    align-items: center;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -ms-flex-pack: center;
+                    justify-content: center;
+                width: 3.75em;
+                transform: rotate(0deg); }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle__line {
+                  border-bottom: 1px solid;
+                  width: calc(3.125em); }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle__triangle {
+                  border-style: solid;
+                  height: 0;
+                  width: 0;
+                  border-color: transparent transparent transparent black;
+                  border-width: 0.625em 0 0.625em 0.625em; }
+                  html body .content .question-answers .answer .button3D .text .arrow-with-triangle__triangle--right {
+                    border-color: transparent transparent transparent black;
+                    border-width: 0.625em 0 0.625em 0.625em; }
+                  html body .content .question-answers .answer .button3D .text .arrow-with-triangle__triangle--left {
+                    border-color: transparent black transparent transparent;
+                    border-width: 0.625em 0.625em 0.625em 0; }
+                  html body .content .question-answers .answer .button3D .text .arrow-with-triangle__triangle--top {
+                    border-color: transparent transparent black transparent;
+                    border-width: 0 0.625em 0.625em 0.625em; }
+                  html body .content .question-answers .answer .button3D .text .arrow-with-triangle__triangle--bottom {
+                    border-color: black transparent transparent transparent;
+                    border-width: 0.625em 0.625em 0 0.625em; }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle--right {
+                  transform: rotate(0deg); }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle--left {
+                  transform: rotate(180deg); }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle--top {
+                  transform: rotate(-90deg); }
+                html body .content .question-answers .answer .button3D .text .arrow-with-triangle--bottom {
+                  transform: rotate(90deg); }
+              html body .content .question-answers .answer .button3D .text:hover {
+                transform: skew(-10deg); }
+                html body .content .question-answers .answer .button3D .text:hover .arrow-with-triangle {
+                  left: 5em; }
           html body .content .question-answers .answer.incorrect .button3D {
             cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto; }
+            html body .content .question-answers .answer.incorrect .button3D:hover {
+              transform: skew(0deg); }
           html body .content .question-answers .answer.incorrect .lines {
             position: relative; }
             html body .content .question-answers .answer.incorrect .lines .line {
@@ -1032,8 +1151,7 @@ html {
         html body .content .signup #mc_embed_signup_scroll .mc-field-group {
           display: none; }
         html body .content .signup #mc_embed_signup_scroll .button {
-          font-size: 0.8em;
-          letter-spacing: 2.5px;
+          letter-spacing: 0.625em;
           text-transform: uppercase;
           transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: all;
