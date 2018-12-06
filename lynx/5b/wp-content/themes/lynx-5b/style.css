@@ -1,0 +1,1235 @@
+/*!
+ Theme Name:   Lynx 5B
+ Theme URI:    https://metamn.io/
+ Description:  A WordPress landinpage theme.
+ Author:       Csongor Bartus
+ Author URI:   https://metamn.io/
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         landinpage
+ Text Domain:  lynx-theme
+*/
+/**
+ * The default skin
+ *
+ * - black on white
+ * - minimalist and brutalist look
+ *
+ * Enabling a skin / theme is done in `style.scss`
+ * Example: `@import 'assets/scss/themes/white.scss';`
+ *
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts
+ */
+/**
+ * Typography
+ *
+ */
+/**
+  * Layout
+  *
+  */
+/**
+ * Decorations
+ *
+ */
+@font-face {
+  font-family: 'GalapagosCTrial-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GalapagosCTrial-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GalapagosCTrial-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GalapagosCTrial-Semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'MonumentGroteskTrial-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/MonumentGroteskTrial-Regular.woff") format("woff"); }
+
+/* - fixing big child elements breaking smaller parent's width and height in Firefox
+- http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
+*/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+     ========================================================================== */
+/**
+   * 1. Correct the line height in all browsers.
+   * 2. Prevent adjustments of font size after orientation changes in
+   *    IE on Windows Phone and in iOS.
+   */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers (opinionated).
+   */
+body {
+  margin: 0; }
+
+/**
+   * Add the correct display in IE 9-.
+   */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in IE.
+   */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+   * Add the correct margin in IE 8.
+   */
+figure {
+  margin: 1em 40px; }
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * 1. Remove the gray background on active links in IE 10.
+   * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+   */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+   */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font style in Android 4.3-.
+   */
+dfn {
+  font-style: italic; }
+
+/**
+   * Add the correct background and color in IE 9-.
+   */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+audio,
+video {
+  display: inline-block; }
+
+/**
+   * Add the correct display in iOS 4-7.
+   */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+   * Remove the border on images inside links in IE 10-.
+   */
+img {
+  border-style: none; }
+
+/**
+   * Hide the overflow in IE.
+   */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers (opinionated).
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+   *    controls in Android 4.
+   * 2. Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * 1. Add the correct display in IE 9-.
+   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+   * Remove the default vertical scrollbar in IE.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10-.
+   * 2. Remove the padding in IE 10-.
+   */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in Edge, IE, and Firefox.
+   */
+details,
+menu {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Scripting
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+canvas {
+  display: inline-block; }
+
+/**
+   * Add the correct display in IE.
+   */
+template {
+  display: none; }
+
+/* Hidden
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10-.
+   */
+[hidden] {
+  display: none; }
+
+* {
+  min-height: 0; }
+
+* {
+  min-width: 0; }
+
+html {
+  box-sizing: border-box; }
+  html *,
+  html *::before,
+  html *::after {
+    box-sizing: inherit; }
+  html body {
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-family: MonumentGroteskTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: black;
+    letter-spacing: 1px;
+    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    overflow-x: hidden;
+    width: 100%; }
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      font-size: 1em;
+      font-weight: normal;
+      margin: 0;
+      padding: 0; }
+    html body p,
+    html body figure,
+    html body blockquote,
+    html body ul,
+    html body ol,
+    html body li {
+      margin: 0;
+      padding: 0; }
+    html body a {
+      word-wrap: break-word; }
+    html body iframe,
+    html body object,
+    html body embed {
+      max-width: 100%; }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      html body {
+        font-size: 1.563em; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+      html body {
+        font-size: 1.563em; } }
+    @media only screen and (min-width: 1600.1px) {
+      html body {
+        font-size: 1.953em; } }
+    html body button,
+    html body input,
+    html body optgroup,
+    html body select,
+    html body textarea,
+    html body input[type='button'],
+    html body input[type='reset'],
+    html body input[type='submit'],
+    html body input[type='checkbox'],
+    html body input[type='radio'],
+    html body input[type='number'],
+    html body input[type='search'],
+    html body input[type='url'] {
+      font-style: normal;
+      font-weight: normal;
+      font-family: MonumentGroteskTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+      background-color: #fafafa;
+      color: black;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 0; }
+    html body input[type='text'],
+    html body input[type='url'],
+    html body .input-text,
+    html body input[type='email'],
+    html body input[type='tel'],
+    html body input[type='password'],
+    html body input[type='file'],
+    html body input[type='search'] {
+      border-bottom: 1px solid;
+      padding-bottom: 0.625em;
+      width: 100%; }
+    html body select {
+      border: 1px solid;
+      padding: 0.3125em;
+      width: 100%; }
+    html body label {
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 0.625em;
+      padding-top: 1.25em; }
+    html body fieldset {
+      border: 1px solid;
+      margin: 0;
+      padding: 1.25em; }
+    html body textarea {
+      border: 1px solid;
+      padding: 1.25em;
+      width: 100%; }
+    html body button,
+    html body .button,
+    html body input[type='submit'] {
+      letter-spacing: 0.625em;
+      text-transform: uppercase;
+      transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      will-change: all;
+      border: 1px solid;
+      padding: 0.3125em 0.625em; }
+      html body button:hover,
+      html body .button:hover,
+      html body input[type='submit']:hover {
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+    html body a {
+      transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      will-change: all; }
+      html body a:hover {
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+    html body .content {
+      width: 100%; }
+      html body .content .slide {
+        transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: all;
+        position: relative; }
+        html body .content .slide.slide-1 {
+          width: 100%;
+          min-height: 100vh;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          position: absolute;
+          left: 0;
+          top: 0; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-1 {
+              padding-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-1 {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-1 {
+              padding-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-1 {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-1 {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-1 {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-1 {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-1 {
+              padding-right: 2.5em; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-top: 2.5em; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-top: 2.5em; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-bottom: 0; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-left: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-left: 0; } }
+
+@media only screen and (orientation: portrait) and (max-width: 767.9px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-right: 0; } }
+
+@media only screen and (orientation: portrait) and (min-width: 768px) {
+  html body .content .slide.slide-1 .intro-text-2 {
+    margin-right: 0; } }
+        html body .content .slide.slide-2 {
+          border: 0.07812em solid;
+          transform: skew(-10deg);
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-2 {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-2 {
+              margin-top: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-2 {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-2 {
+              margin-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-2 {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-2 {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .slide.slide-2 {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .slide.slide-2 {
+              margin-right: 0; } }
+          @media only screen and (orientation: portrait) {
+            html body .content .slide.slide-2 {
+              min-height: 100vh;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+              html body .content .slide.slide-2.slide-2--show {
+                width: 90vw;
+                left: 5vw;
+                transform: skew(0deg); }
+              html body .content .slide.slide-2.slide-2--collapse {
+                min-height: auto;
+                margin-top: 50vh; } }
+          @media only screen and (orientation: landscape) {
+            html body .content .slide.slide-2 {
+              position: absolute;
+              height: calc(100vh - 2.5em);
+              left: 45vw;
+              width: 33vw; }
+              html body .content .slide.slide-2 .signup {
+                position: fixed;
+                top: 50vh; } }
+  @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    html body .content .slide.slide-2 {
+      left: auto;
+      right: 5em; }
+      html body .content .slide.slide-2.slide-2--show {
+        width: 65vw; }
+      html body .content .slide.slide-2.slide-2--collapse {
+        right: auto;
+        left: 60vw; } }
+          html body .content .slide.slide-2 > * {
+            display: none; }
+          html body .content .slide.slide-2 .call-to-action {
+            display: -ms-flexbox;
+            display: flex; }
+          html body .content .slide.slide-2--show {
+            width: 45vw;
+            left: calc((100vw - 45vw) / 2);
+            background-color: #fafafa;
+            color: black;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .slide.slide-2--show {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .slide.slide-2--show {
+                padding-top: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .slide.slide-2--show {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .slide.slide-2--show {
+                padding-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .slide.slide-2--show {
+                padding-left: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .slide.slide-2--show {
+                padding-left: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .slide.slide-2--show {
+                padding-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .slide.slide-2--show {
+                padding-right: 1.25em; } }
+            html body .content .slide.slide-2--show .question-intro-text,
+            html body .content .slide.slide-2--show .question-body,
+            html body .content .slide.slide-2--show .question-answers {
+              display: -ms-flexbox;
+              display: flex; }
+            html body .content .slide.slide-2--show .call-to-action {
+              display: none; }
+          html body .content .slide.slide-2--collapse {
+            width: auto;
+            border-right: 0; }
+            html body .content .slide.slide-2--collapse > * {
+              display: none; }
+            html body .content .slide.slide-2--collapse .call-to-action {
+              display: none; }
+            html body .content .slide.slide-2--collapse .signup {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+      html body .content .site-title .link {
+        background-color: transparent;
+        color: black;
+        text-decoration: underline;
+        transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: text-decoration; }
+        html body .content .site-title .link:hover, html body .content .site-title .link:active {
+          text-decoration: line-through; }
+      html body .content .site-title .text {
+        background-color: transparent;
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        font-family: GalapagosCTrial-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+        font-size: 1.563em; }
+        @media only screen and (min-width: 360px) and (max-width: 413.9px) {
+          html body .content .site-title .text {
+            font-size: 1.953em; } }
+        @media only screen and (min-width: 414px) and (max-width: 767.9px) {
+          html body .content .site-title .text {
+            font-size: 1.953em; } }
+      html body .content .intro-text-1 {
+        max-width: 37.5em; }
+        html body .content .intro-text-1 .text {
+          font-size: 1.25em; }
+          @media only screen and (min-width: 360px) and (max-width: 413.9px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 414px) and (max-width: 767.9px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 1025px) {
+            html body .content .intro-text-1 .text {
+              font-size: 1.563em; } }
+      html body .content .intro-text-2 {
+        max-width: 37.5em; }
+        html body .content .intro-text-2 .text {
+          font-size: 1.25em; }
+          @media only screen and (min-width: 360px) and (max-width: 413.9px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 414px) and (max-width: 767.9px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
+          @media only screen and (min-width: 1025px) {
+            html body .content .intro-text-2 .text {
+              font-size: 1.563em; } }
+      html body .content .call-to-action {
+        display: -ms-flexbox;
+        display: flex; }
+        html body .content .call-to-action .button3D {
+          letter-spacing: 0.625em;
+          text-transform: uppercase;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
+          border: 1px solid;
+          padding: 0.3125em 0.625em;
+          border-color: transparent; }
+          html body .content .call-to-action .button3D:hover {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+          html body .content .call-to-action .button3D .arrow-with-triangle {
+            position: relative;
+            left: 2.5em;
+            -ms-flex-align: center;
+                align-items: center;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -ms-flex-pack: center;
+                justify-content: center;
+            width: 3.75em;
+            transform: rotate(0deg); }
+            html body .content .call-to-action .button3D .arrow-with-triangle__line {
+              border-bottom: 1px solid;
+              width: calc(3.125em); }
+            html body .content .call-to-action .button3D .arrow-with-triangle__triangle {
+              border-style: solid;
+              height: 0;
+              width: 0;
+              border-color: transparent transparent transparent black;
+              border-width: 0.625em 0 0.625em 0.625em; }
+              html body .content .call-to-action .button3D .arrow-with-triangle__triangle--right {
+                border-color: transparent transparent transparent black;
+                border-width: 0.625em 0 0.625em 0.625em; }
+              html body .content .call-to-action .button3D .arrow-with-triangle__triangle--left {
+                border-color: transparent black transparent transparent;
+                border-width: 0.625em 0.625em 0.625em 0; }
+              html body .content .call-to-action .button3D .arrow-with-triangle__triangle--top {
+                border-color: transparent transparent black transparent;
+                border-width: 0 0.625em 0.625em 0.625em; }
+              html body .content .call-to-action .button3D .arrow-with-triangle__triangle--bottom {
+                border-color: black transparent transparent transparent;
+                border-width: 0.625em 0.625em 0 0.625em; }
+            html body .content .call-to-action .button3D .arrow-with-triangle--right {
+              transform: rotate(0deg); }
+            html body .content .call-to-action .button3D .arrow-with-triangle--left {
+              transform: rotate(180deg); }
+            html body .content .call-to-action .button3D .arrow-with-triangle--top {
+              transform: rotate(-90deg); }
+            html body .content .call-to-action .button3D .arrow-with-triangle--bottom {
+              transform: rotate(90deg); }
+          html body .content .call-to-action .button3D:hover {
+            transform: skew(-10deg); }
+            html body .content .call-to-action .button3D:hover .arrow-with-triangle {
+              left: 5em; }
+      html body .content .question-body .text {
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 37.5em;
+        font-size: 0.8em; }
+        html body .content .question-body .text ol,
+        html body .content .question-body .text .ol {
+          list-style-position: inside; }
+          html body .content .question-body .text ol li > ul,
+          html body .content .question-body .text ol li > .ul,
+          html body .content .question-body .text ol li > ol,
+          html body .content .question-body .text ol li > .ol,
+          html body .content .question-body .text ol .li > ul,
+          html body .content .question-body .text ol .li > .ul,
+          html body .content .question-body .text ol .li > ol,
+          html body .content .question-body .text ol .li > .ol,
+          html body .content .question-body .text .ol li > ul,
+          html body .content .question-body .text .ol li > .ul,
+          html body .content .question-body .text .ol li > ol,
+          html body .content .question-body .text .ol li > .ol,
+          html body .content .question-body .text .ol .li > ul,
+          html body .content .question-body .text .ol .li > .ul,
+          html body .content .question-body .text .ol .li > ol,
+          html body .content .question-body .text .ol .li > .ol {
+            margin-top: 0; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol li > ul,
+              html body .content .question-body .text ol li > .ul,
+              html body .content .question-body .text ol li > ol,
+              html body .content .question-body .text ol li > .ol,
+              html body .content .question-body .text ol .li > ul,
+              html body .content .question-body .text ol .li > .ul,
+              html body .content .question-body .text ol .li > ol,
+              html body .content .question-body .text ol .li > .ol,
+              html body .content .question-body .text .ol li > ul,
+              html body .content .question-body .text .ol li > .ul,
+              html body .content .question-body .text .ol li > ol,
+              html body .content .question-body .text .ol li > .ol,
+              html body .content .question-body .text .ol .li > ul,
+              html body .content .question-body .text .ol .li > .ul,
+              html body .content .question-body .text .ol .li > ol,
+              html body .content .question-body .text .ol .li > .ol {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol li > ul,
+              html body .content .question-body .text ol li > .ul,
+              html body .content .question-body .text ol li > ol,
+              html body .content .question-body .text ol li > .ol,
+              html body .content .question-body .text ol .li > ul,
+              html body .content .question-body .text ol .li > .ul,
+              html body .content .question-body .text ol .li > ol,
+              html body .content .question-body .text ol .li > .ol,
+              html body .content .question-body .text .ol li > ul,
+              html body .content .question-body .text .ol li > .ul,
+              html body .content .question-body .text .ol li > ol,
+              html body .content .question-body .text .ol li > .ol,
+              html body .content .question-body .text .ol .li > ul,
+              html body .content .question-body .text .ol .li > .ul,
+              html body .content .question-body .text .ol .li > ol,
+              html body .content .question-body .text .ol .li > .ol {
+                padding-left: 2.5em; } }
+        html body .content .question-body .text ol,
+        html body .content .question-body .text .ol {
+          counter-reset: li; }
+          html body .content .question-body .text ol > li,
+          html body .content .question-body .text ol > .li,
+          html body .content .question-body .text .ol > li,
+          html body .content .question-body .text .ol > .li {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            list-style: none; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li,
+              html body .content .question-body .text ol > .li,
+              html body .content .question-body .text .ol > li,
+              html body .content .question-body .text .ol > .li {
+                margin-right: 0; } }
+            html body .content .question-body .text ol > li > *,
+            html body .content .question-body .text ol > .li > *,
+            html body .content .question-body .text .ol > li > *,
+            html body .content .question-body .text .ol > .li > * {
+              display: inline-block; }
+            html body .content .question-body .text ol > li::before,
+            html body .content .question-body .text ol > .li::before,
+            html body .content .question-body .text .ol > li::before,
+            html body .content .question-body .text .ol > .li::before {
+              background-color: #fafafa;
+              color: black;
+              border-radius: 2.5em;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-align: center;
+                  align-items: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              height: 2.5em;
+              min-height: 2.5em;
+              min-width: 2.5em;
+              width: 2.5em;
+              overflow: hidden;
+              border: 1px solid;
+              content: counter(li);
+              counter-increment: li; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-right: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-right: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content .question-body .text ol > li::before,
+                html body .content .question-body .text ol > .li::before,
+                html body .content .question-body .text .ol > li::before,
+                html body .content .question-body .text .ol > .li::before {
+                  margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .question-body .text ol > li:last-of-type,
+              html body .content .question-body .text ol > .li:last-of-type,
+              html body .content .question-body .text .ol > li:last-of-type,
+              html body .content .question-body .text .ol > .li:last-of-type {
+                margin-right: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .question-body .text {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .question-body .text {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .question-body .text {
+            margin-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .question-body .text {
+            margin-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .question-body .text {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .question-body .text {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .question-body .text {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .question-body .text {
+            margin-right: 0; } }
+        html body .content .question-body .text ol li::before {
+          border-color: transparent; }
+      html body .content .question-answers {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        html body .content .question-answers .answer {
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .question-answers .answer + .answer {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .question-answers .answer + .answer {
+              margin-top: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .question-answers .answer + .answer {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .question-answers .answer + .answer {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .question-answers .answer + .answer {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .question-answers .answer + .answer {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .question-answers .answer + .answer {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .question-answers .answer + .answer {
+              margin-right: 0; } }
+          html body .content .question-answers .answer .button3D {
+            letter-spacing: 0.625em;
+            text-transform: uppercase;
+            transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            will-change: all;
+            border: 1px solid;
+            padding: 0.3125em 0.625em; }
+            html body .content .question-answers .answer .button3D:hover {
+              cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+          html body .content .question-answers .answer.incorrect {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto; }
+            html body .content .question-answers .answer.incorrect .button3D .text {
+              visibility: hidden; }
+          html body .content .question-answers .answer.hidden {
+            display: none; }
+      html body .content .signup #mc_embed_signup_scroll {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        html body .content .signup #mc_embed_signup_scroll .mc-field-group {
+          display: none; }
+        html body .content .signup #mc_embed_signup_scroll .button {
+          letter-spacing: 0.625em;
+          text-transform: uppercase;
+          transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: all;
+          border: 1px solid;
+          padding: 0.3125em 0.625em; }
+          html body .content .signup #mc_embed_signup_scroll .button:hover {
+            cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+      html body .content .signup .circle {
+        background-color: #fafafa;
+        color: black;
+        border-radius: 18.75em;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        height: 18.75em;
+        min-height: 18.75em;
+        min-width: 18.75em;
+        width: 18.75em;
+        overflow: hidden;
+        border: 0.07812em solid;
+        position: absolute;
+        z-index: -1; }
+    html body .hidden {
+      display: none; }
+    html body .screen-reader-text {
+      display: none; }
+
+/*# sourceMappingURL=style.css.map */
