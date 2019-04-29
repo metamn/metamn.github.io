@@ -1,0 +1,463 @@
+/* SASS structure: http://37signals.com/svn/posts/3003-css-taking-control-of-the-cascade
+*/
+/* Typography
+================= 
+*/
+/* Transform the current font, make it Smuff style
+*/
+/* Transform some headings needed only for Document Outline
+*/
+/* Columns / Grid
+=================
+  
+  - width: the width of the column in percentage
+*/
+/* Other
+==================
+*/
+/* A barebones list
+*/
+/* Navigation list 
+*/
+/* Inline List
+*/
+/* Block
+*/
+/* Rotate
+- usage: rotate(190deg, 1.6);
+*/
+/* Typography 
+*/
+body {
+  font-family: Arial ,Helvetica, sans-serif; }
+
+h1, h2, h3 {
+  font-family: MuseoSans-500;
+  text-transform: uppercase; }
+
+/* Header 
+*/
+body #background-image {
+  /*background: url(/assets/background-image.png);
+  width: 300px;
+  position: relative;
+  z-index: -2; */ }
+body .container {
+  width: 90%;
+  margin: 0 auto;
+  /*position: relative;
+  z-index: 1;
+  top: -300px;*/ }
+  body .container header {
+    width: 100%;
+    float: left;
+    margin-bottom: 1.25em; }
+    body .container header #logo {
+      width: 33%;
+      float: left; }
+      body .container header #logo #image {
+        width: 25%;
+        float: left; }
+      body .container header #logo #title {
+        width: 75%;
+        float: left; }
+        body .container header #logo #title h1 {
+          font-weight: bold;
+          letter-spacing: -4px;
+          text-transform: none;
+          font-size: 3em;
+          /* Traditional, overwritten */
+          padding: .59em 0 0; }
+      body .container header #logo #strapline {
+        width: 75%;
+        float: left;
+        font-size: smaller; }
+    body .container header #search {
+      width: 33%;
+      float: left; }
+      body .container header #search h2 {
+        font-size: 100%;
+        visibility: hidden; }
+      body .container header #search #searchform input[name="search"] {
+        font-size: smaller;
+        width: 85%;
+        height: 2.5em; }
+      body .container header #search #searchform input[name="submit"] {
+        background: url("/assets/search.png") no-repeat center center #eeeeee;
+        width: 10%;
+        height: 2.5em; }
+    body .container header #menu {
+      width: 100%;
+      float: left;
+      width: 33%;
+      float: left; }
+      body .container header #menu #cart {
+        width: 50%;
+        float: left;
+        text-align: right;
+        float: right; }
+        body .container header #menu #cart h2 {
+          font-size: 100%;
+          visibility: hidden; }
+        body .container header #menu #cart ul {
+          list-style: none;
+          margin: 0;
+          margin-top: .625em; }
+          body .container header #menu #cart ul li span {
+            position: relative;
+            top: -0.312em; }
+      body .container header #menu #information {
+        width: 50%;
+        float: left;
+        text-align: right;
+        float: right; }
+        body .container header #menu #information h2 {
+          font-size: 100%;
+          visibility: hidden; }
+        body .container header #menu #information ul {
+          list-style: none;
+          margin: 0;
+          margin-top: .625em; }
+          body .container header #menu #information ul li span {
+            position: relative;
+            top: -0.312em; }
+    body .container header #menu-products {
+      width: 100%;
+      float: left; }
+      body .container header #menu-products .select-box {
+        width: 32.9%;
+        float: left;
+        margin-right: .1%;
+        cursor: pointer; }
+        body .container header #menu-products .select-box h2 {
+          margin: 1.25em 0;
+          padding: 0 0 .312em .312em; }
+        body .container header #menu-products .select-box h2:after {
+          content: '\2039';
+          font-size: 2em;
+          transform: rotate(270deg);
+          -webkit-transform: rotate(270deg);
+          -o-transform: rotate(270deg);
+          -moz-transform: rotate(270deg);
+          -ms-transform: rotate(270deg);
+          filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#degree_ie);
+          padding: .312em .312em .625em; }
+        body .container header #menu-products .select-box ul {
+          list-style: none;
+          margin: 0;
+          font-size: smaller; }
+          body .container header #menu-products .select-box ul li {
+            margin-bottom: .5em;
+            padding-bottom: .125em;
+            border-width: 0 0 1px 0;
+            border-style: inset; }
+          body .container header #menu-products .select-box ul li {
+            display: block;
+            cursor: pointer; }
+      body .container header #menu-products #events {
+        width: 34%;
+        float: left;
+        margin-right: 0; }
+  body .container header.fixed {
+    height: 5.5em;
+    width: 90%;
+    z-index: 1; }
+    body .container header.fixed #banner {
+      display: none; }
+    body .container header.fixed #logo #image {
+      width: 7%;
+      float: left;
+      margin: 0 1.5%; }
+    body .container header.fixed #logo #title h1 {
+      font-size: 100%;
+      font-weight: bold;
+      letter-spacing: -1.1px; }
+    body .container header.fixed #logo #strapline {
+      display: none; }
+    body .container header.fixed #search {
+      visibility: hidden; }
+    body .container header.fixed #menu {
+      font-size: 100%; }
+      body .container header.fixed #menu h2 {
+        display: none; }
+      body .container header.fixed #menu #information span {
+        display: none; }
+      body .container header.fixed #menu #cart {
+        width: 40%; }
+    body .container header.fixed #menu-products {
+      font-size: smaller;
+      width: 70%;
+      position: relative;
+      top: -8.5em;
+      left: 10%; }
+      body .container header.fixed #menu-products .select-box h2 {
+        margin: 0 0 .312em; }
+      body .container header.fixed #menu-products .select-box ul li {
+        padding: .312em; }
+      body .container header.fixed #menu-products .select-box ul li.active {
+        font-size: 2em;
+        font-weight: bold;
+        letter-spacing: -1.1px;
+        width: 200%;
+        border-bottom: none; }
+
+/* Startpage
+*/
+#banner {
+  width: 100%;
+  float: left;
+  background: url(/assets/spring.jpg) no-repeat white;
+  height: 400px;
+  margin: 1.25em 0 0;
+  text-align: center; }
+  #banner h1, #banner h2, #banner h3, #banner p {
+    font-weight: bold;
+    letter-spacing: -1.1px;
+    margin-left: 40%;
+    width: 50%; }
+
+#content #sidebar {
+  width: 16%;
+  float: left;
+  margin-left: 4%;
+  float: right; }
+  #content #sidebar ul#navigation-icons {
+    display: block;
+    margin: 0;
+    font-family: 'WebSymbolsRegular', Arial, sans-serif; }
+    #content #sidebar ul#navigation-icons li {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowarp; }
+    #content #sidebar ul#navigation-icons li {
+      margin-right: 1.25em;
+      cursor: pointer; }
+  #content #sidebar ul {
+    list-style: none;
+    margin: 0;
+    font-size: smaller; }
+    #content #sidebar ul li {
+      margin-bottom: .5em;
+      padding-bottom: .125em;
+      border-width: 0 0 1px 0;
+      border-style: inset; }
+#content #body {
+  width: 80%;
+  float: left; }
+  #content #body nav#products {
+    width: 100%;
+    float: left; }
+    #content #body nav#products h2 {
+      display: none; }
+    #content #body nav#products ul {
+      display: block;
+      margin: 0; }
+      #content #body nav#products ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 0;
+        white-space: nowarp; }
+      #content #body nav#products ul li {
+        padding: .625em .312em; }
+  #content #body section {
+    margin-bottom: 5em;
+    width: 100%;
+    float: left; }
+  #content #body #subscribe-gift-service #image {
+    width: 33%;
+    float: left; }
+  #content #body #subscribe-gift-service #call-for-action {
+    width: 60%;
+    float: left;
+    margin: 0 3%;
+    float: right; }
+    #content #body #subscribe-gift-service #call-for-action form {
+      width: 100%;
+      float: left;
+      margin: 5em 0; }
+      #content #body #subscribe-gift-service #call-for-action form ul {
+        display: block;
+        margin: 0; }
+        #content #body #subscribe-gift-service #call-for-action form ul li {
+          display: inline-block;
+          list-style-type: none;
+          margin-left: 0;
+          white-space: nowarp; }
+        #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-now {
+          width: 40%;
+          float: left;
+          margin-right: 10%; }
+        #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email {
+          width: 50%;
+          float: left; }
+          #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email input[name="subscribe-later"] {
+            width: 99%; }
+          #content #body #subscribe-gift-service #call-for-action form ul li#subscribe-email input[name="submit"] {
+            width: 100%; }
+
+#content.fixed {
+  position: relative;
+  top: 15em; }
+
+/* Product
+*/
+#product.mixed {
+  width: 58%;
+  float: left;
+  margin-right: 2%; }
+  #product.mixed #info {
+    position: relative;
+    top: -11.5em;
+    height: 5em;
+    font-size: smaller; }
+    #product.mixed #info #inner {
+      padding: 0 .312em;
+      width: 40%; }
+      #product.mixed #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.mixed #info #inner ul#shopping-info #price {
+          width: 90%; }
+        #product.mixed #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em; }
+
+#product.thumbly {
+  width: 18%;
+  float: left;
+  margin: 2.5% 2% 2% 0;
+  cursor: pointer; }
+  #product.thumbly #info #inner h2 {
+    font-size: 100%; }
+  #product.thumbly #info #inner #shopping-info {
+    display: none; }
+
+#product.thumb {
+  width: 18%;
+  float: left;
+  margin-right: 2%; }
+  #product.thumb #info #inner h2 {
+    font-size: 100%; }
+  #product.thumb #info #inner #shopping-info {
+    display: none; }
+
+#product.scroll {
+  display: none;
+  height: 40em; }
+  #product.scroll #info {
+    position: relative;
+    top: -12em;
+    height: 5em; }
+    #product.scroll #info #inner {
+      padding: 0 .312em;
+      width: 40%; }
+      #product.scroll #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
+      #product.scroll #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.scroll #info #inner ul#shopping-info #price {
+          width: 60%; }
+        #product.scroll #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em .312em;
+          padding-bottom: .625em; }
+
+#product.active {
+  display: block; }
+
+.product-scroller {
+  font-size: 4em;
+  position: relative;
+  top: -6em;
+  cursor: pointer;
+  width: 10%;
+  height: 0; }
+
+#product-scroll-left {
+  left: 1%; }
+
+#product-scroll-right {
+  left: 96%; }
+
+#see-all-products.scroll {
+  position: relative;
+  top: -2.5em;
+  left: 90%;
+  width: 15%;
+  padding: 1.25em; }
+
+#product.list {
+  width: 100%;
+  float: left;
+  margin-bottom: 5em; }
+  #product.list #info {
+    width: 33%;
+    float: left; }
+    #product.list #info #inner {
+      padding-left: 1.25em; }
+      #product.list #info #inner h2 {
+        font-weight: bold;
+        letter-spacing: -1.1px; }
+      #product.list #info #inner ul#shopping-info {
+        list-style: none;
+        margin: 0; }
+        #product.list #info #inner ul#shopping-info #price {
+          width: 80%; }
+        #product.list #info #inner ul#shopping-info #delivery {
+          margin: .625em 0 1.25em; }
+  #product.list #image {
+    width: 66%;
+    float: left; }
+
+#product.grid1 {
+  width: 33%;
+  float: left;
+  height: 30em; }
+  #product.grid1 #info {
+    margin: 0 2.5em 0 0;
+    text-align: center; }
+    #product.grid1 #info h2 {
+      font-weight: bold;
+      letter-spacing: -1.1px;
+      min-height: 2.5em; }
+    #product.grid1 #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+      #product.grid1 #info ul#shopping-info #price {
+        width: 90%;
+        margin: 0 5%; }
+      #product.grid1 #info ul#shopping-info #delivery {
+        margin: .625em 0 1.25em; }
+  #product.grid1 #image {
+    margin: 0 2.5em 0 0; }
+
+#product.grid {
+  width: 25%;
+  float: left;
+  height: 10em;
+  padding: 2.5em 0; }
+  #product.grid #info {
+    display: none;
+    margin: 0 2.5em 0 0;
+    text-align: center; }
+    #product.grid #info h2 {
+      font-weight: bold;
+      letter-spacing: -1.1px; }
+    #product.grid #info ul#shopping-info {
+      list-style: none;
+      margin: 0; }
+      #product.grid #info ul#shopping-info #price {
+        width: 90%;
+        margin: 0 5%; }
+      #product.grid #info ul#shopping-info #delivery {
+        margin: .625em 0 1.25em; }
+  #product.grid #image {
+    margin: 0 2.5em 0 0; }
+
+#see-all-products.grid {
+  width: 25%;
+  float: left;
+  height: 10em;
+  padding: 2.5em 0; }

@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Typography 
+*/
+
+/* Traditional, em from http://lamb.cc/typograph/ */
+body { font-size:100%; line-height:1.25; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.5em; padding:1.45833em 0; }
+h2 { font-size:1.33333em; padding:1.25em 0; }
+h3 { font-size:1.16667em; padding:1.51785em 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+h4 {
+  font-variant: small-caps;
+}
+
+
+p+p {
+  margin-top: 1.25em;
+}
+em {
+  font-style: italic;
+}
+ol {
+  list-style: decimal;
+}
+strong {
+  font-weight: bold;
+}
+blockquote {
+  display: block;
+  margin: 1.25em;
+  border-left: 1px dotted;
+  padding-left: 1.25em;
+  
+  font-style: italic;
+  font-size: larger;
+}
+
+dl {
+  margin: 1.25em 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 1.25em;
+}
+dl + dl {
+  margin-top: 2.5em;
+}
+
+
+
+/* Hacks
+*/
+
+/* Breaking long lines of text */
+/* http://stackoverflow.com/questions/320184/who-has-solved-the-long-word-breaks-my-div-problem-hint-not-stackoverflow */
+p {
+  word-wrap: break-word;  
+}
+.word-break {
+  /* The following styles prevent unbroken strings from breaking the layout */
+  width: 100%; /* set to whatever width you need */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP printers */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+  -moz-binding: url('xbl.xml#wordwrap'); /* Firefox (using XBL) */
+}
+
+
+
+/* Common 
+*/
+
+
+.triangle {
+  border-style: solid;  
+  display: inline;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.mobile {
+  display: none;
+}
+
+table {
+  width: 100%;
+}
+.small {
+  font-size: small;
+}
+.box {
+  padding: 1.25em;
+}
+.button {
+  display: block;
+}
+.button, .button a {
+  /*background: #99FF33;*/
+  color: #333 !important;  
+}
+.button a {
+  text-decoration: none;
+}
+.rounded {  
+  padding: .5em 1em;
+  -moz-border-radius: 1em;  
+  -webkit-border-radius: 1em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+}
+.block {
+  width: 100%;
+  float: left;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hidden {
+  display: none;
+}
+.alignright {
+  text-align: right;
+}
+.alignleft {
+  text-align: left;
+}
+.aligncenter {
+  text-align: center;
+}
+ul {
+  list-style-type: disc;
+  margin: 1.25em 2.5em;
+}
+ul.inline-list {
+  display: block;
+  margin: 0;
+}
+ul.inline-list li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowarp;  
+}
+
+
+

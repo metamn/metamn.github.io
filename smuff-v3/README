@@ -1,0 +1,5 @@
+# Rulz
+
+* First category is taken as 'category', the rest are taken as 'tags'
+
+* Categories with more than 3 posts are advanced to channels
