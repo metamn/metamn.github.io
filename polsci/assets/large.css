@@ -1,0 +1,56 @@
+/* The Grid 
+*/
+
+#sidebar {    
+  width: 30%;
+  margin-right: 20%;
+}
+#content {
+  width: 50%;
+}
+
+
+/* Startpage
+*/
+
+.startpage article #excerpt {  
+  top: 27.5em;
+}
+.startpage article #body {
+  top: 12em; 
+}
+.startpage #footer {
+  top: 44em;
+}
+
+.startpage article section {  
+  position: absolute;
+  top: 0;
+}
+.startpage #footer {
+  position: absolute;
+}
+
+
+/* News and Events
+*/
+
+.newsticker {
+  position: fixed;
+  bottom: .625em;
+}
+
+
+/* Footer
+*/
+
+#login ul {
+  display: block;
+  margin: 0;
+}
+#login ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowarp;  
+}

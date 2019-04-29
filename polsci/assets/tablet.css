@@ -1,0 +1,100 @@
+/* The Layout
+*/
+
+#container {
+  width: 98%;
+  margin: 0 auto;
+}
+
+
+/* The Grid 
+*/
+
+#sidebar {    
+  width: 40%;
+  margin-right: 5%;
+}
+#content {
+  width: 55%;
+}
+
+
+
+/* Typography
+*/
+
+h1 { font-size:2.11538em; padding:1.44305em 0; }
+h2 { font-size:1.61538em; padding:1.30936em 0; }
+h3 { font-size:1.30769em; padding:1.28686em 0; }
+
+
+
+/* Header
+*/
+
+#header img {
+  width: 30%;
+}
+
+
+/* Startpage 
+*/
+
+#content {
+  font-size: smaller;
+}
+.startpage article #excerpt {  
+  top: 22.5em;
+}
+.startpage #footer {
+  top: 46em;
+}
+.startpage article section {  
+  position: absolute;
+  top: 0;
+}
+.startpage #footer {
+  position: absolute;
+}
+
+
+/* Menu
+*/
+
+#secondary li {
+  margin-right: 0;
+}
+
+
+
+/* News, Events 
+*/
+
+.newsticker {
+  position: fixed;
+  bottom: .625em;
+}
+.newsticker ul {
+  margin: 0;
+}
+#news {
+  left: 40%;
+}
+
+
+
+/* Footer
+*/
+
+#login ul {
+  display: block;
+  margin: 0;
+}
+#login ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowarp;  
+}
+
+

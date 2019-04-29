@@ -1,0 +1,244 @@
+/* Eric Meyer's CSS reset: 
+ - http://meyerweb.com/eric/tools/css/reset/
+ - v1.0 | 20080212 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1.3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Typo 
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+h4 {
+  font-variant: small-caps;
+}
+
+
+
+/* Hacks
+*/
+
+/* Breaking long lines of text */
+/* http://stackoverflow.com/questions/320184/who-has-solved-the-long-word-breaks-my-div-problem-hint-not-stackoverflow */
+p {
+  word-wrap: break-word;  
+}
+.word-break {
+  /* The following styles prevent unbroken strings from breaking the layout */
+  width: 100%; /* set to whatever width you need */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -hp-pre-wrap; /* HP printers */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+  -moz-binding: url('xbl.xml#wordwrap'); /* Firefox (using XBL) */
+}
+p + p {
+  margin-top: 1.25em;
+}
+
+
+
+
+/* 
+## Lists ##
+
+* both `<ul>, <ol>, <dl>` items are indented in the same way
+* items are separated by a blank line
+* cascading lists identation is also supported
+
+*/
+
+
+ol {
+  list-style-type: decimal;  
+}
+ul {
+  list-style-type: disc;  
+}
+ol, ul {
+  margin-left: 2.5em;
+}
+ol ol, ol ul, ul ul, ul ol, dl, dl dl {
+  margin-top: 1.25em;
+}
+li, dd {
+  margin-bottom: 1.25em;
+}
+dd {
+  margin-left: 1.25em;
+}
+
+
+/* 
+## Tables ##
+
+* table header is bold
+* table rows are separated with a blank line
+* all cells are aligned to top  
+* all cells are padded
+* normal cells are indented related to table header
+* no borders were used
+
+*/
+
+table {
+  width: 100%;
+  margin-bottom: 5em;
+}
+td, th, tr {
+  vertical-align: top;
+  text-align: left;
+}
+th {
+  padding-left: 0;
+  font-weight: bold;
+}
+td {
+  padding: 1.25em 1.25em 0 1.25em;
+}
+
+
+
+
+
+/* Common 
+*/
+
+
+.triangle {
+  border-style: solid;  
+  display: inline;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.mobile {
+  display: none;
+}
+
+table {
+  width: 100%;
+}
+.small {
+  font-size: small;
+}
+.box {
+  padding: 1.25em;
+}
+.button {
+  display: block;
+}
+.button, .button a {
+  /*background: #99FF33;*/
+  color: #333 !important;  
+}
+.button a {
+  text-decoration: none;
+}
+.rounded {  
+  padding: .5em 1em;
+  -moz-border-radius: 1em;  
+  -webkit-border-radius: 1em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+}
+.block {
+  width: 100%;
+  float: left;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hidden {
+  display: none;
+}
+.alignright {
+  text-align: right;
+}
+.alignleft {
+  text-align: left;
+}
+.aligncenter {
+  text-align: center;
+}
+ul {
+  list-style-type: disc;
+  margin: 1.25em 2.5em;
+}
+ul.inline-list {
+  display: block;
+  margin: 0;
+}
+ul.inline-list li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowarp;  
+}
+
+

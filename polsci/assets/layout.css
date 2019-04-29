@@ -1,0 +1,331 @@
+#container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.mobile {
+  display: none;
+}
+
+
+
+/* The Grid
+*/
+
+#sidebar, #content {
+  float: left;
+}
+
+
+
+/* Header
+*/
+
+#header h1, #header h2 {
+  padding: 0;
+}
+#header, ul#main {
+  padding: 1.25em;  
+}
+#header #ceu-logo {
+  margin-bottom: 1.25em;
+}
+#header img {
+  width: 30%;
+}
+
+#title {
+  padding: .625em .937em 1.25em;
+}
+#title h3 {
+  padding: .312em;
+}
+
+
+/* Menu
+*/
+
+#menu ul {
+  list-style: none;
+  margin: 2.5em 5%;
+}
+#menu ul li {
+  margin-bottom: .625em;
+  padding-left: 5%;
+}
+#menu ul ul {
+  display: none;
+}
+#menu ul ul li {
+  padding-left: 0;
+}
+
+
+/* Secondary menu
+*/
+
+
+#secondary ul {
+  margin: 0;
+  list-style: none;
+}
+#secondary li {
+  margin-right: .625em;
+}
+#secondary li h4 {
+  padding: .325em .625em;
+  cursor: pointer;
+}
+
+
+
+
+/* Page
+*/
+
+
+article section {
+  padding: 1.25em;
+}
+
+#video, #image {
+  padding: 1.25em;
+  margin: 1.25em 0;
+}
+
+
+
+
+/* Startpage
+*/
+
+.startpage article section {  
+  cursor: pointer;
+  width: 45%;
+  top: 0;
+}
+.startpage article #body {
+  display: none;
+}
+
+
+
+
+
+/* News and Events
+*/
+
+.newsticker {
+  padding: 1.25em;
+  width: 25%;
+  display: none;
+  bottom: .625em;
+}
+#news {
+  left: 45%;
+}
+#events {
+  left: 70%;
+}
+.newsticker ul {
+  list-style: circle;
+}
+.newsticker li {
+  margin-bottom: .625em;
+  padding-bottom: .625em;
+}
+
+
+
+/* Footer
+*/
+
+#footer {
+  margin-top: 2.5em;
+  padding: .312em;
+}
+
+#login ul {
+  list-style: none;
+  margin: 0;
+}
+#login li {
+  margin-right: .625em;
+}
+#login li h4 {
+  padding: .325em .625em;
+  cursor: pointer;
+}
+#copyright {
+  display: none;
+  padding: .625em;
+  margin: 0;
+}
+
+
+/* Other
+*/
+
+/* The visual grid */
+.grid {
+  position: absolute;
+  top: 0;
+  opacity: .1;
+  display: block;
+  z-index: -1;
+}
+#gridh .col {
+  border-bottom: 1px solid;
+  width: 118em;
+  height: 19px; /* 1.25em = 20px - 1px border */
+}
+#gridv .col {
+  border-right: 1px solid;
+  width: 10%; 
+  height: 250em;
+  float: left;
+}
+
+
+/* Logo
+*/
+
+.logo {
+  text-align: center;
+}
+.logo span {
+  float: right;
+  margin-right: 1%;
+  color: #eee;
+}
+.logo #footer {
+  display: none;
+}
+
+
+.logo h1 {
+  font-variant: small-caps;
+  border-bottom: 1px dotted #eee;
+}
+.logo h1:before {
+  content: '+';
+  margin-right: .312em;
+  
+  background: black;
+  color: white;
+  padding: .312em;
+}
+
+h1#b:before {
+  border-radius: 1.25em;
+  padding: .312em .5em;
+}
+
+h1#c:before {
+  background: white;
+  color: black;
+  border: 1px dotted;
+}
+
+h1#d:before {
+  background: white;
+  color: black;
+  border: 1px dashed;
+}
+
+h1#e:before {
+  background: white;
+  color: #eee;
+  border: 1px solid;
+}
+
+h1#f:before {
+  background: white;
+  color: black;
+  border: 1px inset;
+}
+
+h1#g:before {
+  background: white;
+  color: black;
+  border: 1px outset;
+}
+
+h1#h:before {
+  background: #F5F4F2;
+  color: black;
+  border: 1px solid;
+}
+
+h1#i:before {
+  background: #7D87C3;
+  color: black;
+  border: 1px solid;
+}
+
+h1#j:before {
+  background: #F6AB79;
+  color: black;
+  border: 1px solid;
+}
+
+h1#k:before {
+  background: white;
+  color: #F6AB79;
+  border: 1px solid;
+}
+
+h1#l:before {
+  background: #7D87C3;
+  color: white;
+  border: 1px solid;
+}
+
+h1#m:before {
+  background: #7D87C3;
+  color: white;
+  border-radius: 1.25em;
+  padding: .312em .5em;
+}
+
+h1#n:before {
+  background: #32165D;
+  color: white;
+  border: 1px solid;
+}
+
+h1#o:before {
+  background: white;
+  color: #32165D;
+  border: 1px solid;
+}
+
+
+h1#p:before {
+  content: url("/assets/noun_project_9.svg");
+}
+h1#q:before {
+  content: url("/assets/vote.png");
+  background: white;
+  color: black;
+  margin: 0;
+}
+h1#r:before {
+  content: url("/assets/piechart.png");
+  background: white;
+  color: black;
+  margin: 0;
+}
+h1#s:before {
+  content: url("/assets/stairs.png");
+  background: white;
+  color: black;
+  margin: 0;
+}
+
+
+
+
+
+

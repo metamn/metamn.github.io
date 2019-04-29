@@ -1,0 +1,300 @@
+/* Typography
+*/
+
+body {
+  font-family: 'Old Standard TT', serif;
+}
+
+/* Le Corbusier, em */
+body { font-size:100%; line-height:1.25; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:2.61538em; padding:1.28666em 0; }
+h2, #read-more { font-size:2.11538em; padding:1.44305em 0; }
+h3 { font-size:1.61538em; padding:1.30936em 0; }
+
+
+
+/* Colors
+*/
+
+/*
+- base, gray: F5F4F2, from the header opacity
+  - blue: 7D87C3    
+    - orange: F6AB79
+    - lila: 32165D
+*/
+
+
+body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #222;
+}
+
+a, a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+
+
+/* Header
+*/
+
+#header, ul#main, #title {
+  background: #f9f9f9;
+  opacity: .9;
+}
+#header h2 a, #header h2 a:visited {
+  color: #ccc;
+}
+#header h2 span {
+  font-style: italic;
+}
+#title h3 {
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+
+
+/* Menu
+*/
+
+#menu ul li {
+  border-bottom: 1px dotted;
+  letter-spacing: .156em;
+}
+#menu ul li a.highlight {
+  letter-spacing: .25em;
+}
+
+#menu ul li a, #menu ul li a:visited {
+  background: #36392F;
+  color: #f3f3f3;
+  padding: 0 .312em;
+} 
+#menu ul ul li a, #menu ul ul li a:visited {
+  color: #36392F;  
+  background: transparent;
+  padding: 0;
+} 
+
+
+
+
+/* Startpage, Secondary menu
+*/
+
+article section {
+  background: #7D87C3;
+  opacity: .97;
+}
+article #excerpt, article #body {
+  font-size: larger;
+}
+article #excerpt, article #body,
+#secondary li,
+#login li {
+  border: .312em solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+article #excerpt:hover,
+#secondary li:hover,
+#login li:hover {
+  border: .312em solid rgba(255, 255, 255, 0.1);
+}
+#secondary li h4 {
+  background: #F6AB79;
+  opacity: .9;
+}
+
+
+/* Login menu, footer 
+*/
+
+#login li h4, #copyright {
+   background: rgba(0, 0, 0, .7);
+}
+#login a, #login a:visited, #copyright {
+  color: #f9f9f9;
+}
+
+
+
+
+
+/* News, Events
+*/
+
+
+.newsticker {
+  background: rgba(0, 0, 0, .1);
+  color: #F6AB79;
+  font-family: 'Abel', sans-serif;
+}
+.newsticker h2 {
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 1px 1px 1px #543106;
+}
+.newsticker ul {
+  background: #7D87C3;
+}
+.newsticker a, .newsticker a:visited {
+  color: #000;
+}
+.newsticker li {
+  border-bottom: 1px solid #584076;
+  padding: .625em;
+}
+.newsticker li .date {
+  background: #F6AB79;
+  color: #000;
+  padding: 0 .312em;
+}
+
+
+
+/* Page 
+*/
+
+
+#video, #image {
+  background: #000;
+  opacity: .7;
+}
+
+#content a, #content a:visited {
+  text-decoration: underline;
+}
+#login a, #login a:visited {
+  text-decoration: none;
+}
+
+#content li {
+  margin-bottom: 0;
+}
+#content ul.no-bullets {
+  list-style: none;
+}
+#content li.download:before {
+  content: url("/assets/arrow-down.png");
+  opacity: .1;
+  margin-right: .625em;
+}
+#content li.download {
+  margin-bottom: .625em;
+}
+
+
+dt {
+  font-weight: bold;
+}
+dd:before {
+  content: '{ ';
+}
+dd:after {
+  content: ' }';
+}
+dd {
+  margin-top: .625em;
+  margin-bottom: .625em;
+}
+
+
+#content h4, #content h5, #content h6 {
+  padding: 1.25em 0;
+}
+
+.notice, .important {
+  border-bottom: 1px dotted;
+  padding: .625em;
+  font-variant: small-caps;
+}
+.important {
+  border-bottom: 1px dashed #F6AB79;
+}
+.important:before {
+  content: '!';
+  font-weight: bold;
+  font-size: 130%;
+  
+  background: #F6AB79;
+  color: #7D87C3;
+  
+  margin-right: .625em; 
+  padding: 0 .312em;
+}
+
+
+
+/* Profile */
+
+#content #profile {
+  margin-bottom: 2.5em;
+}
+#content #profile .col-a {
+  width: 10%;
+  margin-right: 10%;
+  float: left;
+}
+#content #profile .col-b {
+  float: left;
+  width: 70%;
+}
+#content #profile #image {
+  padding: 0;
+  margin-top: 0;
+}
+#content #profile #name {
+  font-variant: small-caps;
+}
+#content #profile #dept {
+  font-variant: small-caps;
+}
+#content #profile #enrollment {
+  margin: .625em;
+}
+#content #profile #description {
+}
+
+
+
+/* Tables */
+
+
+#content th {
+  border-bottom: 1px double;
+}
+
+#content td {
+  padding: 1.25em .312em;
+  border-bottom: 1px dotted;
+}
+#content td ul {
+  margin: 0;
+  list-style: none;
+}
+#content td ul li {
+  border-bottom: 1px dotted;
+  margin-bottom: .625em;
+}
+#content tr.red td {
+  background: #D57D5E;
+}
+#content tr.blue td {
+  background: #4659CD;
+}
+#content tr.yellow td {
+  background: #579A25;
+}
+#content tr.red td, 
+#content tr.blue td, 
+#content tr.yellow td {
+  padding: 1.25em;
+}
+
+
+

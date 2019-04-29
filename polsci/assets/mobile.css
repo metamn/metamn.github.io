@@ -1,0 +1,116 @@
+
+
+.desktop {
+  display: none !important;
+}
+.mobile {
+  display: block;
+}
+
+
+body {
+  background: url("/assets/background-mobile.png") repeat scroll 0 0 #BDC6FF !important;
+}
+
+
+/* Typography
+*/
+
+h1 { font-size:2.11538em; padding:1.44305em 0; }
+h2 { font-size:1.61538em; padding:1.30936em 0; }
+h3 { font-size:1.30769em; padding:1.28686em 0; }
+
+
+
+/* The Grid
+*/
+
+#container {
+  width: 98%;
+  margin: 0 auto;
+}
+#sidebar, #content {    
+  width: auto;
+  margin-right: 0;
+}
+
+
+
+/* Header
+*/
+
+#ceu-logo {
+  position: relative;
+  z-index: 10;
+}
+
+
+
+
+
+/* Menu 
+*/
+
+
+#menu ul li {
+  padding-left: 2%;
+}
+#skip-to-content {
+  margin-top: 2.5em;
+}
+#skip-to-content a, #skip-to-content a:visited,
+#toc h4 {
+  opacity: .4;
+}
+
+#title {
+  padding-left: .937em;
+}
+
+
+/* Startpage
+*/
+
+.startpage article section {    
+  width: auto;
+  margin-top: 2.5em;
+}
+article section {
+  width: auto;
+}
+#toc {
+  margin-top: 2.5em;
+  cursor: pointer;
+}
+
+
+/* News and Events
+*/
+
+.newsticker {
+  width: auto;
+  background: none;
+}
+.newsticker ul {
+  margin: 0 .125em;
+  opacity: .9;
+}
+
+
+
+/* Page 
+*/
+
+#more {
+  margin: 1.25em 0;
+}
+#toc #items {
+  background: #BDC6FF;
+  padding: 1.25em 0;
+}
+#toc li {
+  border-bottom: 1px solid #D6DCFF;
+  margin-bottom: .625em;
+}
+
+
