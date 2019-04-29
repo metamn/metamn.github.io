@@ -1,0 +1,1212 @@
+/*
+Settings
+================================================================================
+*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700,);
+
+@import url(http://fonts.googleapis.com/css?family=Lekton:700,);
+
+.white {
+    background: #fff;
+}
+
+.black {
+    background: #000;
+}
+
+.white-on-black {
+    color: #fff;
+    background-color: #000;
+}
+
+/*
+  (TEXT) PARAMS
+  =================
+  1. Namespace -- (class name) where glitch is applied
+  2. Intensity -- (integer) how intensive the glitching is
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color -- (color) color1
+  6. Highlight #2 color -- (color) color2
+  7. Width (px) -- width of the glitch
+  8. Height (px) -- height of the glitch
+*/
+.montserrat-normal {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.lekton-bold {
+    font-family: 'Lekton', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.scale--default {
+    font-size: 100%;
+    line-height: 1.48;
+}
+
+.text-style--default {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.48;
+    color: #fff;
+    background-color: #000;
+}
+
+.text-style--title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.text-style--subtitle {
+    font-family: 'Lekton', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+/*
+Elements on the page
+================================================================================
+*/
+/*
+  Normalize.css // Skip this part
+  ------------------------------------------------------------------------------
+  */
+html {
+    font-family: sans-serif;
+  /* 1 */
+    -ms-text-size-adjust: 100%;
+  /* 2 */
+    -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+    margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+  /* 1 */
+    vertical-align: baseline;
+  /* 2 */
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+  /* 1 */
+    font: inherit;
+  /* 2 */
+    margin: 0;
+  /* 3 */
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+  /* 2 */
+    cursor: pointer;
+  /* 3 */
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+  /* 1 */
+    padding: 0;
+  /* 2 */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+  /* 1 */
+    padding: 0;
+  /* 2 */
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+/*
+  Normalize.css // End
+  ------------------------------------------------------------------------------
+  */
+/* Flexbox bugfixes */
+* {
+    min-height: 0;
+}
+
+* {
+    min-width: 0;
+}
+
+html body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1.48;
+    color: #fff;
+    background-color: #000;
+}
+
+html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body header > h3, html body footer > h3 {
+    display: none;
+}
+
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+html body p, html body figure, html body blockquote, html body ul, html body ol, html body li {
+    margin: 0;
+    padding: 0;
+}
+
+html body figure a {
+    line-height: 0;
+    display: block;
+}
+
+html.home body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+html.home body .monogram {
+    position: relative;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border: 0.37em solid;
+    padding: 1.48em;
+}
+
+html.home body .monogram__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 30vh;
+}
+
+html.home body .monogram__row.monogram__row--cols2 {
+    height: 20vh;
+}
+
+html.home body .monogram__row.monogram__row--cols2 .character {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #fff;
+    position: relative;
+    font-size: calc(20vh * 0.5);
+}
+
+@keyframes character-anim-1 {
+    0% {
+        clip: rect(76px, 450px, 58px, 0);
+    }
+
+    5.88235% {
+        clip: rect(8px, 450px, 19px, 0);
+    }
+
+    11.76471% {
+        clip: rect(65px, 450px, 75px, 0);
+    }
+
+    17.64706% {
+        clip: rect(4px, 450px, 8px, 0);
+    }
+
+    23.52941% {
+        clip: rect(87px, 450px, 5px, 0);
+    }
+
+    29.41176% {
+        clip: rect(96px, 450px, 64px, 0);
+    }
+
+    35.29412% {
+        clip: rect(105px, 450px, 47px, 0);
+    }
+
+    41.17647% {
+        clip: rect(99px, 450px, 3px, 0);
+    }
+
+    47.05882% {
+        clip: rect(72px, 450px, 42px, 0);
+    }
+
+    52.94118% {
+        clip: rect(53px, 450px, 84px, 0);
+    }
+
+    58.82353% {
+        clip: rect(92px, 450px, 12px, 0);
+    }
+
+    64.70588% {
+        clip: rect(38px, 450px, 59px, 0);
+    }
+
+    70.58824% {
+        clip: rect(53px, 450px, 18px, 0);
+    }
+
+    76.47059% {
+        clip: rect(62px, 450px, 42px, 0);
+    }
+
+    82.35294% {
+        clip: rect(32px, 450px, 82px, 0);
+    }
+
+    88.23529% {
+        clip: rect(54px, 450px, 51px, 0);
+    }
+
+    94.11765% {
+        clip: rect(104px, 450px, 67px, 0);
+    }
+
+    100% {
+        clip: rect(41px, 450px, 60px, 0);
+    }
+}
+
+@keyframes character-anim-2 {
+    0% {
+        clip: rect(32px, 450px, 71px, 0);
+    }
+
+    5.88235% {
+        clip: rect(97px, 450px, 22px, 0);
+    }
+
+    11.76471% {
+        clip: rect(52px, 450px, 88px, 0);
+    }
+
+    17.64706% {
+        clip: rect(104px, 450px, 36px, 0);
+    }
+
+    23.52941% {
+        clip: rect(5px, 450px, 88px, 0);
+    }
+
+    29.41176% {
+        clip: rect(87px, 450px, 83px, 0);
+    }
+
+    35.29412% {
+        clip: rect(114px, 450px, 100px, 0);
+    }
+
+    41.17647% {
+        clip: rect(36px, 450px, 77px, 0);
+    }
+
+    47.05882% {
+        clip: rect(7px, 450px, 105px, 0);
+    }
+
+    52.94118% {
+        clip: rect(25px, 450px, 62px, 0);
+    }
+
+    58.82353% {
+        clip: rect(84px, 450px, 110px, 0);
+    }
+
+    64.70588% {
+        clip: rect(41px, 450px, 35px, 0);
+    }
+
+    70.58824% {
+        clip: rect(26px, 450px, 16px, 0);
+    }
+
+    76.47059% {
+        clip: rect(16px, 450px, 74px, 0);
+    }
+
+    82.35294% {
+        clip: rect(86px, 450px, 111px, 0);
+    }
+
+    88.23529% {
+        clip: rect(33px, 450px, 49px, 0);
+    }
+
+    94.11765% {
+        clip: rect(25px, 450px, 40px, 0);
+    }
+
+    100% {
+        clip: rect(52px, 450px, 8px, 0);
+    }
+}
+
+html.home body .monogram__row.monogram__row--cols2 .character:before, html.home body .monogram__row.monogram__row--cols2 .character:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    clip: rect(0, 0, 0, 0);
+}
+
+html.home body .monogram__row.monogram__row--cols2 .character:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: character-anim-1 2s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols2 .character:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: character-anim-2 3s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols2 .character.character__space {
+    display: none;
+}
+
+html.home body .monogram__row.monogram__row--cols3 {
+    height: 13.33333vh;
+}
+
+html.home body .monogram__row.monogram__row--cols3 .character {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #fff;
+    position: relative;
+    font-size: calc(13.33333vh * 0.5);
+}
+
+@keyframes character-anim-1 {
+    0% {
+        clip: rect(92px, 450px, 87px, 0);
+    }
+
+    5.88235% {
+        clip: rect(84px, 450px, 110px, 0);
+    }
+
+    11.76471% {
+        clip: rect(78px, 450px, 11px, 0);
+    }
+
+    17.64706% {
+        clip: rect(93px, 450px, 29px, 0);
+    }
+
+    23.52941% {
+        clip: rect(93px, 450px, 89px, 0);
+    }
+
+    29.41176% {
+        clip: rect(102px, 450px, 31px, 0);
+    }
+
+    35.29412% {
+        clip: rect(81px, 450px, 9px, 0);
+    }
+
+    41.17647% {
+        clip: rect(107px, 450px, 44px, 0);
+    }
+
+    47.05882% {
+        clip: rect(98px, 450px, 18px, 0);
+    }
+
+    52.94118% {
+        clip: rect(86px, 450px, 24px, 0);
+    }
+
+    58.82353% {
+        clip: rect(99px, 450px, 6px, 0);
+    }
+
+    64.70588% {
+        clip: rect(75px, 450px, 92px, 0);
+    }
+
+    70.58824% {
+        clip: rect(2px, 450px, 52px, 0);
+    }
+
+    76.47059% {
+        clip: rect(31px, 450px, 44px, 0);
+    }
+
+    82.35294% {
+        clip: rect(52px, 450px, 6px, 0);
+    }
+
+    88.23529% {
+        clip: rect(37px, 450px, 105px, 0);
+    }
+
+    94.11765% {
+        clip: rect(25px, 450px, 31px, 0);
+    }
+
+    100% {
+        clip: rect(91px, 450px, 21px, 0);
+    }
+}
+
+@keyframes character-anim-2 {
+    0% {
+        clip: rect(10px, 450px, 30px, 0);
+    }
+
+    5.88235% {
+        clip: rect(38px, 450px, 17px, 0);
+    }
+
+    11.76471% {
+        clip: rect(83px, 450px, 73px, 0);
+    }
+
+    17.64706% {
+        clip: rect(6px, 450px, 102px, 0);
+    }
+
+    23.52941% {
+        clip: rect(42px, 450px, 97px, 0);
+    }
+
+    29.41176% {
+        clip: rect(3px, 450px, 65px, 0);
+    }
+
+    35.29412% {
+        clip: rect(19px, 450px, 102px, 0);
+    }
+
+    41.17647% {
+        clip: rect(75px, 450px, 71px, 0);
+    }
+
+    47.05882% {
+        clip: rect(106px, 450px, 55px, 0);
+    }
+
+    52.94118% {
+        clip: rect(17px, 450px, 71px, 0);
+    }
+
+    58.82353% {
+        clip: rect(86px, 450px, 61px, 0);
+    }
+
+    64.70588% {
+        clip: rect(60px, 450px, 18px, 0);
+    }
+
+    70.58824% {
+        clip: rect(81px, 450px, 98px, 0);
+    }
+
+    76.47059% {
+        clip: rect(91px, 450px, 35px, 0);
+    }
+
+    82.35294% {
+        clip: rect(81px, 450px, 35px, 0);
+    }
+
+    88.23529% {
+        clip: rect(1px, 450px, 12px, 0);
+    }
+
+    94.11765% {
+        clip: rect(28px, 450px, 32px, 0);
+    }
+
+    100% {
+        clip: rect(26px, 450px, 70px, 0);
+    }
+}
+
+html.home body .monogram__row.monogram__row--cols3 .character:before, html.home body .monogram__row.monogram__row--cols3 .character:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    clip: rect(0, 0, 0, 0);
+}
+
+html.home body .monogram__row.monogram__row--cols3 .character:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: character-anim-1 2s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols3 .character:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: character-anim-2 3s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols3 .character.character__space {
+    display: none;
+}
+
+html.home body .monogram__row.monogram__row--cols4 {
+    height: 10vh;
+}
+
+html.home body .monogram__row.monogram__row--cols4 .character {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #fff;
+    position: relative;
+    font-size: calc(10vh * 0.5);
+}
+
+@keyframes character-anim-1 {
+    0% {
+        clip: rect(114px, 450px, 35px, 0);
+    }
+
+    5.88235% {
+        clip: rect(72px, 450px, 22px, 0);
+    }
+
+    11.76471% {
+        clip: rect(106px, 450px, 30px, 0);
+    }
+
+    17.64706% {
+        clip: rect(88px, 450px, 46px, 0);
+    }
+
+    23.52941% {
+        clip: rect(99px, 450px, 17px, 0);
+    }
+
+    29.41176% {
+        clip: rect(53px, 450px, 69px, 0);
+    }
+
+    35.29412% {
+        clip: rect(37px, 450px, 33px, 0);
+    }
+
+    41.17647% {
+        clip: rect(10px, 450px, 37px, 0);
+    }
+
+    47.05882% {
+        clip: rect(96px, 450px, 37px, 0);
+    }
+
+    52.94118% {
+        clip: rect(52px, 450px, 114px, 0);
+    }
+
+    58.82353% {
+        clip: rect(23px, 450px, 32px, 0);
+    }
+
+    64.70588% {
+        clip: rect(30px, 450px, 92px, 0);
+    }
+
+    70.58824% {
+        clip: rect(7px, 450px, 106px, 0);
+    }
+
+    76.47059% {
+        clip: rect(79px, 450px, 5px, 0);
+    }
+
+    82.35294% {
+        clip: rect(86px, 450px, 21px, 0);
+    }
+
+    88.23529% {
+        clip: rect(82px, 450px, 53px, 0);
+    }
+
+    94.11765% {
+        clip: rect(18px, 450px, 33px, 0);
+    }
+
+    100% {
+        clip: rect(50px, 450px, 11px, 0);
+    }
+}
+
+@keyframes character-anim-2 {
+    0% {
+        clip: rect(31px, 450px, 41px, 0);
+    }
+
+    5.88235% {
+        clip: rect(102px, 450px, 69px, 0);
+    }
+
+    11.76471% {
+        clip: rect(27px, 450px, 60px, 0);
+    }
+
+    17.64706% {
+        clip: rect(106px, 450px, 12px, 0);
+    }
+
+    23.52941% {
+        clip: rect(104px, 450px, 96px, 0);
+    }
+
+    29.41176% {
+        clip: rect(47px, 450px, 31px, 0);
+    }
+
+    35.29412% {
+        clip: rect(38px, 450px, 39px, 0);
+    }
+
+    41.17647% {
+        clip: rect(43px, 450px, 2px, 0);
+    }
+
+    47.05882% {
+        clip: rect(82px, 450px, 113px, 0);
+    }
+
+    52.94118% {
+        clip: rect(21px, 450px, 45px, 0);
+    }
+
+    58.82353% {
+        clip: rect(67px, 450px, 112px, 0);
+    }
+
+    64.70588% {
+        clip: rect(52px, 450px, 108px, 0);
+    }
+
+    70.58824% {
+        clip: rect(65px, 450px, 24px, 0);
+    }
+
+    76.47059% {
+        clip: rect(41px, 450px, 82px, 0);
+    }
+
+    82.35294% {
+        clip: rect(73px, 450px, 21px, 0);
+    }
+
+    88.23529% {
+        clip: rect(11px, 450px, 94px, 0);
+    }
+
+    94.11765% {
+        clip: rect(34px, 450px, 114px, 0);
+    }
+
+    100% {
+        clip: rect(113px, 450px, 70px, 0);
+    }
+}
+
+html.home body .monogram__row.monogram__row--cols4 .character:before, html.home body .monogram__row.monogram__row--cols4 .character:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    clip: rect(0, 0, 0, 0);
+}
+
+html.home body .monogram__row.monogram__row--cols4 .character:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: character-anim-1 2s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols4 .character:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: character-anim-2 3s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols4 .character.character__space {
+    display: none;
+}
+
+html.home body .monogram__row.monogram__row--cols5 {
+    height: 8vh;
+}
+
+html.home body .monogram__row.monogram__row--cols5 .character {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #fff;
+    position: relative;
+    font-size: calc(8vh * 0.5);
+}
+
+@keyframes character-anim-1 {
+    0% {
+        clip: rect(111px, 450px, 114px, 0);
+    }
+
+    5.88235% {
+        clip: rect(84px, 450px, 26px, 0);
+    }
+
+    11.76471% {
+        clip: rect(95px, 450px, 56px, 0);
+    }
+
+    17.64706% {
+        clip: rect(90px, 450px, 11px, 0);
+    }
+
+    23.52941% {
+        clip: rect(34px, 450px, 27px, 0);
+    }
+
+    29.41176% {
+        clip: rect(9px, 450px, 40px, 0);
+    }
+
+    35.29412% {
+        clip: rect(18px, 450px, 63px, 0);
+    }
+
+    41.17647% {
+        clip: rect(13px, 450px, 70px, 0);
+    }
+
+    47.05882% {
+        clip: rect(107px, 450px, 48px, 0);
+    }
+
+    52.94118% {
+        clip: rect(3px, 450px, 14px, 0);
+    }
+
+    58.82353% {
+        clip: rect(105px, 450px, 112px, 0);
+    }
+
+    64.70588% {
+        clip: rect(56px, 450px, 113px, 0);
+    }
+
+    70.58824% {
+        clip: rect(34px, 450px, 12px, 0);
+    }
+
+    76.47059% {
+        clip: rect(106px, 450px, 89px, 0);
+    }
+
+    82.35294% {
+        clip: rect(10px, 450px, 27px, 0);
+    }
+
+    88.23529% {
+        clip: rect(83px, 450px, 104px, 0);
+    }
+
+    94.11765% {
+        clip: rect(33px, 450px, 103px, 0);
+    }
+
+    100% {
+        clip: rect(54px, 450px, 28px, 0);
+    }
+}
+
+@keyframes character-anim-2 {
+    0% {
+        clip: rect(23px, 450px, 113px, 0);
+    }
+
+    5.88235% {
+        clip: rect(59px, 450px, 42px, 0);
+    }
+
+    11.76471% {
+        clip: rect(70px, 450px, 64px, 0);
+    }
+
+    17.64706% {
+        clip: rect(89px, 450px, 57px, 0);
+    }
+
+    23.52941% {
+        clip: rect(1px, 450px, 90px, 0);
+    }
+
+    29.41176% {
+        clip: rect(13px, 450px, 37px, 0);
+    }
+
+    35.29412% {
+        clip: rect(38px, 450px, 9px, 0);
+    }
+
+    41.17647% {
+        clip: rect(73px, 450px, 93px, 0);
+    }
+
+    47.05882% {
+        clip: rect(7px, 450px, 108px, 0);
+    }
+
+    52.94118% {
+        clip: rect(115px, 450px, 45px, 0);
+    }
+
+    58.82353% {
+        clip: rect(77px, 450px, 107px, 0);
+    }
+
+    64.70588% {
+        clip: rect(40px, 450px, 79px, 0);
+    }
+
+    70.58824% {
+        clip: rect(95px, 450px, 49px, 0);
+    }
+
+    76.47059% {
+        clip: rect(76px, 450px, 13px, 0);
+    }
+
+    82.35294% {
+        clip: rect(41px, 450px, 113px, 0);
+    }
+
+    88.23529% {
+        clip: rect(43px, 450px, 15px, 0);
+    }
+
+    94.11765% {
+        clip: rect(59px, 450px, 83px, 0);
+    }
+
+    100% {
+        clip: rect(25px, 450px, 61px, 0);
+    }
+}
+
+html.home body .monogram__row.monogram__row--cols5 .character:before, html.home body .monogram__row.monogram__row--cols5 .character:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    clip: rect(0, 0, 0, 0);
+}
+
+html.home body .monogram__row.monogram__row--cols5 .character:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: character-anim-1 2s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols5 .character:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: character-anim-2 3s infinite linear alternate-reverse;
+}
+
+html.home body .monogram__row.monogram__row--cols5 .character.character__space {
+    display: none;
+}
+
+html.home body .icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-image: repeating-linear-gradient(to left, blue 0%, blue 0.1%, red 0.1%, red 0.2%, lime 0.2%, lime 0.3%), repeating-linear-gradient(to left, red 0%, red 0.1%, blue 0.1%, blue 0.2%, lime 0.2%, lime 0.3%), repeating-linear-gradient(to left, blue 0%, blue 0.1%, red 0.1%, red 0.2%, lime 0.2%, lime 0.3%), repeating-linear-gradient(to left, aqua 0%, aqua 0.1%, fuchsia 0.1%, fuchsia 0.2%, yellow 0.2%, yellow 0.3%), repeating-linear-gradient(to left, aqua 0%, aqua 0.1%, yellow 0.1%, yellow 0.2%, fuchsia 0.2%, fuchsia 0.3%), repeating-linear-gradient(to left, yellow 0%, yellow 0.1%, aqua 0.1%, aqua 0.2%, fuchsia 0.2%, fuchsia 0.3%), repeating-linear-gradient(to left, white 0%, white 0.1%, black 0.1%, black 0.2%), repeating-linear-gradient(to left, aqua 0%, aqua 0.1%, fuchsia 0.1%, fuchsia 0.2%), repeating-linear-gradient(to left, red 0%, red 0.1%, lime 0.1%, lime 0.2%);
+    background-size: 100% 10%, 100% 20%, 100% 30%, 100% 40%, 100% 50%, 100% 60%, 100% 70%, 100% 80%, 100% 90%;
+    background-repeat: no-repeat;
+}
+
+html.home body .icons__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+html.home body .icons .icomoon {
+    display: -ms-flexbox;
+    display: flex;
+    width: 1.48em;
+    height: 1.48em;
+    padding: 0.74em;
+}
+
+html.home body .icons .icomoon__icon {
+    display: -ms-flexbox;
+    display: flex;
+    width: 1.48em;
+    height: 1.48em;
+    fill: currentColor;
+    color: #fff;
+    background-color: #000;
+}
+
+html.home body .icons .icomoon__link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+
+/*# sourceMappingURL=site.css.map */
