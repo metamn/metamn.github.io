@@ -1,0 +1,40 @@
+body {
+  background: #046380;
+  color: #EFECCA;
+}
+
+a, a:visited {
+  color: #43ADCC;
+  text-decoration: none;
+}
+#menu {
+  font-variant: small-caps;
+}
+
+#index #intro #info {
+  background: #43ADCC;
+}
+#index #intro h1.large {
+  background: #8D1237;
+}
+
+#index #intro #teacher img {
+  -moz-box-shadow: 0 0 10px #43ADCC;
+  -webkit-box-shadow: 0 0 10px #43ADCC;
+  box-shadow: 0 0 10px #43ADCC;
+}
+
+
+
+
+#index #features #excerpt {
+  background: #EFECCA;
+  color: #046380;
+}
+#index #features .triangle-top {
+  border-color: transparent transparent #EFECCA;
+}
+#index #cert img {
+  border: .612em solid white;
+}
+

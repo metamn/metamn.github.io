@@ -1,0 +1,149 @@
+body {
+  background: url("/images/blue_cityscape.png") no-repeat scroll center top #358EE2;
+  color: #EFECCA;
+  text-shadow: 1px 1px #4F4F7C;
+}
+
+
+a, a:visited {
+  color: #173E62;
+  text-shadow: 1px 1px #3896EE;
+}
+a.white, a.white:visited {
+  color: #EFECCA;
+  text-shadow: 1px 1px #4F4F7C;
+}
+a.blue, a.blue:visited {
+  color: #358EE2;
+  text-shadow: 1px 1px #F9F9F9;
+}
+a:hover {
+  text-shadow: none !important;
+}
+
+
+img.teachers {
+  -moz-box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.698), 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1) inset;   
+}
+
+
+/* Index
+*/
+
+
+#index #video h1.large {
+  background: #EEC939;
+  text-shadow: 1px 1px #D7A229;
+}
+#index #video .col-3 {
+  background: #EC902C;
+  text-shadow: 1px 1px #9F692E;
+}
+
+
+#index #intro .col-1 {
+  background: #55ACFF;
+  text-shadow: 1px 1px #426BE8;
+}
+#index #intro .col-2 {
+  background: #8B951C;
+  text-shadow: 1px 1px #434806;
+}
+#index #intro .col-3 {
+  background: #955F05;
+  text-shadow: 1px 1px #48310A;
+}
+
+
+#index #excerpt {
+  background: #EFECCA;
+  color: #358EE2;
+  text-shadow: 1px 1px #F9F9F9;
+}
+#index .triangle-top {
+  border-color: transparent transparent #EFECCA;
+}
+#index #features #item.highlight #excerpt {
+  background: white;  
+}
+#index #features #item.highlight .triangle-top {
+  border-color: transparent transparent white;
+}
+
+
+#index #courses ul li {
+  border-bottom: 1px solid #7fb8ed;
+}
+#tiptip_content {
+  font-size: 100%;
+  padding: 1.25em .612em;
+  background: #8B951C;
+  text-shadow: 1px 1px #434806;
+  color: #EFECCA;
+}
+#tiptip_content h3 {
+  padding-top: 0;
+}
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+	border-right-color: #8B951C;
+}
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+	border-left-color: #8B951C;
+}
+
+
+/* Sidebar
+*/
+
+#sidebar {
+  background: #55ACFF;
+}
+#sidebar h3 {
+  background: #EEC939;
+  text-shadow: 1px 1px #F1DA81;
+  color: #6E5D1A;
+}
+#sidebar ul li {
+  border-bottom: 1px dotted #358EE2;
+}
+#sidebar a, #sidebar a:visited {
+  color: #2A567F;
+  text-shadow: 1px 1px #A1D2FF;
+}
+
+
+
+/* Features
+*/
+
+#features .circle {
+  background: #EFECCA;
+  color: #358EE2;
+  text-shadow: 1px 1px #F9F9F9;
+}
+.page #excerpt {
+  background: #55ACFF;
+  color: #2A567F;
+  text-shadow: none;
+}
+.page .triangle-top {
+  border-color: transparent transparent #55ACFF;
+}
+
+
+
+/* Articles 
+*/
+
+#teacher ul#experience li {
+  border-bottom: 1px dotted #55ACFF;
+}
+
+
+
+
+
+
+

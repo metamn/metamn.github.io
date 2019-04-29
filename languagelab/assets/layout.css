@@ -1,0 +1,337 @@
+.container {
+  width: 90%; /* 1152px = 72em */
+  max-width: 80em; /* 1280px */
+  margin: 0 auto;
+}
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: MuseoSans-500;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+/* Traditional, em */
+body { font-size:100%; line-height:1.25; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.5em; padding:1.45833em 0; }
+h2 { font-size:1.33333em; padding:1.25em 0; }
+h3 { font-size:1.16667em; padding:1.51785em 0; }
+
+h1.large {
+  font-size: 3em;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+a, a:visited {
+  text-decoration: none;
+}
+
+
+
+
+/* Header 
+*/
+
+#header {
+  margin-bottom: 2em;
+}
+#header h1 {
+  padding-bottom: 0;
+}
+#header h3 {
+  padding: 0;
+}
+#header #menu {
+  position: relative;
+  top: 2.5em;
+}
+#header .col-1 {
+  width: 20%;
+}
+
+#menu ul li {
+  margin-right: .625em;
+}
+#menu ul li.last {
+  margin-right: 0;
+}
+#menu {
+  font-variant: small-caps;
+}
+
+
+
+/* Index
+*/
+
+
+#index .col-1, #index .col-3 {
+  width: 30.5%;
+  float: left;
+}
+#index .col-2 {
+  width: 39%;
+  margin: 0;
+  float: left;
+}
+
+#index #video h1.large {
+  padding-left: .36em;
+  height: 4.05em;
+}
+#index #video .col-3 {
+  height: 335px;
+}
+#index #teacher {
+  padding: 0 1.25em;
+}
+#index #teacher.item-1 {
+  padding-top: 1.25em;
+}
+#index #teacher table {
+  margin-bottom: 0;
+}
+#index #teacher td {
+  padding: 0 .612em 1.5em;
+  float: left;
+}
+#index #teacher img {
+  position: relative;
+}
+#index #teacher td.name {
+  width: 100px;
+}
+#index #teacher .country {
+  font-size: smaller;
+}
+#index img.teachers {
+  width: 83px;
+  height: 83px;
+}
+
+
+#index #intro .col-1, #index #intro .col-2, #index #intro .col-3 {
+  height: 8em;
+}
+#index #intro h1 {
+  padding-left: .612em;
+}
+#index #intro h1.real {
+  padding-bottom: 0;
+}
+#index #intro h1.virtual {
+  padding-top: 0;
+}
+
+
+#index #features {
+  margin: 2.3em 0 2.6em;
+}
+#index #features .col-2, 
+#index #courses .col-2,
+#index #certs .col-2 {
+  width: 69.5%;
+}
+#index #item, #index #item {
+  width: 29%;
+  margin-right: 5%;
+  float: left;
+}
+#index #item.c-3, #index #item.c-3 {
+  margin-right: 0%;
+}
+table.inner {
+  margin-bottom: 0;
+}
+table.inner td {
+  vertical-align: middle;
+  padding: 1.25em;
+  padding-bottom: 2em;
+}
+#index #features .c-1 table {
+  margin-bottom: 1em;
+}
+
+
+#excerpt {
+  padding: 1.25em;
+  min-height: 3.75em;
+}
+.triangle-top {
+  border-width: 25px;
+  top: -1.4em;
+  left: 10%;
+}
+
+
+#index #courses ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+
+
+#index #certs table {
+  margin-bottom: 0;
+  margin-top: 3em;
+}
+#index #certs table td {
+  vertical-align: middle;
+}
+
+
+
+
+/* Sidebar
+*/
+
+#sidebar h3 {
+  padding-left: .36em;
+}
+#sidebar ul {
+  margin: 1.25em .612em;
+  list-style-type: none;
+}
+
+
+
+
+/* Features
+*/
+
+.page .col-1 {
+  width: 20%;
+  float: left;
+}
+.page .col-2 {
+  width: 75%;
+  float: left;
+  margin-left: 5%;
+}
+.page h1.large {
+  padding: 0;
+}
+.page h1.large .circle {
+  width: 2em;
+  height: 2em;
+  -moz-border-radius: 3em;
+  -webkit-border-radius: 3em;
+  border-radius: 3em;
+  text-align: center;
+  position: relative;
+  top: -.36em;
+  margin-right: .36em;
+}
+.page h1.large div {
+  float: left;
+}
+.page h1.large .number {
+  position: relative;
+  top: .36em;
+}
+.page .section {
+  margin-bottom: 5em;
+}
+
+
+/* Teachers
+*/
+
+#teachers img.teachers {
+  width: 100px;
+  height: 100px;
+}
+#teachers #teacher {
+  margin-top: 1.25em;
+}
+#teacher .col-1 {
+  width: 100px;
+  margin-right: 0;
+}
+#teacher ul#images, #teacher ul#experience {
+  list-style-type: none;
+  margin-left: 0;
+}
+#teacher ul#images li {
+  margin-bottom: 2.3em;
+}
+#teacher #body {
+  margin: 1em 0;
+}
+#teacher .triangle-top {
+  left: 5%;
+}
+
+
+
+/* Articles
+*/
+#article #body {
+  margin: 2.5em 0;
+}
+#article .triangle-top {
+  left: 5%;
+}
+
+#more #items #item .triangle, #more #items #item #excerpt, #more #items #item .col-2 {
+  display: none;
+} 
+#more #item h2 {
+  padding: 0;
+}
+#more #item {
+  height: 1.25em;
+  padding-top: 1.25em;
+}
+#more #item .col-1 {
+  width: auto;
+}
+
+
+
+/* Item
+*/
+
+#item .col-1 {
+  width: 50%;
+  margin-left: 5%;
+  float: left;
+}
+#item .col-2 {
+  width: 40%;
+  float: left;
+}
+#item table.inner {
+  margin-top: 4em;
+}
+
+
+
+/* Footer 
+*/
+
+#footer {
+  margin: 2.3em 0;
+}
+
+
+

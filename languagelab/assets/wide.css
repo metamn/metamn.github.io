@@ -1,0 +1,17 @@
+#index #video h1.large {
+  height: 3.28em;
+}
+#index #video .col-3 {
+  height: 298px;
+}
+#index img.teachers {
+  height: 75px;
+  width: 75px;
+}
+#index #teacher td {
+  padding: 0.36em;
+}
+#index #features {
+  margin: 2em 0 2.9em;
+}
+
