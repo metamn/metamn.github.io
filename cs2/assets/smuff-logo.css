@@ -1,0 +1,40 @@
+/* line 132, ../views/assets/header.scss */
+#logo {
+  float: left;
+  cursor: pointer;
+}
+/* line 135, ../views/assets/header.scss */
+#logo.artwork {
+  height: 2.91667em;
+  width: 10.20833em;
+}
+/* line 640, ../views/assets/theme.scss */
+#logo.artwork .smart-stuff-cell, #logo.artwork .smart-stuff, #logo.artwork .ro-cell, #logo.artwork .ro {
+  display: none;
+}
+/* line 665, ../views/assets/theme.scss */
+#logo.artwork .cell {
+  width: 0.41667em;
+  height: 0.41667em;
+  float: left;
+}
+/* line 671, ../views/assets/theme.scss */
+#logo.artwork .small {
+  width: 0.20833em;
+}
+/* line 675, ../views/assets/theme.scss */
+#logo.artwork .set, #logo.artwork .ro {
+  background: #363636;
+}
+/* line 679, ../views/assets/theme.scss */
+#logo.artwork .square {
+  background: #cccccc;
+}
+/* line 684, ../views/assets/theme.scss */
+#logo.artwork:hover {
+  width: 20em;
+}
+/* line 687, ../views/assets/theme.scss */
+#logo.artwork:hover .smart-stuff-cell {
+  display: block;
+}

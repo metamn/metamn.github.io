@@ -1,0 +1,156 @@
+h1, h2, h3, h4 {
+  font-size: larger;
+  font-family: 'Old Standard TT', serif;
+}
+  
+h4 {
+  margin-top: $gutter;
+}
+
+h3 {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter;
+  font-style: italic;
+}
+
+h2 {
+  margin-top: $gutter * 3;
+  margin-bottom: $gutter * 2;
+}
+
+h1 {
+  margin-top: $gutter * 3;
+  margin-bottom: $gutter * 2;
+  font-weight: bold;
+}
+
+
+
+@mixin title {
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Old Standard TT', serif;
+}
+
+@mixin figure {
+  img {
+    padding: $gutter;
+    background: $white;
+    
+    @include mobile {
+      position: relative;
+      margin-left: -$gutter;
+    }
+  }
+  
+  a:hover {
+    border: none !important;
+  }
+}
+
+@mixin figcaption {
+  font-style: italic;
+  font-size: smaller;
+  text-align: left;
+  margin-bottom: $gutter;
+  
+  &:before {
+    content: '\2014';
+    display: inline-block;
+    margin-left: $gutter;
+    
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+@mixin simple-typographic-elements {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  
+  p + p {
+    margin-top: $gutter;
+  }
+}
+
+@mixin extended-typographic-elements {
+  p + p, p + figure, ol + figure, figure + p, table + p, p + ol, ol + p {
+    margin-top: $gutter;
+  }
+  
+  figure + figure {
+    margin-top: $gutter * 2;  
+  }
+  
+  figure {
+    @include figure;
+  }
+  
+  figcaption {
+    @include figcaption;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style-type: disc;    
+    margin: $gutter $gutter - $gutter/4;
+  }
+  
+  dl {
+    margin: $gutter 0;
+    
+    dt {
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    
+    dd {
+      margin-bottom: $gutter/2;
+    }
+    
+    dd + dt {
+      margin-top: $gutter;
+    }
+  }
+  
+  .spacer {
+    @include block;
+    margin-bottom: $gutter;
+  }
+  
+  blockquote {
+    margin: $gutter*2 0 $gutter/4;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .blockquote-source {
+    @include figcaption;  
+    margin-bottom: $gutter;
+  }
+  
+  table {
+    width: 100%;
+    display: table !important;
+    
+    thead th, tbody td {
+      padding: $gutter/2;
+      padding-left: 0;
+      border-bottom: 1px solid $white;
+    }
+  }
+  
+  mark {
+    font-style: italic;
+    background: transparent;
+    color: $color;
+  }
+}

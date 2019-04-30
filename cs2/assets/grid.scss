@@ -1,0 +1,133 @@
+@mixin typographic-grid {
+  font-size: $font-size;
+  line-height: $line-height;
+  
+  $characters-per-row: 50 !global;
+  $grid-cells-per-text: 6 !global;
+  $text-width: $characters-per-row * $gutter/2 !global;
+  $grid-width: $text-width / $grid-cells-per-text !global;
+
+  $text-height: $gutter*4 !global;
+  $grid-height: $text-height !global;
+
+  $text-grid-width: 4 * $grid-width + 3 * $gutter !global;
+}
+
+
+// 0. Reset / Default settings
+$font-size: 100% !global;
+$line-height: 1.25 !global;
+$gutter: 1.25em !global;
+
+body {
+  @include typographic-grid;
+}
+
+
+
+// 0. Preparing devices 
+$breakpoint-mobile: 30em; // 480px
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-small-screen: 64em; // 1024px
+$breakpoint-normal-screen: 80em; // 1280px
+$breakpoint-large-screen: 90em; // 1440px
+
+
+
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin tablet-and-up {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content
+  }
+}
+
+@mixin normal-screen-and-up {
+  @media only screen and (min-width: $breakpoint-normal-screen) {
+    @content
+  }
+}
+
+@mixin large-screen {
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content
+  }
+}
+
+
+// 1. Scalable typographic grid
+@include mobile {
+  $font-size: 87.5% !global;
+  
+  body {
+    @include typographic-grid;
+  }
+}
+
+
+@include large-screen {
+  $font-size: 150% !global;
+  
+  body {
+    @include typographic-grid;
+  }
+}
+
+
+// 2. Grid mixins
+@mixin column($width: $text-grid-width) {
+  @include block;
+  
+  .container {
+    max-width: $width;
+  }
+}
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@function row($nr) {
+  @return $nr * ($grid-height + $gutter);
+}
+
+
+
+
+// Common mixins
+// -----------------------------------------------
+
+@mixin container {
+  margin: $gutter auto;
+  position: relative;
+  
+  @include mobile {
+    padding: 0 $gutter;
+  }
+}
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+@mixin hide-title {
+  .container > h3 {
+    display: none;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+

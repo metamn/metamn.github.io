@@ -1,0 +1,120 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "colors";
+@import "grid";
+@import "typography";
+@import "decorations";
+
+
+@import "visual-grid";
+#grid, #gravity {
+  display: none;
+}
+
+
+
+html {
+  body {
+    @include body;
+    
+    .container {
+      @include container;
+      
+      header, #about, #contact {
+        @include column;
+      }
+      
+      #about, #contact, nav {
+        @include hide-title;
+      }
+      
+      header {
+        @include rows(1);
+        @include header;
+      }
+      
+      #about {
+        @include rows(2);
+        text-align: justify;
+        
+        @include mobile {
+          height: auto;
+        }
+      }
+      
+      #contact {
+        margin: $grid-height auto;
+        
+        p {
+          @include button;
+        }
+      }
+      
+      #navigation {
+        @include navigation;
+      }
+    }
+  
+    &.frontpage, &.older-projects {
+      main {
+        @include column($text-grid-width + $text-grid-width / 2);
+        
+        .container {
+          article {
+            margin-bottom: $gutter;
+            @include thumb;
+          }
+        }
+      }
+    }
+    
+    &.older-projects {
+      figure img {
+        background: transparent !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  
+    
+    &.article, &.portfolio {
+      header, main, #navigation {
+        @include column($text-grid-width + $text-grid-width / 2);
+      }
+      
+      main {
+        @include tablet-and-up {
+          @include color($color, $light-grey);
+          @include link($link, $light-grey);
+        }
+               
+        .container {
+          @include extended-typographic-elements;
+          
+          @include separator;
+          margin-bottom: $grid-height;
+          padding-bottom: $grid-height;
+        }
+      }
+      
+      #contact {
+        @include mobile {
+          margin-top: 0;
+        }
+      }
+    }
+    
+    &.portfolio {
+      @include portfolio-item;
+    }
+    
+    &.reboot {
+      @include reboot;
+    }
+  }
+}

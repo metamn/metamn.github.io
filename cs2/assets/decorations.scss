@@ -1,0 +1,284 @@
+@mixin asymmetric-portfolio-item {
+  h3 {
+    display: none;
+  }
+  
+  aside h3 {
+    display: block;
+  }
+  
+  &.image {
+    figure {
+      position: relative;
+      left: -10em;
+    }
+    
+    aside {
+      position: relative;
+      top: -20em;
+      left: 20em;
+      width: 20em;
+      height: 0;
+    }
+  }
+  
+  &.tablet, &.desktop {
+    figure {
+      left: -16em;
+    }
+    
+    aside {
+      left: 30em;
+      top: -25em;
+    }
+  }
+  
+  &.desktop {
+    aside {
+      left: 25em;
+      top: -45em;
+    }
+  }
+  
+  @include large-screen {
+    &.image {
+      figure {
+        left: 0;
+      }
+      
+      aside {
+        top: -20em;
+        left: 20em;
+      }
+    }
+    
+    &.tablet {
+      figure {
+        left: -10em;
+      }
+      
+      aside {
+        left: 25em;
+        top: -25em;
+      }
+    }
+    
+    &.desktop {
+      figure {
+        left: -14em;
+      }
+      
+      aside {
+        left: 27em;
+        top: -45em;
+      }
+    }
+  }
+}
+
+
+
+@mixin reboot {
+  @include normal-screen-and-up {
+    article {
+      &.first {
+        aside {
+          top: -10em;
+        }
+        
+        figure {
+          left: -9em;
+          
+          img {
+            background: transparent;
+          }
+          
+          figcaption {
+            display: none;
+          }
+        }
+      }
+      
+      &.image {
+        aside {
+          left: 25em;
+        }
+      }
+    }
+  }
+  
+  @include large-screen {
+    article {
+      &.first {
+        margin-bottom: $grid-height;
+      }
+      
+      &.last {
+        aside {
+          top: -25em;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin fade-in {
+  &.image {
+    // by default all articles are hidden and revealed on scroll
+    opacity: 0;
+    
+    aside {
+      // by default the story is hidden and becomes visible when all images are loaded
+      opacity: 0;
+    }
+  }
+  
+  &:nth-of-type(3) {
+    opacity: 1;
+  }
+}
+
+
+@mixin portfolio-item {
+  article {
+    figcaption {
+      margin-left: $gutter / 2;
+    }
+    
+    aside {
+      h3 {
+        display: none;
+      }
+    }
+    
+    &.services {
+      margin: $grid-height 0;
+      
+      h3 {
+        display: none;
+      }
+    }
+    
+    &.logo-animated {
+      figure {
+        @include block;
+        margin-bottom: $gutter;
+      }
+    }
+    
+    @include fade-in;
+    
+    @include normal-screen-and-up {
+      @include asymmetric-portfolio-item;
+    }
+  }
+}
+
+@mixin navigation {
+  .container {
+    // Stretch to limits
+    padding-left: 0;
+    padding-right: 0;
+    
+    // Remove separator
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    
+    // Move up
+    position: relative;
+    top: -$grid-height;
+          
+    ul {
+      list-style-type: none;
+      
+      li {
+        display: inline-block;
+        
+        &.right {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin thumb {
+  text-align: center;
+  
+  h1, figcaption {
+    display: none;
+  }
+  
+  .category {
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  opacity: 0;
+  &:first-of-type {
+    opacity: 1;
+  }
+}
+
+
+@mixin header {
+  @include link($title);
+        
+  h4 {
+    @include title;
+  }
+  
+  p {
+    font-size: smaller;
+  }
+}
+
+
+@mixin body {
+  @include color;
+  @include link;
+  @include simple-typographic-elements;
+}
+
+
+
+
+@mixin link($c: $link, $b: $background) {
+  a {
+    @include color($c, $b);
+    text-decoration: none;
+    
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+
+@mixin separator {
+  border-bottom: 1px solid $grey;
+}
+
+
+@mixin button {
+  text-align: center;
+  border: 1px solid $grey;
+  padding: $gutter/2 $gutter $gutter/2 + $gutter/8;
+  box-shadow: 1px 0 $grey, 0 1px $grey, 2px 1px $grey, 1px 2px $grey, 3px 2px $grey, 2px 3px $grey, 4px 3px $grey, 3px 4px $grey, 5px 4px $grey, 4px 5px $grey;
+  
+  width: calc(100% - #{$gutter * 2} - #{2px});
+  
+  @include link($color);
+  
+  span {
+    @include title;
+    font-size: larger;
+  }
+
+  a:hover {
+    border-bottom: none !important;
+  }
+}
