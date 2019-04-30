@@ -1,0 +1,32 @@
+@mixin strapline {
+  overflow: hidden;
+  
+  width: 100%;
+  
+  @include portrait {
+    width: 100%;
+  }
+  
+  
+  //@include harsh($black, $transparency: 0.6, $angle: left, $nuance: .1);
+  background-color: $black;
+  background-image: url("http://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
+  
+  .container {
+    @include svg-cliptext;
+    
+    svg {
+      @include portrait-or-landscape;
+      
+      text {
+        @include font(strapline);
+      }
+    }
+  }
+}
+
+
+@keyframes move-mask {
+  0%, 100% {opacity: 1}
+  50% {opacity: .5}
+}

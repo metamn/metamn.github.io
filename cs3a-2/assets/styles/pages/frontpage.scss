@@ -1,0 +1,17 @@
+html.frontpage {
+  @include full-height;
+  
+  body {
+    #strapline {
+      @include strapline;
+    }
+  
+    #values {
+      @include values;
+    }
+    
+    footer {
+      @include footer;
+    }
+  }
+}

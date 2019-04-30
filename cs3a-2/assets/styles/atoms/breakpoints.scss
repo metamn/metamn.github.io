@@ -1,0 +1,39 @@
+$breakpoint-large-screen: 90em; // 1440px
+
+@mixin large-screen-and-up {
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content
+  }
+}
+
+@mixin portrait {
+  @media only screen and (orientation: portrait) {
+    @content
+  }
+}
+
+
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content
+  }
+}
+
+
+@mixin portrait-or-landscape {
+  &.portrait {
+    display: none;
+  }
+  
+  @include portrait {
+    &.landscape {
+      display: none;
+    }
+
+    &.portrait {
+      display: block;
+    }
+  }
+}
+      
+      

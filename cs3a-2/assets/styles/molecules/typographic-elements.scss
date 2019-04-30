@@ -1,0 +1,25 @@
+@mixin typographic-elements {
+  h3 {
+    @include h3;
+  }
+  
+  p {
+    @include p;
+    
+    @include mobile {
+      font-size: larger;
+    }
+  }
+  
+  .button {
+    @include button($gutter/3 $gutter);
+    
+    @include mobile {
+      font-size: smaller;
+    }
+  }
+  
+  em {
+    @include em;
+  }
+} 

@@ -1,0 +1,16 @@
+@mixin h3 {
+  @include font(skill);
+}
+
+@mixin p {
+  line-height: 1.5;
+  
+  + p {
+    padding-top: $gutter;
+  }
+}
+
+@mixin em {
+  font-style: italic;
+  letter-spacing: $gutter/16;
+}

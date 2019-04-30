@@ -1,0 +1,17 @@
+@mixin tooltip {
+  cursor: pointer;
+  
+  .tooltip-item {
+    .tooltip-text {
+      display: none;
+    }
+  }
+  
+  .tooltip {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
+}

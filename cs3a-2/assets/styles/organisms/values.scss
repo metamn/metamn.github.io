@@ -1,0 +1,101 @@
+@mixin values {
+  display: none;
+  
+  @include values-common;
+  
+  @include portrait {
+    @include values-portrait;
+  }
+  
+  @include landscape {
+    @include values-landscape;
+  }
+  
+  @include large-screen-and-up {
+    @include values-large-screen;
+  }
+}
+
+
+
+
+
+@mixin values-common {
+  #about {
+    max-width: $text-width;
+    
+    h2 {
+      @include font(title);
+    }
+  }
+  
+  #skills {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    
+    ul {
+      li {
+        @include circle-with-text($gutter * 3.2);
+      }
+    }
+  }
+  
+  #content { 
+    figure {
+      @include figure;
+      margin-bottom: $gutter * 2;
+    }
+  }
+  
+  #menu {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    
+    ul {
+      @include list-inline;
+      li {
+        @include button;
+      }
+    }
+  }
+}
+
+
+@mixin values-portrait {
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+@mixin values-landscape {
+  width: 50%;
+  padding-left: 5%;
+  float: left;
+  
+  #about {
+    margin-top: row(1);
+    max-width: $text-width / 1.5;
+  }
+  
+  nav {
+    ul {
+      font-size: small;
+    }
+  }
+  
+  #content {
+    margin-top: $gutter;
+  }
+}
+
+
+
+@mixin values-large-screen {
+  
+  nav {
+    ul {
+      font-size: medium;
+    }
+  }
+}

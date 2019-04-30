@@ -1,0 +1,15 @@
+@mixin line($width: 100%) {
+  @include block;
+  
+  &.top {
+    border-top: 1px solid $lightgrey;
+  }
+  
+  &.bottom {
+    border-bottom: 1px solid $lightgrey;
+  }
+
+  max-width: $width;
+  margin-left: calc((100% - #{$width}) / 2);
+  margin-right: calc((100% - #{$width}) / 2);
+}

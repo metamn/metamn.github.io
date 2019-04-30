@@ -1,0 +1,13 @@
+html {
+  body {
+    @include grid;
+    @include font;
+    @include colors;
+    @include link;
+    
+    section, article, nav, header, footer {
+      @include block;
+      @include hide-title;
+    }
+  }
+}

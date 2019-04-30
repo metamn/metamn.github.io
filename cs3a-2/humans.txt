@@ -1,0 +1,25 @@
+
+/* TEAM */
+Designer and Developer: Csongor Bartus
+Site: http://its-csongor.com
+Twitter: @metamn
+Location: Budapest, Hungary
+
+
+
+/* THANKS */
+Harsh backgrounds: Caey Olson, http://www.bookcasey.com/harsh/
+Contact Icon: <a href="http://www.thenounproject.com/sapi">Stefan Parnarov</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+Email icon: <a href="http://www.thenounproject.com/eddyyme">Eddy Ymeri</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+Twitter icon: <a href="http://www.thenounproject.com/eddyyme">Eddy Ymeri</a> from the <a href="http://www.thenounproject.com">Noun Project</a>
+HTML5 logo: http://www.w3.org/html/logo/
+Javascript logo: http://en.wikipedia.org/wiki/JavaScript#mediaviewer/File:Unofficial_JavaScript_logo_2.svg
+
+/* SITE */
+Last update: YYYY/MM/DD
+Standards: HTML5, CSS3
+Components: SASS, Compass, jQuery
+Software: Jekyll (http://jekyllrb.com/), Adobe Brackets (http://brackets.io/), Write Good (https://github.com/btford/write-good)
+
+
+                    

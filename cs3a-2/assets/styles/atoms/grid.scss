@@ -1,0 +1,84 @@
+
+// The responsive typographic grid
+// =======================================================================================================
+
+
+// The basic font-size
+// - the first rule of typography is to make the basic font perfectly readable 
+// - in a responsive environment this means we will have different, scaling settings for small screens (tablets and below), normal screens (laptops) and monitors
+$small-font-size: 100%;
+$font-size: 125%;
+$large-font-size: 150%;
+
+// The basic line height
+// - this is 125% of the $font-size
+// - see more http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
+$line-height: 1.25;
+
+// The basic line height in EM
+// - it's derived from the $line-height property
+$gutter: 1.25em;
+
+
+  
+// Setting up the typographic grid based on the basic font
+@mixin grid {
+  font-size: $font-size;
+  line-height: $line-height;
+    
+  @include portrait {
+    font-size: $small-font-size;  
+  } 
+  
+  @include large-screen-and-up {
+    font-size: $large-font-size;  
+  }
+}
+
+
+
+
+// Setting up the typographic and the usual grid
+// =======================================================================================================
+// - we will have a grid for text elements like blog posts, excerpts
+// - we will have a grid for non-text elements
+// - global variables set up are: $text-grid-width, $text-grid-height, $grid-width, $grid-height;
+
+
+
+// Setting up the text block
+// -----------------------------------------------
+// Characters per row
+$characters-per-row: 50;
+
+// Text block width
+$text-block-width: $characters-per-row * $gutter/2; 
+$text-grid-width: $text-block-width;
+$text-width: $text-grid-width;
+
+// How many lines are in a txt-block
+$lines-in-text-block: 4;
+
+// Text block height
+$text-block-height: $lines-in-text-block * $gutter;
+$text-grid-height: $text-block-height;
+$text-height: $text-grid-height;
+
+
+
+// Setting up the grid
+// -----------------------------------------------
+// Number of grid cells in a text block
+$cells-in-a-text-block: 6;
+
+// Grid cell width
+$grid-cell-width: $text-block-width / $cells-in-a-text-block;
+$grid-width: $grid-cell-width;
+
+// Grid cell height
+$grid-cell-height: $text-block-height;
+$grid-height: $grid-cell-height;
+
+
+
+
