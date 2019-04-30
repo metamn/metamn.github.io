@@ -1,0 +1,180 @@
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* Vertical rhythm
+*/
+/* The Grid
+*/
+/* Responsive mixins - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+*/
+@media only screen and (max-width: 380px) { .mobile { display: block; }
+  .desktop { display: none !important; } }
+@media only screen and (min-width: 381px) { .mobile { display: none; }
+  .desktop { display: block; } }
+/* Highlighting active navigation item
+*/
+body { font-size: 100%; line-height: 1.25; }
+body .container { /* Headings -----------------------------------------------
+*/ /* Headings dont differ by size but by decoration - vertical rhythm is maintained by padding
+*/ /* Block level elements
+// -----------------------------------------------
+*/ /* the second <p> has a top margin */ /* blockquote is simply indented, enlarged */ /* address is small caps */ /* Lists
+// -----------------------------------------------
+*/ /* Tables
+// -----------------------------------------------
+*/ /* Text styles
+// -----------------------------------------------
+*/ /* Forms
+// -----------------------------------------------
+*/ /* Reset browser defaults */ /* Text */ /* Button */ /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ - the checkbox and radio button is not displayed - instead a label is displayed which can be styled with 'content' 
+*/ /* Select box  - put inside a <label class="select"> - label:after is positioned over the original selectbox arrow - additionally padding & relative positioning must be overwritten later in the new context
+*/ }
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 { font-size: 1.5em; padding: 1.25em 0; margin-top: 0; margin-bottom: 0; }
+body .container h2 { font-weight: 300; }
+body .container p + p { margin-top: 1.25em; }
+body .container q, body .container blockquote { display: block; margin: 2.5em; border-left: 1px dotted; padding-left: 1.25em; font-style: italic; font-size: larger; }
+body .container address { font-variant: small-caps; }
+body .container ul, body .container menu, body .container dir, body .container ol { margin: 1.25em; list-style-type: square; }
+body .container ol { list-style-type: decimal; }
+body .container dl { margin: 1.25em 0; }
+body .container dl dt { font-weight: bold; text-transform: uppercase; margin: 1.25em 0; }
+body .container dl dd { margin: 0.3125em; margin-bottom: 0.625em; }
+body .container dl dd + dt { margin-top: 2.5em; }
+body .container table { margin: 1.25em 0 2.5em; }
+body .container table thead tr td { font-weight: bold; }
+body .container table tbody { border-top: 1px dotted; border-bottom: 1px dotted; }
+body .container table td, body .container table th, body .container table tr { text-align: left; vertical-align: top; padding: 1.25em; }
+body .container table td { border-bottom: 1px solid; }
+body .container em, body .container i { font-style: italic; }
+body .container strong, body .container b { font-weight: bold; }
+body .container input, body .container textarea, body .container select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea { border: 1px solid transparent; border-bottom: 1px solid; font-style: italic; color: gray; }
+body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus { color: black; font-style: normal; border: 1px solid #ccc; border-bottom: 1px solid; }
+body .container input[type='submit'] { background: black; color: lightgray; padding: 0.625em; }
+body .container input[type='submit']:hover { cursor: pointer; color: white; }
+body .container input[type='radio'], body .container input[type='checkbox'] { display: none; }
+body .container input[type='radio'] + label, body .container input[type='checkbox'] + label { display: inline-block; }
+body .container input[type='radio'] + label:after { content: '\2610'; margin-right: 0.625em; }
+body .container input[type='radio']:checked + label:after { content: '\25a3'; }
+body .container input[type='checkbox'] + label:before { content: '\2610'; margin-right: 0.3125em; font-size: 200%; line-height: .5; vertical-align: top; color: lightgray; }
+body .container input[type='checkbox']:checked + label:before { content: '\2611'; color: black; }
+body .container select { border-bottom: 1px solid gray; cursor: pointer; width: 100%; }
+body .container label.select:after { content: '\003E'; float: right; display: inline-block; padding: 0 .45em; position: relative; left: 0; background: white; pointer-events: none; /* this is a must */ cursor: pointer; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); }
+
+body .container { width: 90%; margin: 0 auto; }
+body .container section, body .container nav, body .container footer { width: 100%; float: left; }
+body .container section { width: 75.902%; margin-left: 24.098%; }
+@media only screen and (max-width: 767px) { body .container section { width: 100%; float: left; margin-left: 0; } }
+body .container nav { margin: 2.5em 0; }
+@media only screen and (min-width: 1025px) { body .container nav { margin: 10em 0 5em; } }
+@media only screen and (min-width: 1401px) { body .container nav { margin: 15em 0 5em; } }
+body .container nav ul { width: 75.902%; margin-left: 24.098%; }
+@media only screen and (max-width: 767px) { body .container nav ul { width: 100%; float: left; margin-left: 0; } }
+@media only screen and (max-width: 767px) { body .container nav ul li { margin-left: 2.5em; } }
+body .container footer figure { width: 19.098%; margin-right: 5%; float: left; }
+body .container footer figure img { width: 100%; max-width: 11em; }
+body .container footer form { width: 75.902%; float: left; }
+body .container footer #contact { display: none; }
+@media only screen and (max-width: 1023px) { body .container footer { margin-bottom: 1.25em; }
+  body .container footer figure { width: 38.196%; }
+  body .container footer form { width: 56.804%; } }
+@media (max-width: 380px) { body .container footer h1, body .container footer h2 { padding-top: 0; }
+  body .container footer figure { width: 50%; margin-top: 0.625em; }
+  body .container footer form { width: 100%; float: left; }
+  body .container footer form input[type="submit"] { width: 100%; float: left; } }
+@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container footer h1 { padding-top: 0.625em; } }
+
+body.contact .container footer form { display: none; }
+body.contact .container footer #contact { display: block; }
+
+/* The color scheme
+*/
+body { color: #363636; background: #f1f1f1; font-family: 'Lato', sans-serif; }
+body .container a, body .container a:active, body .container a:visited { color: #363636; text-decoration: none; }
+@media only screen and (min-width: 1025px) { body .container h1 { width: 60%; } }
+body .container blockquote, body .container nav { font-family: 'Old Standard TT', serif; }
+body .container input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
+body .container article h1, body .container article aside { font-size: 3em; font-weight: 300; }
+body .container article blockquote { font-size: larger; margin: 0; margin-bottom: 2.5em; font-style: normal; }
+body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; font-size: larger; font-weight: 300; }
+@media only screen and (max-width: 1023px) { body .container article table td, body .container article table th, body .container article table tr { padding: 0.3125em; } }
+@media only screen and (max-width: 767px) { body .container article table td, body .container article table th, body .container article table tr { font-size: 100%; } }
+body .container article table td { color: #f3aaaa; }
+body .container article table td.c1 { color: #363636; }
+body .container article table td, body .container article table tbody { border-bottom: 1px dotted #dddddd; border-color: #dddddd; }
+body .container article dl { margin-bottom: 2.5em; font-size: larger; font-weight: 300; }
+body .container article dl dt { border-bottom: 1px dotted #f6c0c0; margin-bottom: 0.625em; font-weight: 300; }
+body .container article dl dd { margin: 0; }
+@media only screen and (min-width: 1401px) { body .container article dl { font-size: 125%; } }
+body .container article figure { margin-bottom: 5em; }
+body .container article figure img { -webkit-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; }
+body .container article figure figcaption { padding: 0.625em 0; color: #b5b5b5; }
+body .container article form p { margin: 0; }
+body .container article form p input, body .container article form p textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container article form p input, body .container article form p textarea { width: 94%; } }
+body .container article form p input[type="submit"] { width: 10em; }
+body .container nav { background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa; }
+body .container nav ul { padding: 1.25em 0; list-style: none; }
+body .container nav ul li { padding: 0.625em 0; }
+body .container nav ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+body .container nav ul li.last { border-bottom: none; }
+body .container nav ul li { border-bottom: 1px dotted #f6c0c0; }
+body .container footer h1 { padding-bottom: 0; }
+body .container footer h2 { padding-top: 0; }
+body .container footer #contact a { border-bottom: 1px dotted #363636; }
+
+body.text .container article { /* Make it readable
+*/ max-width: 700px; line-height: 1.5; font-size: 1.25em; font-weight: 300; /* Adjust visual hierarchy
+*/ /* Restore expectations
+*/ /* Decorations 
+*/ /* Highlight text
+*/ /* Images
+*/ }
+body.text .container article ol, body.text .container article ul { font-size: 100%; margin-left: 1.25em; margin-bottom: 2.5em; }
+body.text .container article ul { list-style: square; }
+body.text .container article h3 { padding-bottom: 0; }
+body.text .container article h1, body.text .container article h2, body.text .container article h3, body.text .container article h4 { line-height: 1.1; display: block; }
+body.text .container article h4 { text-transform: uppercase; font-size: 1em; font-weight: bold; }
+body.text .container article article { margin-top: 0; }
+body.text .container article a, body.text .container article a:active, body.text .container article a:visited { border-bottom: 1px dotted; }
+body.text .container article span { background: #dddddd; padding: 0.15625em; font-style: italic; }
+body.text .container article p { /* Separate content blocks
+*/ }
+body.text .container article p.separator { text-align: center; }
+body.text .container article p.separator:after { content: '* * *'; }
+body.text .container article table, body.text .container article td, body.text .container article th, body.text .container article tr { font-size: 100%; }
+body.text .container article td { border-color: #dddddd; color: #363636; }
+@media (max-width: 380px) { body.text .container article table td, body.text .container article table th, body.text .container article table tr { padding: 0.3125em; font-size: 90%; } }
+body.text .container article figure { margin-bottom: 2.5em; }
+@media only screen and (min-width: 1025px) { body.text .container article figure { display: inline-block; max-width: 65em; } }
+body.text .container article figure a { border-bottom: none; }
+body.text .container article p + figure, body.text .container article figure + p { margin-top: 1.25em; }
+
+/* Highlight menu
+*/
+body.design .container nav li#design a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+
+body.development .container nav li#development a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+
+body.values .container nav li#values a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+
+body.manifesto .container nav li#manifesto a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+
+.outline { display: none; }
+
+img { max-width: 100%; }

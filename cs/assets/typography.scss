@@ -1,0 +1,260 @@
+body {
+  font-size: 100%;
+  line-height: 1.25;
+  
+  .container {
+    
+    /* Headings
+     -----------------------------------------------
+    */
+
+    /* Headings dont differ by size but by decoration
+     - vertical rhythm is maintained by padding
+    */
+
+    h1, h2, h3, h4, h5, h6 {
+	    font-size: 1.5em;
+	    
+      padding: 1.25em 0;
+	    margin-top: 0; 
+	    margin-bottom: 0;
+    }
+    
+    h2 {
+      font-weight: 300;
+    }
+    
+
+
+    /* Block level elements
+    // -----------------------------------------------
+    */
+
+    /* the second <p> has a top margin */
+    p + p {
+	    margin-top: $pad;
+    }
+
+    /* blockquote is simply indented, enlarged */
+    q, blockquote {
+      display: block;
+	    margin: $pad*2;
+	
+	    border-left: 1px dotted;
+	    padding-left: $pad;
+	
+	    font-style: italic;
+	    font-size: larger;
+    }
+
+    /* address is small caps */
+    address {
+	    font-variant: small-caps;
+    }
+
+
+    /* Lists
+    // -----------------------------------------------
+    */
+
+    ul, menu, dir, ol {
+	    margin: $pad;
+	    list-style-type: square;
+    }
+
+    ol {
+	    list-style-type: decimal;
+    }
+
+    dl {
+	    margin: $pad 0;
+	
+	    dt {
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    margin: $pad 0;
+	    }
+	    dd {
+		    margin: $pad/4;
+		    margin-bottom: $pad/2;
+	    }
+	    
+      dd + dt {
+        margin-top: $pad*2;
+      }
+    }
+
+
+
+    /* Tables
+    // -----------------------------------------------
+    */
+
+    
+    table {
+	    margin: $pad 0 $pad*2;
+	
+	    thead {
+		    tr {
+			    td {
+				    font-weight: bold;
+			    }
+		    }
+	    }
+	
+	    tbody {
+		    border-top: 1px dotted;
+		    border-bottom: 1px dotted;
+	    }
+	
+	    td, th, tr {
+  			text-align: left;
+  			vertical-align: top;
+  			padding: $pad;
+	    }
+	
+	    td {
+	      border-bottom: 1px solid;
+	    }
+    }
+    
+
+
+    /* Text styles
+    // -----------------------------------------------
+    */
+    
+    em, i {
+	    font-style: italic;
+    }
+
+    strong, b {
+	    font-weight: bold;
+    }
+
+
+
+
+    /* Forms
+    // -----------------------------------------------
+    */
+
+
+    /* Reset browser defaults */
+    input, textarea, select {
+	    border: none;
+	    outline: 0;
+	    background: white;
+	
+	    appearance: none;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+    }
+
+    /* Text */
+    input[type='text'], input[type='email'], input[type='password'], textarea {
+	    border: 1px solid transparent;
+	    border-bottom: 1px solid;
+	    font-style: italic;
+	    color: gray;
+    }
+    input[type='text']:focus, input[type='email']:focus, input[type='password']:focus, textarea:focus {
+	    color: black;
+	    font-style: normal;
+	    border: 1px solid #ccc;
+	    border-bottom: 1px solid;
+    }
+
+    /* Button */
+    input[type='submit'] {		
+	    background: black;
+	    color: lightgray;
+	    padding: $pad/2;
+	    
+	    &:hover {
+	      cursor: pointer;
+	      color: white;
+	    }
+    }
+    
+
+
+    /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+      - the checkbox and radio button is not displayed
+      - instead a label is displayed which can be styled with 'content' 
+    */
+
+    
+    input[type='radio'], input[type='checkbox'] {
+      display: none;
+    }
+    input[type='radio'] + label, input[type='checkbox'] + label {
+      display: inline-block;
+    }
+
+    
+    input[type='radio'] + label:after {
+	    content: '\2610';
+	    margin-right: $pad/2;
+    }
+    input[type='radio']:checked + label:after {
+	    content: '\25a3';
+    }
+
+    
+    input[type='checkbox'] + label:before {
+	    content: '\2610';
+	    margin-right: $pad/4;
+	
+	    // This glyph is too small, so grow it
+	    font-size: 200%;
+	    line-height: .5;
+	    vertical-align: top;
+	
+	    color: lightgray;
+    }
+    input[type='checkbox']:checked + label:before {
+      content: '\2611';
+	    color: black;
+    }
+    
+    
+    
+    /* Select box 
+      - put inside a <label class="select">
+      - label:after is positioned over the original selectbox arrow
+      - additionally padding & relative positioning must be overwritten later in the new context
+    */
+    
+    select {
+      border-bottom: 1px solid gray;
+      cursor: pointer;
+      width: 100%;
+    }
+    label.select:after {
+      content: '\003E';
+      float: right;
+      
+      display: inline-block;
+      padding: 0 .45em;
+      position: relative;
+      left: 0;
+      background: white;
+      
+      
+      pointer-events: none; /* this is a must */
+      cursor: pointer;
+
+      @include rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    }
+
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+
+body {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+    section, nav, footer {
+      @include block;
+    }
+    
+    section {
+      @include align-right;
+    }
+    
+    
+    nav {
+      margin: $pad*2 0;
+      
+      @include small-screen-and-up {
+        margin: $pad*8 0 $pad*4;
+      }
+      
+      @include big-screen {
+         margin: $pad*12 0 $pad*4;
+      }
+      
+      ul {
+        @include align-right;
+        
+        li {
+          @include tablet-and-below {
+            margin-left: $pad*2;
+          }
+        }
+      }
+    }
+    
+    
+    footer {
+      figure {
+        width: $minor/2;
+        margin-right: $margin;
+        
+        float: left;
+        
+        img {
+          width: 100%;
+          max-width: 11em;
+        }
+      }
+      
+      form {
+        width: $major + $minor/2 - $margin;
+        float: left;
+      }
+      
+      #contact {
+        display: none;
+      }
+      
+      
+      @include small-screen-and-below {
+        margin-bottom: $pad;
+        
+        figure {
+          width: $minor;
+        }
+        
+        form {
+          width: $major - $margin;
+        }
+      }
+      
+      @include mobile {
+        h1, h2 {
+          padding-top: 0;
+        }
+        
+        figure {
+          width: 50%;
+          margin-top: $pad/2;
+        }
+        
+        form {
+          @include block;
+          
+          input[type="submit"] {
+            @include block;
+          }
+        }
+      }
+      
+      @include mobile-landscape {
+        h1 {
+          padding-top: $pad/2;
+        }
+      }
+      
+      
+    }
+  }
+}
+
+
+
+body.contact {
+  .container {
+    footer {
+      form {
+        display: none;
+      } 
+      
+      #contact {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+

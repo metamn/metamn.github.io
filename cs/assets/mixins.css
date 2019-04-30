@@ -1,0 +1,8 @@
+/* Responsive mixins - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+*/
+@media only screen and (max-width: 380px) { .mobile { display: block; }
+  .desktop { display: none !important; } }
+@media only screen and (min-width: 381px) { .mobile { display: none; }
+  .desktop { display: block; } }
+/* Highlighting active navigation item
+*/

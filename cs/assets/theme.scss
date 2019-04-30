@@ -1,0 +1,370 @@
+
+/* The color scheme
+*/
+
+
+$color: #363636;
+
+$background: #f1f1f1;
+$pink: #F3AAAA;
+
+$gray: lighten($color, 50%);
+$lightgray: #ddd;
+$pinky: lighten($pink, 5%);
+
+
+
+
+body {
+  color: $color;
+  background: $background;
+  
+  font-family: 'Lato', sans-serif;
+  
+  .container {
+    a, a:active, a:visited {
+      color: $color;
+      text-decoration: none;
+    }
+    
+    h1 {
+      @include small-screen-and-up {
+        width: 60%;
+      }
+    }
+    
+    blockquote, nav {
+      font-family: 'Old Standard TT', serif;
+    }
+    
+    input[type="submit"] {
+      font-size: large;
+      padding: $pad/2 $pad;
+      
+      background: $color;
+      color: $background;
+    }
+    
+    
+    article {
+      h1, aside {
+        @include large-fonts;
+      }
+      
+      blockquote {
+        font-size: larger;
+        margin: 0;
+        margin-bottom: $pad*2;
+        
+        font-style: normal;
+      }
+      
+      
+      table {
+        td, th, tr {
+          padding: $pad/2;
+          
+          font-size: larger;
+          font-weight: 300;
+          
+          @include small-screen-and-below {
+            padding: $pad/4;
+          }
+          
+          @include tablet-and-below {
+            font-size: 100%;
+          }
+        }
+        
+        td {
+          color: $pink;
+          &.c1 {
+            color: $color;
+          }
+        }
+        
+        td, tbody {
+          @include border($lightgray);
+          border-color: $lightgray;
+        }
+      }
+      
+      
+      dl {
+        margin-bottom: $pad*2;
+        
+        font-size: larger;
+        font-weight: 300;
+        
+        dt {
+          @include border($pinky);
+          margin-bottom: $pad/2;
+          
+          font-weight: 300;
+        }
+        
+        dd {
+          margin: 0;
+        }
+        
+        @include big-screen {
+          font-size: 125%;
+        }
+      }
+      
+      
+      figure {
+        margin-bottom: $pad*4;
+        
+        img {
+          @include box-shadow(rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px  inset);
+        }
+        
+        figcaption {
+          padding: $pad/2 0;
+          color: $gray;
+        }
+      }
+      
+      
+      form {
+        p {
+          margin: 0;
+          
+          input, textarea {
+            width: $minor;
+            
+            @include small-screen-and-below {
+              width: 94%;
+            }
+              
+            margin-bottom: $pad;
+            padding: $pad/2;
+          }
+          
+          input[type="submit"] {
+            width: 10em;
+          }
+        }
+      }
+      
+      
+    }
+    
+    
+    nav {
+      background: url(http://metamn.github.io/cs/assets/background.png) $pink;
+      ul {
+        @include list;
+        
+        li {
+          @include border($pinky);
+        }
+      }
+    }
+    
+    
+    
+    footer {
+      h1 {
+        padding-bottom: 0;
+      }
+      h2 {
+        padding-top: 0;
+      }
+      
+      #contact {
+        a {
+          @include border;
+        }
+      }
+    }
+    
+    
+  }
+}
+
+
+
+body.text {
+  .container {
+    article {
+      
+      /* Make it readable
+      */
+      max-width: 700px;
+      line-height: 1.5;
+      font-size: 1.25em;
+      font-weight: 300;
+      
+      ol, ul {
+        font-size: 100%;
+        
+        margin-left: $pad;
+        margin-bottom: $pad*2;
+      }
+      
+      ul {
+        list-style: square;
+      }
+      
+            
+      
+      /* Adjust visual hierarchy
+      */
+      h3 {
+        padding-bottom: 0;
+      }  
+      
+      h1, h2, h3, h4 {
+        line-height: 1.1;
+        display: block;
+      }
+      
+      h4 {
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold;
+      }
+      
+      article {
+        margin-top: 0;
+      } 
+      
+      
+      
+      /* Restore expectations
+      */
+      a, a:active, a:visited {
+        border-bottom: 1px dotted;
+      }
+      
+      
+      /* Decorations 
+      */
+      
+      /* Highlight text
+      */
+      span {
+        background: $lightgray;
+        padding: $pad/8;
+        
+        font-style: italic;
+      }
+      
+      p {
+        /* Separate content blocks
+        */
+        &.separator {
+          text-align: center;
+          
+          &:after {
+            content: '* * *';
+          }
+        }
+      }
+      
+      table, td, th, tr {
+        font-size: 100%;
+      }
+      
+      td {
+        border-color: $lightgray;
+        color: $color;
+      }
+      
+      @include mobile {
+        table {
+          td, th, tr {
+            padding: $pad/4;
+            font-size: 90%;
+          }
+        }
+      }
+      
+      
+      /* Images
+      */
+      figure {
+        margin-bottom: $pad*2;
+        
+        @include small-screen-and-up {
+          display: inline-block;
+          max-width: 65em;
+        }
+        
+        a {
+          border-bottom: none;
+        }
+        
+      }
+      
+      p + figure, figure + p {
+        margin-top: $pad;
+      }
+      
+      
+    }
+  }
+}
+
+
+
+
+/* Highlight menu
+*/
+
+body.design {
+  .container {
+    nav {
+      li#design {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.development {
+  .container {
+    nav {
+      li#development {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.values {
+  .container {
+    nav {
+      li#values {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.manifesto {
+  .container {
+    nav {
+      li#manifesto {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

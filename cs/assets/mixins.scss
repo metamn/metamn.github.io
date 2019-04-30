@@ -1,0 +1,154 @@
+
+
+
+/* Responsive mixins
+  - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+*/
+
+
+$breakpoint-mobile: 380px !default;
+$breakpoint-tablet: 767px !default;
+$breakpoint-small: 1024px !default;
+$breakpoint-large: 1279px !default;
+$breakpoint-big: 1400px !default;
+
+
+@mixin mobile {
+	@media (max-width : $breakpoint-mobile) {
+		@content;
+	}
+}
+
+@mixin mobile-landscape {
+	@media only screen and (min-width : $breakpoint-mobile + 1) and (max-width : $breakpoint-tablet) and (orientation : landscape) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media only screen and (min-width : $breakpoint-mobile + 1) and (max-width : $breakpoint-tablet) {
+		@content;
+	}
+}
+@mixin tablet-and-below {
+	@media only screen and (max-width : $breakpoint-tablet) {
+		@content;
+	}
+}
+@mixin small-screen {
+	@media only screen and (min-width : $breakpoint-tablet + 1) and (max-width : $breakpoint-small - 1) {
+		@content;
+	}
+}
+@mixin small-screen-and-below {
+	@media only screen and (max-width : $breakpoint-small - 1) {
+		@content;
+	}
+}
+@mixin small-screen-and-up {
+	@media only screen and (min-width : $breakpoint-small + 1) {
+		@content;
+	}
+}
+
+@mixin normal-screen {
+  @media only screen and (min-width : $breakpoint-small) and (max-width : $breakpoint-large) {
+		@content;
+	}
+}
+
+@mixin large-screen {
+	@media only screen and (min-width : $breakpoint-large + 1) {
+		@content;
+	}
+}
+
+@mixin big-screen {
+	@media only screen and (min-width : $breakpoint-big + 1) {
+		@content;
+	}
+}
+
+@media only screen and (max-width : $breakpoint-mobile) {
+  .mobile { display: block; }
+  .desktop { display: none !important; }
+}
+
+@media only screen and (min-width : $breakpoint-mobile + 1) {
+  .mobile { display: none; }
+  .desktop { display: block; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+
+@mixin large-fonts {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+
+@mixin align-right {
+  width: $major + $minor/2 - $margin;
+  margin-left: $minor/2 + $margin;
+  
+  @include tablet-and-below {
+    @include block;
+    margin-left: 0;
+  }
+}
+
+
+
+/* Highlighting active navigation item
+*/
+
+@mixin highlight {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: $pad/2;
+}
+
+
+@mixin border($color:#363636) {
+  border-bottom: 1px dotted $color;
+}
+
+
+
+@mixin list {
+  padding: $pad 0;
+  list-style: none;
+      
+  li {
+    padding: $pad/2 0;
+    
+    a {
+      &:hover {
+        @include highlight;
+      }
+    }
+    
+    &.last {
+      border-bottom: none;
+    }
+  }
+}
+
+
+
+
