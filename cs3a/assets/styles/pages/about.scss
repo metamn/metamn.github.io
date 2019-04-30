@@ -1,0 +1,30 @@
+html.about {
+  body {
+    #intro {
+      height: row(3.5);
+      @include colors(black-on-orange);
+      @include harsh($orange, $white);
+    }
+    
+    #content {
+      padding-bottom: row(1);
+      @include typographic-elements;
+      
+      article {   
+        @include article-about;
+        
+        + article {
+          padding-top: row(1);
+        }
+      }
+    }
+    
+    footer {
+      display: none;
+    }
+  }
+}
+
+
+
+

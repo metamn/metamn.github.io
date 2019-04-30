@@ -1,0 +1,27 @@
+@mixin input {
+  @include text-inputs;
+}
+
+
+@mixin textarea {
+  @include text-inputs;
+}
+
+
+
+
+@mixin text-inputs {
+  @include reset-form;
+  @include font;
+}
+
+
+@mixin reset-form {
+  border: none;
+  outline: 0;
+  background: $white;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

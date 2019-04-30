@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="get-in-touch default ">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="author" href="humans.txt" />
+
+    <title>Get in touch &mdash; It's Csongor</title>
+
+    <!-- Compass with SASS -->
+    <link
+      href="http://metamn.io/cs3a/assets/styles/screen.css"
+      media="screen, projection"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+      <link
+        href="http://metamn.io/cs3a/assets/styles/ie.css"
+        media="screen, projection"
+        rel="stylesheet"
+        type="text/css"
+      />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="http://metamn.io/cs3a/assets/scripts/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script src="http://metamn.io/cs3a/assets/scripts/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- Picturefill Responsive Images -->
+    <script
+      async
+      src="http://metamn.io/cs3a/assets/scripts/picturefill.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>it's csongor<span></span></h1>
+
+        <nav id="menu">
+          <h3>Menu</h3>
+
+          <ul>
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/" title="home">home</a>
+            </li>
+
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/about" title="about">about</a>
+            </li>
+
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/portfolio" title="portfolio"
+                >portfolio</a
+              >
+            </li>
+
+            <li
+              class="
+
+active"
+            >
+              <a href="http://metamn.io/cs3a/contact" title="contact"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="intro" class=" with-featured-image with-subtitle">
+      <h3>Introduction</h3>
+
+      <article id="title">
+        <div class="container"><h1>Get in touch</h1></div>
+      </article>
+
+      <article id="subtitle">
+        <h3>Subtitle</h3>
+
+        <div class="container">
+          <h3>Via email, twitter or a spiffy form. Answer in a business day</h3>
+        </div>
+      </article>
+
+      <article id="featured-image">
+        <h3>Featured image</h3>
+
+        <div class="container">
+          <!-- http://picture.responsiveimages.org/ -->
+
+          <!-- From post, or from direct input -->
+
+          <!-- The deafult image is the desktop -->
+
+          <figure id="get-in-touch" class="">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source
+                media="(max-width: 30em"
+                srcset="
+                  http://metamn.io/cs3a/assets/images/contact-icon.png,
+                  /assets/images/contact-icon.png                      2x
+                "
+              />
+              <source
+                media="(max-width: 48em"
+                srcset="http://metamn.io/cs3a/assets/images/contact-icon.png"
+              />
+
+              <!--[if IE 9]></video><![endif]-->
+
+              <img
+                src="http://metamn.io/cs3a/assets/images/contact-icon.svg"
+                onerror="this.onerror=null; this.src='/assets/images/contact-icon.png'"
+                alt="Get in touch"
+              />
+            </picture>
+
+            <figcaption>Get in touch</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="content">
+      <h3>Content</h3>
+
+      <div class="container">
+        <article>
+          <h3>Direct contact</h3>
+
+          <ul>
+            <li>
+              <div class="link-with-icon" id="contact-via-email">
+                <span class="icon">
+                  <img
+                    src="http://metamn.io/cs3a/assets/images/email-icon.svg"
+                    onerror="this.onerror=null; this.src='/assets/images/email-icon.png'"
+                    alt="Contact via email"
+                  />
+                </span>
+
+                <span class="link">
+                  <a
+                    href="mailto:bartus.csongor@gmail.com"
+                    title="Contact via email"
+                    >bartus.csongor@gmail.com</a
+                  >
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="link-with-icon" id="contact-via-twitter">
+                <span class="icon">
+                  <img
+                    src="http://metamn.io/cs3a/assets/images/twitter-icon.svg"
+                    onerror="this.onerror=null; this.src='/assets/images/twitter-icon.png'"
+                    alt="Contact via Twitter"
+                  />
+                </span>
+
+                <span class="link">
+                  <a
+                    href="https://twitter.com/metamn"
+                    title="Contact via Twitter"
+                    >@metamn</a
+                  >
+                </span>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Contact form</h3>
+
+          <form
+            action="http://getsimpleform.com/messages?form_api_token=d880283125ae9e07ca71d96259d6647b"
+            method="post"
+          >
+            <!--
+              the redirect_to is optional, the form will redirect to the referrer on submission
+            -->
+            <input type="hidden" name="redirect_to" value="/contact" />
+
+            <p>
+              Hello I'm
+              <input type="text" name="name" placeholder="your name" /> from
+              <input
+                type="text"
+                name="from"
+                placeholder="your location, or company, or web"
+              />
+              and I
+              <textarea
+                rows="4"
+                name="address"
+                placeholder="your short message here ..."
+              ></textarea>
+            </p>
+
+            <p>
+              Thank you,
+              <input type="text" name="email" placeholder="your email" />
+            </p>
+
+            <p><input type="submit" value="Send message" /></p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- jQuery from CDN and local fallback -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('/assets/scripts/jquery-1.10.2.min.js">\x3C/script>');
+    </script>
+
+    <!-- Site specific scripts -->
+    <script src="http://metamn.io/cs3a/assets/scripts/jquery.init.js"></script>
+
+    <!-- The visual grid helper -->
+    <script
+      type="text/javascript"
+      src="http://metamn.io/cs3a/assets/scripts/jquery.visual.grid.js"
+    ></script>
+  </body>
+</html>

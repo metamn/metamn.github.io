@@ -1,0 +1,17 @@
+@mixin footer {
+  @include block;
+  @include hide-title;
+  @include center($text-width);
+  
+  height: row(1);
+  padding-bottom: row(1);
+  
+  
+  .container {
+    
+    .button {
+      margin-top: $gutter;
+      @include button;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic|Nothing+You+Could+Do|Nunito);
+
+
+// Heading sizes
+// - based on lamb.cc/typography using Fibonacci numbers
+$heading-level-1: 1.6154em;
+$heading-level-2: 2.6154em;
+$heading-level-3: 4.2308em;
+
+@mixin font($type: body) {
+  @if ($type == body) {
+    font-family: 'Vollkorn', serif;
+  
+  } @elseif ($type == header) {
+    font-family: 'Nothing You Could Do', cursive;  
+    font-size: $heading-level-1;
+  
+  } @elseif ($type == title) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $heading-level-2;
+    line-height: 1.1;
+  
+  } @elseif ($type == subtitle) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $heading-level-1;
+  
+  } @elseif ($type == menu) {
+    font-family: 'Nunito', sans-serif;
+  
+  } @elseif ($type == skill) {
+    font-family: 'Nunito', sans-serif;
+    @include color($orange);
+    line-height: 1;
+    padding-bottom: $gutter/8;
+    
+    word-wrap: break-word;
+    font-size: $heading-level-2;
+    @include large-screen-and-up {
+      font-size: $heading-level-3;
+    }
+  
+  } @elseif ($type == skill-body) {
+    @include below-tablet {
+      font-size: larger;
+    }
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="one-stop-shop-for-your-next-website default frontpage">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="author" href="humans.txt" />
+
+    <title>One-stop shop for your next website &mdash; It's Csongor</title>
+
+    <!-- Compass with SASS -->
+    <link
+      href="http://metamn.io/cs3a/assets/styles/screen.css"
+      media="screen, projection"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+      <link
+        href="http://metamn.io/cs3a/assets/styles/ie.css"
+        media="screen, projection"
+        rel="stylesheet"
+        type="text/css"
+      />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script
+        href="http://metamn.io/cs3a/assets/scripts/html5shiv.min.js"
+      ></script>
+    <![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+      <script
+        href="http://metamn.io/cs3a/assets/scripts/css3-mediaqueries.js"
+      ></script>
+    <![endif]-->
+
+    <!-- Picturefill Responsive Images -->
+    <script
+      async
+      href="http://metamn.io/cs3a/assets/scripts/picturefill.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>it's csongor<span></span></h1>
+
+        <nav id="menu">
+          <h3>Menu</h3>
+
+          <ul>
+            <li
+              class="
+
+active"
+            >
+              <a href="http://metamn.io/cs3a/" title="home">home</a>
+            </li>
+
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/about" title="about">about</a>
+            </li>
+
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/portfolio" title="portfolio"
+                >portfolio</a
+              >
+            </li>
+
+            <li
+              class="
+
+"
+            >
+              <a href="http://metamn.io/cs3a/contact" title="contact"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="intro" class=" with-featured-image with-button">
+      <h3>Introduction</h3>
+
+      <article id="title">
+        <div class="container">
+          <h1>One-stop shop for your next website</h1>
+        </div>
+      </article>
+
+      <article id="button">
+        <h3>View portfolio</h3>
+
+        <div class="container">
+          <span class="button">
+            <a href="http://metamn.io/cs3a/portfolio" title="View portfolio"
+              >View portfolio</a
+            >
+          </span>
+        </div>
+      </article>
+
+      <article id="featured-image">
+        <h3>Featured image</h3>
+
+        <div class="container">
+          <!-- http://picture.responsiveimages.org/ -->
+
+          <!-- From post, or from direct input -->
+
+          <!-- The deafult image is the desktop -->
+
+          <figure id="responsive-web-design" class="">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source
+                media="(max-width: 30em"
+                srcset="
+                  http://metamn.io/cs3a/assets/images/devices-portrait.png,
+                  http://metamn.io/cs3a/assets/images/devices.png          2x
+                "
+              />
+              <source
+                media="(max-width: 48em"
+                srcset="http://metamn.io/cs3a/assets/images/devices.png"
+              />
+
+              <!--[if IE 9]></video><![endif]-->
+
+              <img
+                href="http://metamn.io/cs3a/assets/images/devices.png"
+                alt="Responsive web design"
+              />
+            </picture>
+
+            <figcaption>Responsive web design</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="content">
+      <h3>Content</h3>
+
+      <div class="container">
+        <article>
+          <h3>About</h3>
+
+          <p>
+            Csongor is a web designer and developer with great product skills
+          </p>
+
+          <nav>
+            <h3>Logos</h3>
+            <ul>
+              <li>
+                <div class="tooltip-item">
+                  <div id="rwd"><span>RWD</span></div>
+
+                  <span class="tooltip-text">
+                    Responsive web design since 2009
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-item">
+                  <div id="ux"><span>UX</span></div>
+
+                  <span class="tooltip-text">
+                    Creating better user experiences
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-item">
+                  <div id="ui"><span>UI</span></div>
+
+                  <span class="tooltip-text">
+                    User interaction design for engagement
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-item">
+                  <div id="cms"><span>CMS</span></div>
+
+                  <span class="tooltip-text">
+                    Content management and optimization
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tooltip"><span></span></div>
+
+          <div>
+            <span class="button">
+              <a href="http://metamn.io/cs3a/contact" title="Get in touch"
+                >Get in touch</a
+              >
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- jQuery from CDN and local fallback -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('/assets/scripts/jquery-1.10.2.min.js">\x3C/script>');
+    </script>
+
+    <!-- Site specific scripts -->
+    <script href="http://metamn.io/cs3a/assets/scripts/jquery.init.js"></script>
+
+    <!-- The visual grid helper -->
+    <script
+      type="text/javascript"
+      href="http://metamn.io/cs3a/assets/scripts/jquery.visual.grid.js"
+    ></script>
+  </body>
+</html>

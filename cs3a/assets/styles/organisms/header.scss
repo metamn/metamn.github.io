@@ -1,0 +1,66 @@
+@mixin header {
+  @include block;
+  @include center($text-width);
+  height: row(1);
+  
+  .container {
+    padding-top: $gutter*2;
+    
+    h1 {
+      @include font(header);
+      cursor: pointer;
+      @include menu-switcher;
+    }
+    
+    #menu {
+      @include menu;
+      display: none;
+    }
+  }
+  
+  &.active {
+    @include menu-height;
+    
+    .container {
+      h1 {
+        @include menu-switcher(active);
+      }
+      
+      #menu {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+@mixin menu-height {
+  @include landscape {
+    height: row(2);
+  }
+  
+  @include portrait {
+    height: row(3);
+  }
+}
+
+
+@mixin menu-switcher($status: inactive) {
+  @if ($status == inactive) {
+    span {
+      margin-left: $gutter;
+      
+      &:after {
+        content: '#';
+      }
+    }
+  
+  } @else {
+    span {
+      &:after {
+        content: 'x';
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+$breakpoint-mobile: 30em; // 480px
+$breakpoint-tablet: 48em; // 768px
+$breakpoint-large-screen: 90em; // 1440px
+
+
+@mixin mobile {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content
+  }
+}
+
+@mixin below-tablet {
+  @media only screen and (max-width: $breakpoint-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin tablet-and-up {
+  @media only screen and (min-width: $breakpoint-tablet) {
+    @content
+  }
+}
+
+
+@mixin large-screen-and-up {
+  @media only screen and (min-width: $breakpoint-large-screen + 0.001) {
+    @content
+  }
+}
+
+@mixin portrait {
+  @media only screen and (orientation: portrait) {
+    @content
+  }
+}
+
+
+@mixin landscape {
+  @media only screen and (orientation: landscape) {
+    @content
+  }
+}

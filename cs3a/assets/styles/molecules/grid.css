@@ -1,0 +1,2 @@
+/* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
+*/

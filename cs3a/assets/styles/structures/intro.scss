@@ -1,0 +1,21 @@
+@mixin intro {
+  @include block;
+  @include hide-title;
+  
+  #title {
+    @include title;
+  }
+  
+  #subtitle {
+    @include subtitle;
+  }
+  
+  #featured-image {
+    @include featured-image;
+  }
+  
+  #button {
+    @include intro-button;
+  }
+}
+

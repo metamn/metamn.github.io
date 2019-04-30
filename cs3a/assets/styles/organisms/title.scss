@@ -1,0 +1,14 @@
+@mixin title {
+  @include block;
+  @include center($text-width);
+  
+  padding-top: $gutter * 2;
+  padding-bottom: $gutter * 2;  
+  
+  .container {
+    h1 {
+      @include font(title);
+    }
+  }
+}
+

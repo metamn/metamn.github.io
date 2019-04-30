@@ -1,0 +1,13 @@
+@mixin featured-image {
+  @include block;
+  @include hide-title;
+  @include center($text-width * 2);
+  
+  .container {
+    position: relative; /* to make image overflow the content below (to be not truncated by content) */
+    
+    figure {
+      @include figure;
+    }
+  }
+}

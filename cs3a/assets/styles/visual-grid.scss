@@ -1,0 +1,84 @@
+// The harmony / gravity point calculator
+// ---------------------------------------------
+
+#gravity {
+  
+  .h-vertical, .h-horizontal, .h-golden-rectangle {
+    position: fixed;
+    z-index: 1000;
+    opacity: .3;
+  }
+
+  .h-vertical {
+    left: calc(50% - 1px);
+    height: 100%;
+    border-left: 1px solid red;
+  }
+
+  .h-horizontal {
+    top: calc(50% - 1px);
+    width: 100%;
+    border-bottom: 1px solid red;
+  }
+
+  .h-golden-rectangle {
+    border: 1px solid green;
+    opacity: .8;
+  }
+  
+  .h-gravity-point {
+    position: absolute;
+    z-index: 1000;
+    opacity: .3;
+
+    &:after {
+      content: '';
+      display: block;
+      width: $gutter;
+      height: $gutter;
+      background: red;
+      position: relative;
+      top: -$gutter / 2;
+      left: -$gutter / 2;
+    }
+
+    display: none;
+    &:last-of-type {
+      display: block;
+    }
+  }
+}
+
+
+
+
+// The visual grid
+// ---------------------------------------------
+#grid {
+  position: absolute;
+  top: 0;
+  opacity: .1;
+  z-index: -1;
+}
+
+#grid .col {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  width: calc(#{$grid-width} + #{$gutter} - 1px);
+  height: calc(#{$text-height} + #{$gutter} - 1px);
+  float: left;
+}
+
+#grid .gutter-right {
+  float: right;
+  border-left: 1px solid;
+  width: calc(#{$gutter} - 1px);
+  height: 100%;
+}
+
+#grid .gutter-bottom {
+  float: left;
+  border-bottom: 1px solid;
+  height: calc(#{$gutter} - 1px);
+  width: 100%;
+}

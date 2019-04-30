@@ -1,0 +1,35 @@
+html.get-in-touch {
+  body {
+    #intro {
+      @include colors(black-on-green);
+      @include harsh($green, $white);
+      
+      height: row(2.75);
+    }
+    
+    #content {
+      padding-top: row(1);
+      @include typographic-elements;
+      
+      article {   
+        @include hide-title;
+        
+        &:first-of-type {
+          @include direct-contact;
+        }
+        
+        &:last-of-type {
+          padding-top: row(.5);
+          margin-top: row(.5);
+          border-top: 1px solid $lightgrey;
+          
+          @include contact-form;
+        }
+      }
+    }
+    
+    footer {
+      display: none;
+    }
+  }
+}

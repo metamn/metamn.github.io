@@ -1,0 +1,98 @@
+@mixin symmetric-grid($cols) {
+  > * {
+    width: 30% !important;
+    margin-right: 5%;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+// Typographic Grid functions
+// ==========================
+
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@mixin cols($nr) {
+  width: col($nr);
+}
+
+
+@function row($nr) {
+  @return $nr * ($text-grid-height + $gutter);
+}
+
+@function col($nr) {
+  @return $nr * ($grid-width + $gutter);
+}
+
+
+
+
+
+
+// Various Grid helpers
+// =========================
+
+
+@mixin list-inline($margin: $gutter) {
+  li {
+    display: inline-block;
+    float: left;
+    padding-right: $margin;
+    
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
+
+
+/* Center horizontally
+  - works with an inner container only
+  - example:
+    <header>
+      <div class="container">
+    ...
+    header { @include center }
+*/
+@mixin center($max-width) {
+  text-align: center;
+  
+  .container {
+    text-align: center;
+    display: inline-block;
+    
+    padding-left: $gutter;
+    padding-right: $gutter;
+    width: calc(100% - #{$gutter * 2});
+    max-width: $max-width;
+  }
+}
+
+
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,20 @@
+@mixin circle($radius: $gutter * 2) {
+  width: $radius;
+  height: $radius;
+  @include border-radius($radius);
+}
+
+
+/* The text must be inside a <span> */
+@mixin circle-with-text($radius) {
+  display: inline-block;
+  @include circle($radius);
+  border: 2px solid;
+  
+  font-size: smaller;
+
+  span {
+    position: relative;
+    top: $radius / 3;
+  }
+}

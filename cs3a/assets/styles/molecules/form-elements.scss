@@ -1,0 +1,10 @@
+@mixin form-elements {
+
+  input {
+    @include input;
+  }
+  
+  textarea {
+    @include textarea;
+  }
+}

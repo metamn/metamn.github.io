@@ -1,0 +1,61 @@
+html.frontpage {
+  body {
+    #intro {
+      @include colors(white-on-violet);
+      @include harsh($violet, $white);
+  
+      #button {
+        a {
+          @include color($white-for-violet);
+        }
+      }
+      
+      height: row(5);
+      @include mobile {
+        height: row(4);
+      }
+    }
+    
+    #content {
+      padding-top: row(2);
+      padding-bottom: row(1);
+      
+      article {
+        @include block;
+        @include hide-title;
+        
+        p {
+          @include font(subtitle);
+        }
+        
+        nav {
+          padding-top: $gutter;
+          
+          @include hide-title;
+          
+          ul {
+            @include circles;
+            
+            li {
+              color: $darkgray;
+              
+              &.active {
+                color: $black;
+              }
+            }
+          }
+        }
+        
+        @include tooltip;
+        .tooltip {
+          @include tooltip-popup;
+        }
+        
+        .button {
+          margin-top: $gutter * 2;
+          @include button;
+        }
+      }
+    }
+  }
+}

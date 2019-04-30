@@ -1,0 +1,53 @@
+@mixin menu {
+  @include block;
+  @include hide-title;
+  @include font(menu);
+  
+  @include landscape {
+    @include menu-landscape;
+  }
+  
+  @include portrait {
+    @include menu-portrait;
+  }
+}
+
+
+
+@mixin menu-portrait {
+  ul {
+    font-size: large;
+    margin-top: $gutter;
+    
+    li {
+      @include link(none);
+      line-height: 1.75;
+      border-bottom: 1px dotted $lightgray;
+      
+      &.active, &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+@mixin menu-landscape {
+  padding-top: $gutter * 2;
+  
+  ul {
+    @include list-inline;
+    display: inline-block;
+    
+    li {
+      @include link(menu);
+      
+      &.active {
+        a {
+          border-bottom: 2px solid;
+        }
+      }
+    }
+  }
+}

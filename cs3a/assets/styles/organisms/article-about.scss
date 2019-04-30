@@ -1,0 +1,22 @@
+@mixin article-about {
+  p {
+    @include font(skill-body);
+  }
+  
+  nav {
+    @include circles;
+  }
+  
+  .line {
+    margin-top: $gutter;
+    margin-bottom: $gutter;
+    
+    &.bottom {
+      @include line;
+    }
+    
+    &.top {
+      @include line(60%);
+    }
+  }
+}

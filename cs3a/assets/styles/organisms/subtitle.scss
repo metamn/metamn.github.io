@@ -1,0 +1,13 @@
+@mixin subtitle {
+  @include block;
+  @include hide-title;
+  @include center($text-width);
+  
+  padding-bottom: $gutter * 2;
+  
+  .container {
+    h3 {
+      @include font(subtitle);
+    }
+  }
+}

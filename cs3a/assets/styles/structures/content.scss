@@ -1,0 +1,6 @@
+@mixin content {
+  @include block;
+  @include hide-title;
+  
+  @include center($text-width);
+}

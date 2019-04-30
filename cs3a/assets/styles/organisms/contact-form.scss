@@ -1,0 +1,43 @@
+@mixin contact-form {
+  @include block;
+  padding-bottom: row(1);
+  
+  form {
+    @include form-elements;
+    
+    p {
+      font-size: $gutter;
+      line-height: 2;
+      
+      &:last-of-type {
+        font-size: medium;
+      }
+      
+      input, textarea {
+        font-size: $gutter;
+        text-align: center;
+        background: #f9f9f9;
+      }
+
+      input[name="name"] {
+        width: auto;
+      }
+
+      input[name="from"] {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      textarea {
+        width: 100%;
+        padding-top: $gutter;
+      }
+
+      input[type="submit"] {
+        font-size: medium;
+        @include button($gutter/4 $gutter/2);
+      } 
+    } 
+  }
+}

@@ -1,0 +1,9 @@
+@mixin circles {
+  @include block;
+  @include hide-title;
+  
+  li {
+    @include circle-with-text($gutter * 3.2);
+    @include font(menu);
+  }
+}
