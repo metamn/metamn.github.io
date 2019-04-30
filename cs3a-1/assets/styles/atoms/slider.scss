@@ -1,0 +1,94 @@
+/* https://developers.google.com/web/fundamentals/look-and-feel/animations/animating-between-views
+*/
+
+
+// There are two types of sliders:
+// - stacked: 
+//    - slides are stacked upon each other like a pack of cards
+//    - only a single slide is visible at a time
+//    - on swipe the next slide is shown
+// - aligned: 
+//    - slides are aligned left to right
+//    - many slides can be visible at a time, depending on the viewport width
+//    - on swipe the next set of slides are shown
+
+@mixin slider($type: stacked, $number-of-slides: 0) {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* let the browser know we plan to animate
+       each view in and out */
+    will-change: transform;
+    
+    // This will push out the slides right of the viewport
+    @include slider-alignment($type);
+    
+    // there is a bug in compass and can't do @include transition(transform(.....)) 
+    transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  }
+  
+  @include show-slides-on-swipe($number-of-slides);
+}
+
+
+@mixin show-slides-on-swipe($number-of-slides) {
+  // This brings back a single slide
+  // - used with the stacked slide
+  .active {
+    @include transform(translateX(0px));
+  }
+  
+  
+  // This scrolls left and right the slides
+  // - use with the aligned slides
+  @for $i from 1 through $number-of-slides + 1 {
+    &.left-#{$i} {
+      .slide {
+        @include move-slides($i);
+      }
+    }
+    
+    &.right-#{$i} {
+      .slide {
+        @include move-slides($i, right);
+      }
+    }
+  }
+}
+
+
+
+@mixin slider-alignment($type) {
+  @if ($type == stacked) {
+    // - slides are stacked
+    @include transform(translateX(100%));
+  
+  } @elseif ($type == aligned) {
+    // - slides are aligned left
+    @include move-slides(0);
+  }
+}
+
+
+@mixin move-slides($index, $direction: left) {
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      @if ($direction == left) {
+        @include transform(translateX(calc(100% * #{$i - $index - 1})));
+      } @else {
+        @include transform(translateX(calc(100% * #{$i - $index + 1})));
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@mixin values {
+  @include values-grid;
+  
+  #about {
+    @include about;
+  }
+  
+  #skills {
+    @include skills;
+  }
+  
+  #slider {
+    @include slider-grid;
+    
+    .slide {
+      padding-top: $gutter * 2;
+      figure {
+        @include figure;
+      }
+      
+      &#rwd {
+        @include rwd;
+      }
+
+      &#ux {
+        @include ux;
+      }
+
+      &#cms {
+        @include cms;
+      }
+
+      &#psd {
+        @include psd;
+      }
+    }
+  }
+}
+
+
+@mixin slider-grid {
+  @include landscape {
+    @include slider;
+    /* to make the iMac look good
+    */
+    overflow: visible;
+  }
+}
+
+
+@mixin values-grid {
+  @include landscape {
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 70%;
+    overflow: hidden;
+  }
+  
+  @include portrait {
+    @include block;
+    
+    .container {
+      width: 90%;
+      padding-left: 5%;
+    }
+  }
+}
+

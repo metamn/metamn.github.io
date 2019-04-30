@@ -1,0 +1,11 @@
+@mixin header {
+  @include landscape {
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+
+    background-color: $black;
+    background-image: url("/assets/images/subtle-zebra-3d.png");
+  }
+}
+

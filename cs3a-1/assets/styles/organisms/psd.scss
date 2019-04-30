@@ -1,0 +1,11 @@
+@mixin psd {
+  @include portrait {
+    @include colors(white-on-black);
+  }
+  
+  .container {
+    p + p {
+      margin-top: $gutter;
+    }
+  }
+}

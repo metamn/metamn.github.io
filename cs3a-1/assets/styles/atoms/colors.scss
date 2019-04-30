@@ -1,0 +1,92 @@
+$white: white;
+$black: hsla(170, 95%, 5%, 1);
+
+$orange: hsla(39, 100%, 63%, 1);
+
+// from https://kuler.adobe.com/Le-Chat-color-theme-4234685/
+$violet: hsla(308, 60%, 58%, 1);
+$white-for-violet: hsla(196, 100%, 91%, 1);
+
+$green: hsla(138, 100%, 50%, 1);
+$yellow: #DFFF0D;
+
+
+$lightgray: #f1f1f1;
+$lightgrey: $lightgray;
+
+$gray: #eee;
+$grey: $gray;
+
+$darkgrey: #999;
+$darkgray: #999;
+
+
+
+/* for very combination check the contrast ratio !!!
+  - http://leaverou.github.io/contrast-ratio/
+
+  - black on white: 18.4
+  - black on orange: 11
+  - white on violet: 3.1, only suitable for large fonts
+  - black on green: 15.4
+*/
+
+@mixin colors($combination: black-on-white) {
+  @if ($combination == black-on-white) {
+    color: $black;
+    background-color: $white;
+    
+  } @elseif ($combination == white-on-black) {
+    color: $white;
+    background-color: $black;
+  
+  } @elseif ($combination == black-on-orange) {
+    color: $black;
+    background-color: $orange;
+  
+  } @elseif ($combination == white-on-violet) {
+    color: $white-for-violet;
+    background-color: $violet;
+  
+  } @elseif ($combination == black-on-green) {
+    color: $black;
+    background-color: $green;
+  }
+}
+
+
+@mixin color($color) {
+  color: $color;
+  background-color: transparent;
+  
+  a {
+    color: $color;
+    background-color: transparent;
+  }
+}
+
+
+// Generate $total gradients from a list of $colors
+// - the colors are lightened by $step percent
+@mixin gradients($colors, $total, $step) {
+  $gradients-per-color: $total % length($colors);
+  $gradients: null;
+  
+  @each $color in $colors {
+    @for $i from 1 through $gradients-per-color {
+      $gradients: append($gradients, lighten($color, $i * $step));
+    }
+  }
+  
+  @include gradient($gradients);
+}
+
+
+@mixin gradient($list) {
+  @for $i from 1 through length($list) {
+    &:nth-of-type(#{$i - 1}) {
+      background-color: nth($list, $i);
+      color: nth($list, $i);
+    }
+  }
+}

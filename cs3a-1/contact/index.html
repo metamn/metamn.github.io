@@ -1,0 +1,77 @@
+<div class="container">
+  <article>
+    <h3>Direct contact</h3>
+
+    <ul>
+      <li>
+        <div class="link-with-icon" id="contact-via-email">
+          <span class="icon">
+            <img
+              src="http://metamn.io/cs3a-1//assets/images/email-icon.svg"
+              onerror="this.onerror=null; this.src='http://metamn.io/cs3a-1//assets/images/email-icon.png'"
+              alt="Contact via email"
+            />
+          </span>
+
+          <span class="link">
+            <a href="mailto:bartus.csongor@gmail.com" title="Contact via email"
+              >bartus.csongor@gmail.com</a
+            >
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="link-with-icon" id="contact-via-twitter">
+          <span class="icon">
+            <img
+              src="http://metamn.io/cs3a-1//assets/images/twitter-icon.svg"
+              onerror="this.onerror=null; this.src='http://metamn.io/cs3a-1//assets/images/twitter-icon.png'"
+              alt="Contact via Twitter"
+            />
+          </span>
+
+          <span class="link">
+            <a href="https://twitter.com/metamn" title="Contact via Twitter"
+              >@metamn</a
+            >
+          </span>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Contact form</h3>
+
+    <form
+      action="http://getsimpleform.com/messages?form_api_token=d880283125ae9e07ca71d96259d6647b"
+      method="post"
+    >
+      <!--
+        the redirect_to is optional, the form will redirect to the referrer on submission
+      -->
+      <input type="hidden" name="redirect_to" value="/contact" />
+
+      <p>
+        Hello I'm <input type="text" name="name" placeholder="your name" /> from
+        <input
+          type="text"
+          name="from"
+          placeholder="your location, or company, or web"
+        />
+        and I
+        <textarea
+          rows="4"
+          name="address"
+          placeholder="your short message here ..."
+        ></textarea>
+      </p>
+
+      <p>
+        Thank you, <input type="text" name="email" placeholder="your email" />
+      </p>
+
+      <p><input type="submit" value="Send message" /></p>
+    </form>
+  </article>
+</div>

@@ -1,0 +1,5 @@
+/* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
+*/
+/* Center vertically or horizontally using transformations
+- http://davidwalsh.name/css-vertical-center
+*/

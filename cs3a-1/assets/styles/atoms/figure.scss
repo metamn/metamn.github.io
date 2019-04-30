@@ -1,0 +1,11 @@
+@mixin figure {
+  @include block;
+  
+  img {
+    max-width: 100%;
+  }
+  
+  figcaption {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+@mixin footer {
+  @include footer-grid;
+
+  ul {
+    @include list-inline;
+    @include font(title);
+
+    li {
+      @include button;
+      font-size: medium;
+      margin-right: $gutter; 
+    }
+  }
+}
+
+
+@mixin footer-grid {
+  @include landscape {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    width: 70%;
+  }
+  
+  padding-left: 5%;
+  
+  @include portrait {
+    width: 90%;
+  }
+}

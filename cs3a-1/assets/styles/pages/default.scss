@@ -1,0 +1,14 @@
+html {
+  body {
+    @include grid;
+    @include font;
+    @include colors;
+    @include link;
+    @include portrait-or-landscape;
+    
+    section, article, nav, header, footer, aside {
+      @include block;
+      @include hide-title;
+    }
+  }
+}

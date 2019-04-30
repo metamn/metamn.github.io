@@ -1,0 +1,211 @@
+<<<<<<< HEAD
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Nothing+You+Could+Do|Nunito);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* for very combination check the contrast ratio !!! - http://leaverou.github.io/contrast-ratio/
+ - black on white: 18.4 - black on orange: 11 - white on violet: 3.1, only suitable for large fonts
+*/
+/* Center horizontally - works with an inner container only - example: <header> <div class="container"> ... header { @include center }
+*/
+html.about body #intro { color: #011915; background-color: #ffbd42; background: -webkit-gradient(linear, 56% 70%, 44% 30%, color-stop(82%, rgba(254, 185, 57, 0.5)), color-stop(82.0%, transparent)), -webkit-gradient(linear, 72% 93%, 28% 7%, color-stop(68%, rgba(255, 189, 66, 0.5)), color-stop(68.0%, transparent)), -webkit-gradient(linear, 34% 67%, 66% 33%, color-stop(64%, rgba(255, 187, 61, 0.5)), color-stop(64.0%, transparent)), -webkit-gradient(linear, 26% 56%, 74% 44%, color-stop(43%, rgba(252, 183, 54, 0.5)), color-stop(43.0%, transparent)), -webkit-gradient(linear, 38% 28%, 62% 72%, color-stop(29%, rgba(248, 187, 73, 0.5)), color-stop(29.0%, transparent)), -webkit-gradient(linear, 23% 40%, 77% 60%, color-stop(9%, rgba(255, 198, 92, 0.5)), color-stop(9.0%, transparent)), -webkit-gradient(linear, 5% 52%, 95% 48%, color-stop(35%, rgba(255, 178, 36, 0.5)), color-stop(35.0%, transparent)), -webkit-gradient(linear, 34% 47%, 66% 53%, color-stop(28%, rgba(252, 195, 89, 0.5)), color-stop(28.0%, transparent)), -webkit-gradient(linear, 50% 87%, 50% 13%, color-stop(15%, rgba(252, 177, 39, 0.5)), color-stop(15.0%, transparent)), -webkit-gradient(linear, 65% 46%, 35% 54%, color-stop(34%, rgba(255, 189, 66, 0.5)), color-stop(34.0%, transparent)), white; background: -webkit-linear-gradient(56% 70%, rgba(254, 185, 57, 0.5) 82%, transparent 82.0%), -webkit-linear-gradient(72% 93%, rgba(255, 189, 66, 0.5) 68%, transparent 68.0%), -webkit-linear-gradient(34% 67%, rgba(255, 187, 61, 0.5) 64%, transparent 64.0%), -webkit-linear-gradient(26% 56%, rgba(252, 183, 54, 0.5) 43%, transparent 43.0%), -webkit-linear-gradient(38% 28%, rgba(248, 187, 73, 0.5) 29%, transparent 29.0%), -webkit-linear-gradient(23% 40%, rgba(255, 198, 92, 0.5) 9%, transparent 9.0%), -webkit-linear-gradient(5% 52%, rgba(255, 178, 36, 0.5) 35%, transparent 35.0%), -webkit-linear-gradient(34% 47%, rgba(252, 195, 89, 0.5) 28%, transparent 28.0%), -webkit-linear-gradient(50% 87%, rgba(252, 177, 39, 0.5) 15%, transparent 15.0%), -webkit-linear-gradient(65% 46%, rgba(255, 189, 66, 0.5) 34%, transparent 34.0%), white; background: -moz-linear-gradient(56% 70%, rgba(254, 185, 57, 0.5) 82%, transparent 82.0%), -moz-linear-gradient(72% 93%, rgba(255, 189, 66, 0.5) 68%, transparent 68.0%), -moz-linear-gradient(34% 67%, rgba(255, 187, 61, 0.5) 64%, transparent 64.0%), -moz-linear-gradient(26% 56%, rgba(252, 183, 54, 0.5) 43%, transparent 43.0%), -moz-linear-gradient(38% 28%, rgba(248, 187, 73, 0.5) 29%, transparent 29.0%), -moz-linear-gradient(23% 40%, rgba(255, 198, 92, 0.5) 9%, transparent 9.0%), -moz-linear-gradient(5% 52%, rgba(255, 178, 36, 0.5) 35%, transparent 35.0%), -moz-linear-gradient(34% 47%, rgba(252, 195, 89, 0.5) 28%, transparent 28.0%), -moz-linear-gradient(50% 87%, rgba(252, 177, 39, 0.5) 15%, transparent 15.0%), -moz-linear-gradient(65% 46%, rgba(255, 189, 66, 0.5) 34%, transparent 34.0%), white; background: -o-linear-gradient(56% 70%, rgba(254, 185, 57, 0.5) 82%, transparent 82.0%), -o-linear-gradient(72% 93%, rgba(255, 189, 66, 0.5) 68%, transparent 68.0%), -o-linear-gradient(34% 67%, rgba(255, 187, 61, 0.5) 64%, transparent 64.0%), -o-linear-gradient(26% 56%, rgba(252, 183, 54, 0.5) 43%, transparent 43.0%), -o-linear-gradient(38% 28%, rgba(248, 187, 73, 0.5) 29%, transparent 29.0%), -o-linear-gradient(23% 40%, rgba(255, 198, 92, 0.5) 9%, transparent 9.0%), -o-linear-gradient(5% 52%, rgba(255, 178, 36, 0.5) 35%, transparent 35.0%), -o-linear-gradient(34% 47%, rgba(252, 195, 89, 0.5) 28%, transparent 28.0%), -o-linear-gradient(50% 87%, rgba(252, 177, 39, 0.5) 15%, transparent 15.0%), -o-linear-gradient(65% 46%, rgba(255, 189, 66, 0.5) 34%, transparent 34.0%), white; background: linear-gradient(56% 70%, rgba(254, 185, 57, 0.5) 82%, transparent 82.0%), linear-gradient(72% 93%, rgba(255, 189, 66, 0.5) 68%, transparent 68.0%), linear-gradient(34% 67%, rgba(255, 187, 61, 0.5) 64%, transparent 64.0%), linear-gradient(26% 56%, rgba(252, 183, 54, 0.5) 43%, transparent 43.0%), linear-gradient(38% 28%, rgba(248, 187, 73, 0.5) 29%, transparent 29.0%), linear-gradient(23% 40%, rgba(255, 198, 92, 0.5) 9%, transparent 9.0%), linear-gradient(5% 52%, rgba(255, 178, 36, 0.5) 35%, transparent 35.0%), linear-gradient(34% 47%, rgba(252, 195, 89, 0.5) 28%, transparent 28.0%), linear-gradient(50% 87%, rgba(252, 177, 39, 0.5) 15%, transparent 15.0%), linear-gradient(65% 46%, rgba(255, 189, 66, 0.5) 34%, transparent 34.0%), white; height: 25em; }
+html.about body #content h3 { font-family: 'Nunito', sans-serif; color: #f1f1f1; background-color: transparent; line-height: 1; padding-bottom: 0.15625em; word-wrap: break-word; font-size: 4.2308em; }
+@media only screen and (max-width: 30em) { html.about body #content h3 { font-size: 2.6154em; } }
+html.about body #content p { line-height: 1.75; }
+html.about body #content p + p { padding-top: 1.25em; }
+html.about body #content article + article { padding-top: 6.25em; }
+
+html body { font-size: 100%; line-height: 1.25; font-family: 'Vollkorn', serif; color: #011915; background-color: white; }
+@media only screen and (max-width: 47.999em) { html body { font-size: 87.5%; } }
+@media only screen and (min-width: 90.001em) { html body { font-size: 125%; } }
+html body a { color: #011915; background-color: white; }
+html body header { width: 100%; float: left; text-align: center; height: 6.25em; }
+html body header .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body header .container { padding-top: 2.5em; }
+html body header .container h1 { font-family: 'Nothing You Could Do', cursive; font-size: 1.6154em; cursor: pointer; }
+html body header .container h1 span { margin-left: 1.25em; }
+html body header .container h1 span:after { content: '#'; }
+html body header .container #menu { width: 100%; float: left; font-family: 'Nunito', sans-serif; display: none; }
+html body header .container #menu > h3 { display: none; }
+@media only screen and (orientation: landscape) { html body header .container #menu { padding-top: 2.5em; }
+  html body header .container #menu ul { display: inline-block; }
+  html body header .container #menu ul li { display: inline-block; float: left; padding-right: 1.25em; }
+  html body header .container #menu ul li:last-of-type { padding-right: 0; }
+  html body header .container #menu ul li a { color: #011915; background-color: white; text-decoration: none; }
+  html body header .container #menu ul li a:hover { border-bottom: 2px solid; }
+  html body header .container #menu ul li.active a { border-bottom: 2px solid; } }
+@media only screen and (orientation: portrait) { html body header .container #menu ul { font-size: larger; }
+  html body header .container #menu ul li { border-bottom: 1px dotted #f1f1f1; }
+  html body header .container #menu ul li a { text-decoration: none; }
+  html body header .container #menu ul li.active, html body header .container #menu ul li:hover { font-weight: bold; } }
+@media only screen and (orientation: landscape) { html body header.active { height: 12.5em; } }
+@media only screen and (orientation: portrait) { html body header.active { height: 18.75em; } }
+html body header.active .container h1 span:after { content: 'x'; }
+html body header.active .container #menu { display: block; }
+html body footer { width: 100%; float: left; text-align: center; height: 6.25em; padding-bottom: 6.25em; padding-top: 6.25em; }
+html body footer .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+@media only screen and (orientation: landscape) { html body footer { padding-top: 12.5em; } }
+html body footer .container .button { margin-top: 1.25em; padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; display: inline-block; cursor: pointer; }
+html body footer .container .button a { text-decoration: none; }
+html body #intro { width: 100%; float: left; }
+html body #intro > h3 { display: none; }
+html body #intro #title { width: 100%; float: left; text-align: center; padding-top: 2.5em; padding-bottom: 2.5em; }
+html body #intro #title .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body #intro #title .container h1 { font-family: 'Nunito', sans-serif; font-size: 2.6154em; }
+html body #intro #subtitle { width: 100%; float: left; text-align: center; padding-bottom: 2.5em; }
+html body #intro #subtitle > h3 { display: none; }
+html body #intro #subtitle .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body #intro #subtitle .container h3 { font-family: 'Nunito', sans-serif; font-size: 1.6154em; }
+html body #intro #featured-image { width: 100%; float: left; text-align: center; }
+html body #intro #featured-image > h3 { display: none; }
+html body #intro #featured-image .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 62.5em; }
+html body #intro #featured-image .container figure { width: 100%; float: left; }
+html body #intro #featured-image .container figure img { max-width: 100%; }
+html body #intro #featured-image .container figure figcaption { display: none; }
+html body #intro #button { width: 100%; float: left; text-align: center; padding-top: 2.5em; padding-bottom: 2.5em; }
+html body #intro #button > h3 { display: none; }
+html body #intro #button .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+html body #intro #button .container .button { padding: 0.625em 1.25em; border: 2px solid; -webkit-border-radius: 0.625em; -moz-border-radius: 0.625em; -ms-border-radius: 0.625em; -o-border-radius: 0.625em; border-radius: 0.625em; display: inline-block; cursor: pointer; }
+html body #intro #button .container .button a { text-decoration: none; }
+html body #content { width: 100%; float: left; text-align: center; padding-top: 6.25em; }
+html body #content > h3 { display: none; }
+html body #content .container { text-align: center; display: inline-block; padding-left: 1.25em; padding-right: 1.25em; width: calc(100% - 2.5em); max-width: 31.25em; }
+
+html.frontpage body #intro { color: #d1f3ff; background-color: #d454c3; background: -webkit-gradient(linear, 53% 92%, 47% 8%, color-stop(97%, rgba(210, 55, 189, 0.5)), color-stop(97.0%, transparent)), -webkit-gradient(linear, 13% 59%, 87% 41%, color-stop(1%, rgba(199, 77, 182, 0.5)), color-stop(1.0%, transparent)), -webkit-gradient(linear, 53% 67%, 47% 33%, color-stop(39%, rgba(199, 61, 180, 0.5)), color-stop(39.0%, transparent)), -webkit-gradient(linear, 96% 22%, 4% 78%, color-stop(51%, rgba(216, 79, 198, 0.5)), color-stop(51.0%, transparent)), -webkit-gradient(linear, 54% 7%, 46% 93%, color-stop(34%, rgba(209, 71, 191, 0.5)), color-stop(34.0%, transparent)), -webkit-gradient(linear, 34% 40%, 66% 60%, color-stop(48%, rgba(215, 91, 199, 0.5)), color-stop(48.0%, transparent)), -webkit-gradient(linear, 28% 56%, 72% 44%, color-stop(52%, rgba(211, 115, 198, 0.5)), color-stop(52.0%, transparent)), -webkit-gradient(linear, 66% 73%, 34% 27%, color-stop(83%, rgba(212, 84, 195, 0.5)), color-stop(83.0%, transparent)), -webkit-gradient(linear, 62% 83%, 38% 17%, color-stop(74%, rgba(219, 77, 200, 0.5)), color-stop(74.0%, transparent)), -webkit-gradient(linear, 40% 47%, 60% 53%, color-stop(35%, rgba(213, 77, 195, 0.5)), color-stop(35.0%, transparent)), white; background: -webkit-linear-gradient(53% 92%, rgba(210, 55, 189, 0.5) 97%, transparent 97.0%), -webkit-linear-gradient(13% 59%, rgba(199, 77, 182, 0.5) 1%, transparent 1.0%), -webkit-linear-gradient(53% 67%, rgba(199, 61, 180, 0.5) 39%, transparent 39.0%), -webkit-linear-gradient(96% 22%, rgba(216, 79, 198, 0.5) 51%, transparent 51.0%), -webkit-linear-gradient(54% 7%, rgba(209, 71, 191, 0.5) 34%, transparent 34.0%), -webkit-linear-gradient(34% 40%, rgba(215, 91, 199, 0.5) 48%, transparent 48.0%), -webkit-linear-gradient(28% 56%, rgba(211, 115, 198, 0.5) 52%, transparent 52.0%), -webkit-linear-gradient(66% 73%, rgba(212, 84, 195, 0.5) 83%, transparent 83.0%), -webkit-linear-gradient(62% 83%, rgba(219, 77, 200, 0.5) 74%, transparent 74.0%), -webkit-linear-gradient(40% 47%, rgba(213, 77, 195, 0.5) 35%, transparent 35.0%), white; background: -moz-linear-gradient(53% 92%, rgba(210, 55, 189, 0.5) 97%, transparent 97.0%), -moz-linear-gradient(13% 59%, rgba(199, 77, 182, 0.5) 1%, transparent 1.0%), -moz-linear-gradient(53% 67%, rgba(199, 61, 180, 0.5) 39%, transparent 39.0%), -moz-linear-gradient(96% 22%, rgba(216, 79, 198, 0.5) 51%, transparent 51.0%), -moz-linear-gradient(54% 7%, rgba(209, 71, 191, 0.5) 34%, transparent 34.0%), -moz-linear-gradient(34% 40%, rgba(215, 91, 199, 0.5) 48%, transparent 48.0%), -moz-linear-gradient(28% 56%, rgba(211, 115, 198, 0.5) 52%, transparent 52.0%), -moz-linear-gradient(66% 73%, rgba(212, 84, 195, 0.5) 83%, transparent 83.0%), -moz-linear-gradient(62% 83%, rgba(219, 77, 200, 0.5) 74%, transparent 74.0%), -moz-linear-gradient(40% 47%, rgba(213, 77, 195, 0.5) 35%, transparent 35.0%), white; background: -o-linear-gradient(53% 92%, rgba(210, 55, 189, 0.5) 97%, transparent 97.0%), -o-linear-gradient(13% 59%, rgba(199, 77, 182, 0.5) 1%, transparent 1.0%), -o-linear-gradient(53% 67%, rgba(199, 61, 180, 0.5) 39%, transparent 39.0%), -o-linear-gradient(96% 22%, rgba(216, 79, 198, 0.5) 51%, transparent 51.0%), -o-linear-gradient(54% 7%, rgba(209, 71, 191, 0.5) 34%, transparent 34.0%), -o-linear-gradient(34% 40%, rgba(215, 91, 199, 0.5) 48%, transparent 48.0%), -o-linear-gradient(28% 56%, rgba(211, 115, 198, 0.5) 52%, transparent 52.0%), -o-linear-gradient(66% 73%, rgba(212, 84, 195, 0.5) 83%, transparent 83.0%), -o-linear-gradient(62% 83%, rgba(219, 77, 200, 0.5) 74%, transparent 74.0%), -o-linear-gradient(40% 47%, rgba(213, 77, 195, 0.5) 35%, transparent 35.0%), white; background: linear-gradient(53% 92%, rgba(210, 55, 189, 0.5) 97%, transparent 97.0%), linear-gradient(13% 59%, rgba(199, 77, 182, 0.5) 1%, transparent 1.0%), linear-gradient(53% 67%, rgba(199, 61, 180, 0.5) 39%, transparent 39.0%), linear-gradient(96% 22%, rgba(216, 79, 198, 0.5) 51%, transparent 51.0%), linear-gradient(54% 7%, rgba(209, 71, 191, 0.5) 34%, transparent 34.0%), linear-gradient(34% 40%, rgba(215, 91, 199, 0.5) 48%, transparent 48.0%), linear-gradient(28% 56%, rgba(211, 115, 198, 0.5) 52%, transparent 52.0%), linear-gradient(66% 73%, rgba(212, 84, 195, 0.5) 83%, transparent 83.0%), linear-gradient(62% 83%, rgba(219, 77, 200, 0.5) 74%, transparent 74.0%), linear-gradient(40% 47%, rgba(213, 77, 195, 0.5) 35%, transparent 35.0%), white; height: 37.5em; }
+html.frontpage body #intro #button a { color: #d1f3ff; background-color: transparent; }
+@media only screen and (max-width: 30em) { html.frontpage body #intro { height: 29.6875em; } }
+
+#gravity .h-vertical, #gravity .h-horizontal, #gravity .h-golden-rectangle { position: fixed; z-index: 1000; opacity: .3; }
+#gravity .h-vertical { left: calc(50% - 1px); height: 100%; border-left: 1px solid red; }
+#gravity .h-horizontal { top: calc(50% - 1px); width: 100%; border-bottom: 1px solid red; }
+#gravity .h-golden-rectangle { border: 1px solid green; opacity: .8; }
+#gravity .h-gravity-point { position: absolute; z-index: 1000; opacity: .3; display: none; }
+#gravity .h-gravity-point:after { content: ''; display: block; width: 1.25em; height: 1.25em; background: red; position: relative; top: -0.625em; left: -0.625em; }
+#gravity .h-gravity-point:last-of-type { display: block; }
+
+#grid { position: absolute; top: 0; opacity: .1; z-index: -1; }
+
+#grid .col { border-right: 1px solid; border-bottom: 1px solid; width: calc(5.20833em + 1.25em - 1px); height: calc(5em + 1.25em - 1px); float: left; }
+
+#grid .gutter-right { float: right; border-left: 1px solid; width: calc(1.25em - 1px); height: 100%; }
+
+#grid .gutter-bottom { float: left; border-bottom: 1px solid; height: calc(1.25em - 1px); width: 100%; }
+
+/*
+#grid { z-index: 100;  .col { color: red; }
+}
+*/
+#grid, #gravity { display: none; }
+=======
+/*
+Syntax error: Undefined mixin 'grid'.
+        on line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss, in `grid'
+        from line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss
+
+1: /home/cs/work/cs2/assets/styles/pages/default.scss
+
+Backtrace:
+/home/cs/work/cs2/assets/styles/pages/default.scss:3:in `grid'
+/home/cs/work/cs2/assets/styles/pages/default.scss:3
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:39:in `delete'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:32:in `block in deleted'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `deleted'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:16:in `refresh'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `call'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `block in watch'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/watcher.rb:41:in `[]'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/watcher.rb:41:in `callback!'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/event.rb:128:in `callback!'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `block in process'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `each'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `process'
+/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:221:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:20:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `call'
+/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'grid'.\A         on line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss, in `grid'\A         from line 3 of /home/cs/work/cs2/assets/styles/pages/default.scss\A \A 1: /home/cs/work/cs2/assets/styles/pages/default.scss"; }
+>>>>>>> v2

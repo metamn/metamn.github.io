@@ -1,0 +1,20 @@
+html.frontpage {
+  
+  @include landscape {
+    @include full-height;
+  }
+  
+  body {
+    header {
+      @include header;
+    }
+  
+    #values {
+      @include values;
+    }
+    
+    footer {
+      @include footer;
+    }
+  }
+}

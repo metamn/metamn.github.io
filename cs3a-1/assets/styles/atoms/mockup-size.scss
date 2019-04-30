@@ -1,0 +1,17 @@
+@mixin mockup-size($device) {
+  @include responsive-mockup($device, 2.5);
+  
+  @include large-screen-and-up {
+    @include responsive-mockup($device, 2);
+  }
+}
+
+@mixin responsive-mockup($device, $divider) {
+  @if ($device == imac) {
+    max-height: $gutter * 51.6 / $divider;
+  } @elseif ($device == ipad) {
+    max-height: $gutter * 20 / $divider;
+  } @elseif ($device == mbp) {
+    max-height: $gutter * 24 / $divider;
+  }
+}

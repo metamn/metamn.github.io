@@ -1,0 +1,29 @@
+// Typefaces
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300,700);
+
+
+
+// Heading sizes
+// - based on lamb.cc/typograph using Le Corbuisier
+// - the even sizes are like the Fibonacci, the odd size are an in between ratio
+$heading-level-1: 1.3077em;
+$heading-level-2: 1.6154em;
+$heading-level-3: 2.1154em;
+$heading-level-4: 2.6154em;
+$heading-level-5: 3.4231em;
+$heading-level-6: 4.2308em;
+$heading-level-7: 5.5385em;
+$heading-level-8: 6.8462em;
+
+
+
+@mixin font($type: body) {
+  @if ($type == body) {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+  
+  } @elseif ($type == title) {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,105 @@
+@mixin cms {
+  .container {
+    aside {
+      @include cms-slider;
+      
+      .cms {
+        @include fixed-width-grid(20em, 5%);
+        
+        figure, div {
+          @include block;
+          margin-bottom: $gutter;
+        }
+        
+        figure {
+          @include figure;
+          @include cms-figures;
+        }
+        
+        div {
+          max-width: $text-width / 2;
+          
+          p {
+            font-size: large;
+          }
+          
+          &.type {
+            font-size: $heading-level-1;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@mixin cms-slider {
+  min-height: 30em;
+  @include slider(aligned, 4);
+}
+
+
+@mixin cms-figures {
+  img {
+    position: relative;
+    max-height: $gutter * 4;
+  }
+  
+  &#docpad img {
+    top: $gutter;
+  }
+  
+  &#craft img {
+    @include landscape {
+      max-width: $gutter * 4;
+      top: $gutter + $gutter / 4;
+    }
+    
+    @include portrait {
+      max-width: $gutter * 6;
+      top: $gutter;
+      margin-bottom: $gutter;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@mixin cms-landscape {
+  width: 95%;
+  margin-right: 5%;
+  margin-top: $gutter;
+  
+  aside {
+    .cms {
+      position: relative;
+
+      figure {
+        height: $gutter * 4;
+        @include figure;
+        @include cms-figures;
+      }
+
+      .description {
+        height: $gutter * 3;
+      }
+
+      .year, .type {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

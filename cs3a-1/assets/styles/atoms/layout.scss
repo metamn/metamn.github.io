@@ -1,0 +1,135 @@
+@mixin symmetric-grid {
+  float: left;
+  width: 22%;
+  margin-right: 4%;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+@mixin fixed-width-grid($size, $gutter) {
+  max-width: $size;
+  float: left;
+  margin-right: $gutter;
+}
+
+
+
+
+// Typographic Grid functions
+// ==========================
+
+
+@mixin rows($nr) {
+  height: row($nr);
+}
+
+@mixin cols($nr) {
+  width: col($nr);
+}
+
+
+@function row($nr) {
+  @return $nr * ($text-grid-height + $gutter);
+}
+
+@function col($nr) {
+  @return $nr * ($grid-width + $gutter);
+}
+
+
+
+
+// Various Grid helpers
+// ========================
+
+
+@mixin full-height {
+  height: 100%;
+  
+  body, section, .container {
+    height: 100%;
+  }
+}
+
+
+@mixin list-inline($margin: $gutter) {
+  li {
+    display: inline-block;
+    float: left;
+    padding-right: $margin;
+    
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
+
+
+/* Center horizontally
+  - works with an inner container only
+  - example:
+    <header>
+      <div class="container">
+    ...
+    header { @include center }
+*/
+@mixin center($max-width) {
+  text-align: center;
+  
+  .container {
+    text-align: center;
+    display: inline-block;
+    
+    padding-left: $gutter;
+    padding-right: $gutter;
+    width: calc(100% - #{$gutter * 2});
+    max-width: $max-width;
+  }
+}
+
+
+/* Center vertically or horizontally using transformations
+- http://davidwalsh.name/css-vertical-center
+*/
+@mixin t-center($direction: both) {
+  position: relative;
+  
+  @if ($direction == vertical) {
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+  
+  @if ($direction == horizontal) {
+    left: 50%;
+    @include transform(translateX(-50%));
+    text-align: center;
+  }
+  
+  @if ($direction == both) {
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    text-align: center;
+  }
+}
+
+
+
+
+@mixin block {
+  width: 100%;
+  float: left;
+}
+
+
+
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
+
+

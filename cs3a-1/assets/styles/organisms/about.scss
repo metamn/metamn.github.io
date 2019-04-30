@@ -1,0 +1,21 @@
+@mixin about {
+  @include font(title);
+  
+  h2 {
+    max-width: $text-width / 1.5;
+  }
+  
+  @include portrait {
+    padding-top: row(1);
+  }
+  
+  
+  /* skills is already inside a .container, so here we avoid double padding 
+  */
+  #skills {
+    .container {
+      @include block;
+      padding-left: 0;
+    }
+  }
+}

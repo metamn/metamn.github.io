@@ -1,0 +1,22 @@
+@mixin link($type: body) {
+  @if ($type == body) {
+    a {
+      @include colors;
+    }
+  
+  } @elseif ($type == none) {
+    a {
+      text-decoration: none;
+    }
+  
+  } @elseif ($type == menu) {
+    a {
+      @include colors;
+      text-decoration: none;
+      
+      &:hover {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}

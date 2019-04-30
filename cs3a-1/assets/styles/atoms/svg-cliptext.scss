@@ -1,0 +1,19 @@
+@mixin svg-cliptext {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle; 
+  overflow: hidden;
+  padding-bottom: 100%;
+  
+
+  svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* this replaces vievBox="" */
+    width: 100%;
+    height: 100%;
+  }
+}
