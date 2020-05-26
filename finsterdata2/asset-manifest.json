@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/finsterdata2/static/js/main.e8a5b1f3.chunk.js",
+    "main.js.map": "/finsterdata2/static/js/main.e8a5b1f3.chunk.js.map",
+    "runtime-main.js": "/finsterdata2/static/js/runtime-main.16805621.js",
+    "runtime-main.js.map": "/finsterdata2/static/js/runtime-main.16805621.js.map",
+    "static/js/2.bd9bd8be.chunk.js": "/finsterdata2/static/js/2.bd9bd8be.chunk.js",
+    "static/js/2.bd9bd8be.chunk.js.map": "/finsterdata2/static/js/2.bd9bd8be.chunk.js.map",
+    "index.html": "/finsterdata2/index.html",
+    "precache-manifest.f562853337dc6d3f2c15cc1dd0f94b8b.js": "/finsterdata2/precache-manifest.f562853337dc6d3f2c15cc1dd0f94b8b.js",
+    "service-worker.js": "/finsterdata2/service-worker.js",
+    "static/js/2.bd9bd8be.chunk.js.LICENSE.txt": "/finsterdata2/static/js/2.bd9bd8be.chunk.js.LICENSE.txt",
+    "static/media/2ndFimage.png": "/finsterdata2/static/media/2ndFimage.b0d16765.png",
+    "static/media/Group-21295.svg": "/finsterdata2/static/media/Group-21295.1aee3080.svg",
+    "static/media/Group21249.svg": "/finsterdata2/static/media/Group21249.44584b4c.svg",
+    "static/media/Logo.svg": "/finsterdata2/static/media/Logo.8b1f57d7.svg",
+    "static/media/bottom-section.png": "/finsterdata2/static/media/bottom-section.1ccdfe27.png",
+    "static/media/dots.png": "/finsterdata2/static/media/dots.c951b9dd.png",
+    "static/media/footer-orange-bg.svg": "/finsterdata2/static/media/footer-orange-bg.f06e7953.svg",
+    "static/media/group.png": "/finsterdata2/static/media/group.82111a84.png",
+    "static/media/orange-banner.png": "/finsterdata2/static/media/orange-banner.e8f4d1d4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16805621.js",
+    "static/js/2.bd9bd8be.chunk.js",
+    "static/js/main.e8a5b1f3.chunk.js"
+  ]
+}
