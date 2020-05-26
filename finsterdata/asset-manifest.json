@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.js": "/finsterdata/static/js/main.59db5e2e.chunk.js",
+    "main.js.map": "/finsterdata/static/js/main.59db5e2e.chunk.js.map",
+    "runtime-main.js": "/finsterdata/static/js/runtime-main.5530659c.js",
+    "runtime-main.js.map": "/finsterdata/static/js/runtime-main.5530659c.js.map",
+    "static/js/2.938d684a.chunk.js": "/finsterdata/static/js/2.938d684a.chunk.js",
+    "static/js/2.938d684a.chunk.js.map": "/finsterdata/static/js/2.938d684a.chunk.js.map",
+    "index.html": "/finsterdata/index.html",
+    "precache-manifest.8f651a23a05895461c99f2fc268046e5.js": "/finsterdata/precache-manifest.8f651a23a05895461c99f2fc268046e5.js",
+    "service-worker.js": "/finsterdata/service-worker.js",
+    "static/js/2.938d684a.chunk.js.LICENSE.txt": "/finsterdata/static/js/2.938d684a.chunk.js.LICENSE.txt",
+    "static/media/chat-1.c663e76e.svg": "/finsterdata/static/media/chat-1.c663e76e.svg",
+    "static/media/contact-bg.png": "/finsterdata/static/media/contact-bg.4fc602a1.png",
+    "static/media/facebook.b67a6282.svg": "/finsterdata/static/media/facebook.b67a6282.svg",
+    "static/media/factory.svg": "/finsterdata/static/media/factory.cb692f4a.svg",
+    "static/media/feature-banner-1.svg": "/finsterdata/static/media/feature-banner-1.44584b4c.svg",
+    "static/media/feature-banner-2.svg": "/finsterdata/static/media/feature-banner-2.ec0f4461.svg",
+    "static/media/features-bg-2.png": "/finsterdata/static/media/features-bg-2.685aa8bb.png",
+    "static/media/features-bg.png": "/finsterdata/static/media/features-bg.10acd1cc.png",
+    "static/media/footer.png": "/finsterdata/static/media/footer.d57e776c.png",
+    "static/media/google.da40935a.svg": "/finsterdata/static/media/google.da40935a.svg",
+    "static/media/instagram.b38a7524.svg": "/finsterdata/static/media/instagram.b38a7524.svg",
+    "static/media/laptop-group-left.png": "/finsterdata/static/media/laptop-group-left.19c213f3.png",
+    "static/media/laptop-group-right.png": "/finsterdata/static/media/laptop-group-right.70c3f6ef.png",
+    "static/media/lines.png": "/finsterdata/static/media/lines.0c5d8fc2.png",
+    "static/media/linkedin.c8fee8b9.svg": "/finsterdata/static/media/linkedin.c8fee8b9.svg",
+    "static/media/logo.svg": "/finsterdata/static/media/logo.525a815b.svg",
+    "static/media/plans-bg.png": "/finsterdata/static/media/plans-bg.6104426d.png",
+    "static/media/printer.01ea0c12.svg": "/finsterdata/static/media/printer.01ea0c12.svg",
+    "static/media/settings-1.831e1ce1.svg": "/finsterdata/static/media/settings-1.831e1ce1.svg",
+    "static/media/upload.b4816269.svg": "/finsterdata/static/media/upload.b4816269.svg",
+    "static/media/website.svg": "/finsterdata/static/media/website.9b14728f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5530659c.js",
+    "static/js/2.938d684a.chunk.js",
+    "static/js/main.59db5e2e.chunk.js"
+  ]
+}
