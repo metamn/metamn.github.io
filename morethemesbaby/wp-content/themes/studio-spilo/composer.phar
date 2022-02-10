@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+Warning: Composer should be invoked via the CLI version of PHP, not the apache2handler SAPI
+<br />
+<b>Notice</b>:  Undefined index: argv in <b>phar:///home/cs/work/studio-spilo/composer.phar/bin/composer</b> on line <b>55</b><br />
+<br />
+<b>Notice</b>:  Undefined index: argv in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>53</b><br />
+<br />
+<b>Warning</b>:  array_shift() expects parameter 1 to be array, null given in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>57</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  count(): Parameter must be an array or an object that implements Countable in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>305</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  count(): Parameter must be an array or an object that implements Countable in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>305</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
+<br />
+<b>Warning</b>:  count(): Parameter must be an array or an object that implements Countable in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>305</b><br />
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>phar:///home/cs/work/studio-spilo/composer.phar/vendor/symfony/console/Input/ArgvInput.php</b> on line <b>282</b><br />
